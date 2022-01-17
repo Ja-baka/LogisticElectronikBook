@@ -5,14 +5,35 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:LogisticEBook.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+	  d:DesignHeight="375" 
+	  d:DesignWidth="800"
       Title="Page1_2">
 
 	<Grid 
-		Background="IndianRed">
-		<Button
-			Content="Вторая страница"
-			Margin="150"
-			FontSize="25"/>
+		Background="#f5e8ae"
+	>
+
+		<StackPanel
+			VerticalAlignment="Top"
+			Margin="10, 0"
+		>
+			<TextBlock
+				Margin="0,2"
+				TextWrapping="Wrap"
+				FontSize="14"
+			>
+				<LineBreak />
+				Объективная необходимость в специально обустроенных местах для содержания запасов существует на всех стадиях движения материального потока, начиная от первичного источника сырья и кончая конечным потребителем. Основными причинами использования складов в логистической системе являются: уменьшение логистических издержек при транспортировке за счет перевозок экономичными партиями; управление спросом и предложением; обеспечение бесперебойного процесса производства за счет создания запасов материально-технических ресурсов; максимальное удовлетворение потребительского спроса; создание условий для поддержания сбыта; увеличение географического охвата рынков сбыта; обеспечение гибкой политики обслуживания. Чтобы оказывать услуги склада необходимо не только помещение, но и оборудование для складов. 
+			</TextBlock>
+		</StackPanel>
+
+		<TextBlock
+			Text="2" 
+			FontSize="14"
+			Margin="5"
+			FontWeight="Bold"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Bottom"
+		/>
 	</Grid>
 </Page>

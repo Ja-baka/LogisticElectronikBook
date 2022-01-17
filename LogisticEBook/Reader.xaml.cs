@@ -19,20 +19,35 @@ namespace LogisticEBook
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
 	/// </summary>
-	public partial class MainWindow : Window
+	public partial class Reader : Window
 	{
-		private Page[] _pages;
 		private int _currentPage;
+		private readonly Page[] _pages;
+		private readonly MainPage _mainPage;
 
-		public MainWindow()
+		private event EventHandler _pageChanged;
+
+		public Reader()
 		{
 			InitializeComponent();
-			_pages = new Page[2] 
+			_pages = new Page[3] 
 			{ 
-				new Page1_1(), new Page1_2() 
+				new Page1_1(), 
+				new Page1_2(),
+				new Page1_3()
 			};
 			_currentPage = 0;
-			GoToCurrentPage();
+			_mainPage = new MainPage();
+
+			MainFrame.NavigationService.Navigate(_mainPage);
+			_mainPage.LectureOpened += (sender, e) => SwitchReadingMode();
+		}
+
+		private void SwitchReadingMode()
+		{
+			ButtonExit.IsEnabled = ButtonExit.IsEnabled == false;
+			ButtonNext.IsEnabled = ButtonNext.IsEnabled == false;
+			ButtonPrew.IsEnabled = ButtonPrew.IsEnabled == false;
 		}
 
 		private void ButtonNext_Click(object sender, RoutedEventArgs e)
@@ -56,6 +71,12 @@ namespace LogisticEBook
 		private void GoToCurrentPage()
 		{
 			MainFrame.NavigationService.Navigate(_pages[_currentPage]);
+		}
+
+		private void ButtonExit_Click(object sender, RoutedEventArgs e)
+		{
+			MainFrame.NavigationService.Navigate(_mainPage);
+			SwitchReadingMode();
 		}
 	}
 }
