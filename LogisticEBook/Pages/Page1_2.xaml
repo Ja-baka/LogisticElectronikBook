@@ -11,7 +11,7 @@
 	<Grid 
 		Background="IndianRed">
 		<Button
-			Content="А ТУТ НЕ СДЕЛАНО"
+			Content="Вторая страница"
 			Margin="150"
 			FontSize="25"/>
 	</Grid>
