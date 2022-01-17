@@ -7,14 +7,21 @@
 		mc:Ignorable="d"
 		Title="Электронный учебник Логистика" 
 		Height="450" 
-		Width="800">
+		Width="800" 
+	>
 	<Grid 
 		Background="White">
 		<Grid.RowDefinitions>
 			<RowDefinition
-				Height="50"/>
-			<RowDefinition/>
+				Height="50"
+			/>
+			<RowDefinition
+			/>
 		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition
+			/>
+		</Grid.ColumnDefinitions>
 		<StackPanel
 			Grid.Row="0"
 			Orientation="Horizontal"
@@ -36,9 +43,11 @@
 		</StackPanel>
 
 		<Frame 
+			NavigationUIVisibility="Hidden"
 			Grid.Row="1"
 			Name="MainFrame" 
-			Background="AliceBlue"/>
+			Background="AliceBlue"
+		/>
 	</Grid>
 
 </Window>
