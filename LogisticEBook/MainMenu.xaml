@@ -32,6 +32,18 @@
 					1.1 Грузы и устройства для их храниения. Общее понятие и классификация
 				</Hyperlink>
 			</TextBlock>
+			<TextBlock
+				Margin="20,0,0,0"
+				FontSize="16"
+			>
+				<Hyperlink
+					Name="Hyperlink1_2"
+					Click="Hyperlink1_2_Click"
+				>
+					1.2 Грузовая единица
+				</Hyperlink>
+			</TextBlock>
+
 		</StackPanel>
 	</Grid>
 </Window>

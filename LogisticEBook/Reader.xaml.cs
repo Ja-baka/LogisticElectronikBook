@@ -21,35 +21,34 @@ namespace LogisticEBook
 	/// </summary>
 	public partial class Reader : Window
 	{
-		private int _currentPage;
 		private int _currentTopic;
-		private readonly Page[] _pages;
+		private int _currentPage;
+		private static readonly Page[][] _pages;
 
-		public Reader()
+		static Reader()
+		{
+			_pages = new Page[2][];
+			_pages[0] = new Page[] { new Page1_1_1(), new Page1_1_2(), new Page1_1_3() };
+			_pages[1] = new Page[] { new Page1_2_1() };
+		}
+
+		public Reader(int topicIndex)
 		{
 			InitializeComponent();
 
-			_pages = new Page[3]
-			{ 
-				new Page1_1_1(), 
-				new Page1_1_2(),
-				new Page1_1_3()
-			};
-			_currentPage = 0;
-
+			_currentTopic = topicIndex;
 			OpenCurrentPage();
 		}
 
-		public void OpenLecture(int topicNumber)
+		public void OpenLecture(int topicIndex)
 		{
 			ShowDialog();
-			_currentTopic = topicNumber;
 		}
 
 		private void ButtonNext_Click(object sender, RoutedEventArgs e)
 		{
 			_currentPage = 
-				_currentPage == _pages.Length - 1
+				_currentPage == _pages[_currentTopic].Length - 1
 				? 0 
 				: _currentPage + 1;
 			OpenCurrentPage();
@@ -59,14 +58,15 @@ namespace LogisticEBook
 		{
 			_currentPage = 
 				_currentPage == 0
-				? _pages.Length - 1
+				? _pages[_currentTopic].Length - 1
 				: _currentPage - 1;
 			OpenCurrentPage();
 		}
 
 		private void OpenCurrentPage()
 		{
-			MainFrame.NavigationService.Navigate(_pages[_currentPage]);
+			NavigationService navigation = MainFrame.NavigationService;
+			navigation.Navigate(_pages[_currentTopic][_currentPage]);
 		}
 
 		private void ButtonExit_Click(object sender, RoutedEventArgs e)

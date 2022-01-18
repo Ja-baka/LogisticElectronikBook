@@ -24,18 +24,24 @@ namespace LogisticEBook
 			InitializeComponent();
 		}
 
-		private void Hyperlink1_1_Click(object sender, RoutedEventArgs e)
-		{
-			int topicNumber = 0;
-			OpenHyperlink(topicNumber);
-		}
-
-		private void OpenHyperlink(int topicNumber)
+		private void OpenTopicByIndex(int topicIndex)
 		{
 			Hide();
-			Reader reader = new Reader();
-			reader.OpenLecture(topicNumber);
+
+			Reader reader = new Reader(topicIndex);
+			reader.ShowDialog();
+			
 			Show();
+		}
+
+		private void Hyperlink1_1_Click(object sender, RoutedEventArgs e)
+		{
+			OpenTopicByIndex(0);
+		}
+
+		private void Hyperlink1_2_Click(object sender, RoutedEventArgs e)
+		{
+			OpenTopicByIndex(1);
 		}
 	}
 }
