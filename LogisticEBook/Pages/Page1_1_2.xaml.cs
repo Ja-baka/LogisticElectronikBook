@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace LogisticEBook.Pages
 {
 	/// <summary>
-	/// Логика взаимодействия для Page1_1.xaml
+	/// Логика взаимодействия для Page1_2.xaml
 	/// </summary>
-	public partial class Page1_3 : Page
+	public partial class Page1_1_2 : Page
 	{
-		public Page1_3()
+		public Page1_1_2()
 		{
 			InitializeComponent();
 		}

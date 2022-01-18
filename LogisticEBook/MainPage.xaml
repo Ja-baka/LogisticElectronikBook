@@ -25,7 +25,7 @@
 				FontSize="16"
 			>
 				<Hyperlink
-					NavigateUri="/Pages/Page1_1.xaml"
+					NavigateUri="/Pages/Page1_1_1.xaml"
 					Click="Hyperlink_Click"
 				>
 					1.1 Грузы и устройства для их храниения. Общее понятие и классификация

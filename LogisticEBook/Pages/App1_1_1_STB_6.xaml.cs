@@ -16,13 +16,18 @@ using System.Windows.Shapes;
 namespace LogisticEBook.Pages
 {
 	/// <summary>
-	/// Логика взаимодействия для Page1_1.xaml
+	/// Логика взаимодействия для Page1_STB_6.xaml
 	/// </summary>
-	public partial class Page1_1 : Page
+	public partial class App1_1_1_STB_6 : Page
 	{
-		public Page1_1()
+		public App1_1_1_STB_6()
 		{
 			InitializeComponent();
+		}
+
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+			NavigationService.GoBack();
 		}
 	}
 }

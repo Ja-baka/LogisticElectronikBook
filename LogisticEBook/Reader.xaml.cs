@@ -25,16 +25,14 @@ namespace LogisticEBook
 		private readonly Page[] _pages;
 		private readonly MainPage _mainPage;
 
-		private event EventHandler _pageChanged;
-
 		public Reader()
 		{
 			InitializeComponent();
 			_pages = new Page[3] 
 			{ 
-				new Page1_1(), 
-				new Page1_2(),
-				new Page1_3()
+				new Page1_1_1(), 
+				new Page1_1_2(),
+				new Page1_1_3()
 			};
 			_currentPage = 0;
 			_mainPage = new MainPage();

@@ -21,7 +21,7 @@ namespace LogisticEBook
 	/// </summary>
 	public partial class MainPage : Page
 	{
-		public event EventHandler<EventArgs> LectureOpened;
+		public event EventHandler<EventArgs>? LectureOpened;
 
 		public MainPage()
 		{
