@@ -5,19 +5,18 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:LogisticEBook.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="1000" d:DesignWidth="800"
       Title="Page1_2_1">
 
 	<Grid 
 		Background="#f5e8ae"
 	>
-
-		<StackPanel
+			<StackPanel
 			VerticalAlignment="Top"
-			Margin="10, 0"
+			Margin="25, 0"
 		>
-			<TextBlock
-				Text="Вторая тема"
+				<TextBlock
+				Text="Тестовая страница"
 				FontSize="16"
 				FontWeight="Bold"
 				Margin="10"
@@ -25,26 +24,42 @@
 				VerticalAlignment="Top"
 			/>
 
-			<TextBlock
+				<TextBlock
 				Margin="0,2"
 				TextWrapping="Wrap"
 				FontSize="14"
 				TextAlignment="Justify"
 	
 			>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec varius arcu. Maecenas vel feugiat tellus. Donec ut massa semper, sodales turpis ac, interdum velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ac pulvinar erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis elementum est nec pretium. 
-				<LineBreak />
-				СТРАНИЦА В РАЗРАБОТКЕ
-			</TextBlock>
-		</StackPanel>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non turpis eros. Ut elementum arcu ut volutpat fermentum. Ut tempor, enim ut dictum euismod, sem ligula accumsan tortor, a tincidunt justo sapien nec est. Nam sagittis enim tincidunt mauris pulvinar pellentesque. Integer vel ultrices tellus, sit amet hendrerit massa. Nullam eleifend interdum mauris, vehicula congue mauris laoreet eget. Nullam bibendum vehicula ante ut eleifend. Vivamus cursus non urna at varius. Cras nec bibendum ipsum, quis lacinia purus. Quisque sed nulla luctus, porta velit at, faucibus sapien. Sed molestie hendrerit lacus, non fermentum lorem pellentesque sed. Cras cursus lacus non mi porttitor finibus ac at odio. Morbi dolor urna, pellentesque vel venenatis id, accumsan a augue. Ut ut pharetra enim. Maecenas feugiat auctor justo ac suscipit. Fusce at leo enim.
+<LineBreak />
+Proin eleifend quis ligula in rhoncus. Sed eu felis ipsum. Quisque porta purus diam, ac gravida augue vehicula in. Integer pretium aliquam nunc vehicula eleifend. Nulla nec eros nisl. Cras ultricies efficitur urna sit amet tincidunt. Aliquam congue aliquet interdum. Nunc pellentesque, est non congue tristique, eros leo sollicitudin enim, quis molestie quam metus et urna. Donec non tempus nisi.
+<LineBreak />
 
-		<TextBlock
-			Text="1" 
-			FontSize="14"
-			Margin="5"
-			FontWeight="Bold"
-			HorizontalAlignment="Center"
-			VerticalAlignment="Bottom"
-		/>
+Aenean ultricies velit sed lacus sagittis blandit. Vestibulum ac justo eu purus interdum pharetra a vel est. Vivamus vitae urna id nibh aliquet sagittis et id dui. Sed nec sapien metus. Pellentesque semper nisl non tortor tristique varius in hendrerit tellus. Nunc consequat dapibus mauris, eu laoreet velit vehicula molestie. Vivamus eget lectus sit amet enim aliquam aliquam sit amet ut sem. Nunc sit amet suscipit eros. Morbi est risus, tristique id fermentum quis, sagittis in enim.
+<LineBreak />
+
+Donec tempor, nisi vel scelerisque bibendum, nulla ante luctus nunc, ac ornare massa augue ut orci. Vivamus in dolor sagittis, aliquam nisl vitae, ornare purus. Cras et porttitor enim, a volutpat dui. Etiam sit amet luctus odio. Aenean fringilla nibh nec velit aliquet, ultricies tincidunt eros faucibus. Nullam consequat eu est lacinia iaculis. Sed leo nisl, efficitur vitae tellus eu, sagittis consequat nisi. Aenean auctor est ut dignissim interdum. Curabitur sit amet neque magna. Sed tincidunt magna at eros ornare, quis elementum massa cursus.
+<LineBreak />
+
+Proin non sapien enim. Morbi eu ex tristique, imperdiet ex vel, malesuada dolor. Sed placerat molestie tincidunt. Fusce id sollicitudin nulla. Integer ac risus luctus, venenatis dolor at, ullamcorper nibh. Pellentesque tincidunt lacinia tincidunt. Nullam ultrices velit non dignissim lacinia. Maecenas eleifend tellus et nisi pulvinar, non ultricies sapien pellentesque.
+<LineBreak />
+
+Morbi ante erat, bibendum non turpis sed, egestas tincidunt orci. Maecenas risus lacus, interdum hendrerit mi quis, efficitur gravida nibh. Donec nec scelerisque nisi. Fusce varius consequat augue eget convallis. Nullam sapien lacus, tincidunt ac faucibus vel, consectetur a nisi. Integer ut ante laoreet, blandit ipsum vitae, fringilla ex. Duis sollicitudin turpis elit, ut pretium tortor sollicitudin in. Nullam sit amet est in odio hendrerit faucibus. Fusce aliquam nunc id ullamcorper scelerisque. Nunc eget imperdiet felis, et fringilla arcu. Morbi convallis risus venenatis, congue nisi nec, vehicula augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis fermentum odio nisi, sit amet dapibus sapien sodales at. Sed dictum, orci pulvinar imperdiet semper, est lacus suscipit arcu, id aliquet orci justo a elit. Pellentesque suscipit orci et aliquam rutrum.
+<LineBreak />
+
+Integer non dictum turpis, ultrices egestas lorem. Cras augue felis, volutpat at sollicitudin in, iaculis in sapien. Maecenas feugiat condimentum lacus, quis consectetur mauris malesuada nec. Donec ultricies accumsan nibh, vel lobortis sem ornare suscipit. Nulla sed malesuada turpis. Nam et mauris malesuada, sollicitudin turpis luctus, sodales ligula. Praesent eleifend faucibus sem, id consectetur metus. Nunc id sagittis neque, eget pretium lectus.
+<LineBreak />
+
+Nulla sed orci at neque gravida viverra vel sit amet augue. Vivamus aliquam auctor rhoncus. Duis blandit metus non porttitor ullamcorper. Suspendisse auctor diam vel ligula ultrices, quis malesuada nisl dapibus. Duis pharetra tempor blandit. Curabitur laoreet tortor a gravida semper. Duis dapibus, odio sit amet condimentum dapibus, mauris diam tempor turpis, eu pulvinar ex ex convallis justo.
+<LineBreak />
+
+Phasellus purus magna, cursus sed ligula vel, rhoncus sollicitudin est. Phasellus ac quam augue. Aenean quis mollis massa, eget mattis enim. Donec pellentesque, sem scelerisque sodales gravida, sem urna placerat justo, et rutrum enim justo sed lorem. Morbi sollicitudin finibus ullamcorper. Etiam quis erat ut metus aliquet pharetra ut in erat. Integer vitae dictum purus, quis accumsan justo. Sed varius metus est, id aliquam est condimentum vitae. Duis ligula erat, lobortis a efficitur vitae, laoreet quis odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut at quam eget nisl scelerisque iaculis. Quisque tortor nisi, venenatis quis ipsum id, mattis porta nulla. Integer sodales magna ac lectus varius efficitur.
+<LineBreak />
+
+Cras gravida nulla ac ipsum commodo convallis. Sed ac mi mattis, mattis nulla sed, pellentesque nibh. Nullam porta ultrices est, id ullamcorper nulla malesuada a. Nunc in ultrices tortor. Sed nec elit pulvinar, ornare ipsum ac, sollicitudin ex. Nunc tempor condimentum urna eu vulputate. Praesent vel neque et erat imperdiet pretium. Aliquam erat volutpat.
+<LineBreak />
+				</TextBlock>
+			</StackPanel>
 	</Grid>
 </Page>

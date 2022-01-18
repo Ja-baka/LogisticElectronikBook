@@ -5,27 +5,28 @@
 	  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
 	  xmlns:local="clr-namespace:LogisticEBook.Pages"
 	  mc:Ignorable="d" 
-	  d:DesignHeight="375" 
+	  d:DesignHeight="2000" 
 	  d:DesignWidth="800"
 	  Title="Page1_1_1">
 
 	<Grid 
 		Background="#f5e8ae"
 	>
-		
+
 		<StackPanel
 			VerticalAlignment="Top"
-			Margin="10, 0"
+			Margin="50, 20, 50, 100"
 		>
 			<TextBlock
 				Text="Введение"
-				FontSize="16"
+				FontSize="20"
 				FontWeight="Bold"
 				Margin="10"
 				HorizontalAlignment="Center"
 				VerticalAlignment="Top"
+				TextAlignment="Center"
+				TextWrapping="Wrap"
 			/>
-			
 			<TextBlock
 				Margin="0,2"
 				TextWrapping="Wrap"
@@ -46,22 +47,76 @@
 				- объект транспортно-логистической системы (здание, сооружение, ангар, либо их отдельная часть, либо открытая площадка, либо площадка под навесом), расположенный на изолированной территории или совместно с производственными, торговыми и другими помещениями и предназначенный для приема, хранения, переработки и отправки грузов.
 				<LineBreak />
 				В целом комплекс складских операций представляет собой: разгрузку транспорта; приемку товаров; размещение на хранение (укладку товаров в стеллажи, штабели); отборку товаров из мест хранения; комплектование и упаковку товаров; погрузку; внутрискладское перемещение грузов.
-				<Hyperlink
-					Name="HyperlinkSTB"
-					Click="HyperlinkSTB_Click"
-				>
-					ссылка на СТБ 
-				</Hyperlink>
+			</TextBlock>
+			<Image
+				Source="/Resources/STB_6.png"
+				Margin="25, 25, 25, 5"
+			/>
+			<TextBlock
+				TextWrapping="Wrap"
+				FontSize="14"
+				TextAlignment="Center"
+			>
+			Рисунок 1 - ссылка на СТБ 2133-2010, стр.6, первый абзац	
+			</TextBlock>
+			
+			<TextBlock
+				Margin="0,2"
+				TextWrapping="Wrap"
+				FontSize="14"
+				TextAlignment="Justify"
+			>
+				 <LineBreak/>
+				Объективная необходимость в специально обустроенных местах для содержания запасов существует на всех стадиях движения материального потока, начиная от первичного источника сырья и кончая конечным потребителем. Основными причинами использования складов в логистической системе являются: уменьшение логистических издержек при транспортировке за счет перевозок экономичными партиями; управление спросом и предложением; обеспечение бесперебойного процесса производства за счет создания запасов материально-технических ресурсов; максимальное удовлетворение потребительского спроса; создание условий для поддержания сбыта; увеличение географического охвата рынков сбыта; обеспечение гибкой политики обслуживания. Чтобы оказывать услуги склада необходимо не только помещение, но и оборудование для складов.
+			</TextBlock>
+
+			<TextBlock
+				Text="РАЗДЕЛ 1 ОБОРУДОВАНИЕ, СООРУЖЕНИЯ И УСТРОЙСТВА ДЛЯ ХРАНЕНИЯ ГРУЗОВ"
+				FontSize="16"
+				FontWeight="Bold"
+				Margin="10, 10, 10, 0"
+				HorizontalAlignment="Center"
+				VerticalAlignment="Top"
+				TextAlignment="Center"
+				TextWrapping="Wrap"
+			/>
+			<TextBlock
+				Text="1.1. ГРУЗЫ И УСТРОЙСТВА ДЛЯ ИХ ХРАНЕНИЯ"
+				FontSize="16"
+				FontWeight="Bold"
+				Margin="5, 0, 5, 0"
+				HorizontalAlignment="Center"
+				VerticalAlignment="Top"
+				TextAlignment="Center"
+				TextWrapping="Wrap"
+			/>
+			<TextBlock
+				Text="1.1.1. Классификация и характеристика грузов"
+				FontSize="16"
+				FontWeight="Bold"
+				Margin="5, 0, 5, 5"
+				HorizontalAlignment="Center"
+				VerticalAlignment="Top"
+				TextAlignment="Center"
+				TextWrapping="Wrap"
+			/>
+			<TextBlock
+				Margin="0,2"
+				TextWrapping="Wrap"
+				FontSize="14"
+				TextAlignment="Justify"
+			>
+				В логистике главным материальным компонентом являются сами грузы, для которых и проектируется вся система рациональной организации грузопотока, наиболее эффективное перемещение, которых от пункта зарождения грузопотока к конечным потребителям и представляет основную задачу логистики.
+				<LineBreak />
+				<Run
+					Text="Груз"
+					FontWeight="Bold"
+				/> – это все предметы с момента принятия их к транспортировке у заказчика до сдачи получателю.
+				<LineBreak />
+				Для потребителей интересны и нужны, прежде всего, свойства и характеристики самих грузов. Для того чтобы груз сохранил свои характеристики, качество и свойства, важно правильно организовать не только транспортировку, но и складские операции с учетом их физического состояния.
+				<LineBreak />
+				Грузы по физическому состоянию подразделяются на: твердые, жидкие, сыпучие, газообразные. Каждая из этих групп грузов имеет свои специфические характеристики.
 			</TextBlock>
 		</StackPanel>
-
-		<TextBlock
-			Text="1" 
-			FontSize="14"
-			Margin="5"
-			FontWeight="Bold"
-			HorizontalAlignment="Center"
-			VerticalAlignment="Bottom"
-		/>
 	</Grid>
 </Page>

@@ -15,6 +15,8 @@
 	>
 		<StackPanel
 			Margin="20"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Top"
 		>
 			<TextBlock
 				Text="Раздел 1. Оборудование, сооружения и устройства для хранения грузов"

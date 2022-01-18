@@ -23,7 +23,7 @@
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition />
 		</Grid.ColumnDefinitions>
-		
+
 		<Button
 			Name="ButtonExit"
 			Grid.Row="0"
@@ -34,7 +34,7 @@
 			VerticalAlignment="Center"
 			Click="ButtonExit_Click"
 		/>
-		
+
 		<StackPanel
 			Grid.Row="0"
 			Orientation="Horizontal"
@@ -48,6 +48,7 @@
 				FontWeight="Bold"
 				Margin="10"
 				Click="ButtonPrew_Click"
+				IsEnabled="False"
 			/>
 			<Button 
 				Name="ButtonNext"
@@ -57,15 +58,20 @@
 				FontWeight="Bold"
 				Margin="10"
 				Click="ButtonNext_Click"
+				IsEnabled="False"
 			/>
 		</StackPanel>
 
-		<Frame 
-			NavigationUIVisibility="Hidden"
+		<ScrollViewer
 			Grid.Row="1"
-			Name="MainFrame" 
-			Background="AliceBlue"
-		/>
+		>
+			<Frame
+				NavigationUIVisibility="Hidden"
+				Grid.Row="1"
+				Name="MainFrame" 
+				Background="AliceBlue"
+			/>
+		</ScrollViewer>
 	</Grid>
 
 </Window>
