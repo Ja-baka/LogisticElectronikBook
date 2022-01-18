@@ -24,5 +24,12 @@ namespace LogisticEBook.Pages
 		{
 			InitializeComponent();
 		}
+
+		private void HyperlinkSTB_Click(object sender, RoutedEventArgs e)
+		{
+			// NavigateUri="/Pages/App1_1_1_STB_6.xaml"
+			Apps.App1_1_1_STB_6	appWindow = new();
+			appWindow.ShowDialog();
+		}
 	}
 }

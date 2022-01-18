@@ -10,24 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace LogisticEBook.Pages
+namespace LogisticEBook.Apps
 {
 	/// <summary>
-	/// Логика взаимодействия для Page1_STB_6.xaml
+	/// Логика взаимодействия для App1_1_1_STB_6.xaml
 	/// </summary>
-	public partial class App1_1_1_STB_6 : Page
+	public partial class App1_1_1_STB_6 : Window
 	{
 		public App1_1_1_STB_6()
 		{
 			InitializeComponent();
 		}
 
-		private void Button_Click(object sender, RoutedEventArgs e)
+		private void ButtonExit_Click(object sender, RoutedEventArgs e)
 		{
-			NavigationService.GoBack();
+			Close();
 		}
 	}
 }
