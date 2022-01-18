@@ -7,7 +7,8 @@
 		mc:Ignorable="d"
 		Title="Электронный учебник Логистика" 
 		Height="450" 
-		Width="800" 
+		Width="800"
+		WindowStartupLocation="CenterScreen"
 	>
 	<Grid 
 		Background="White"
@@ -25,7 +26,6 @@
 		
 		<Button
 			Name="ButtonExit"
-			IsEnabled="False"
 			Grid.Row="0"
 			Content="Вернуться в главное меню"
 			FontSize="14"
@@ -42,7 +42,6 @@
 		>
 			<Button 
 				Name="ButtonPrew"
-				IsEnabled="False"
 				Grid.Row="0"
 				Content="&lt;"
 				FontSize="20"
@@ -52,7 +51,6 @@
 			/>
 			<Button 
 				Name="ButtonNext"
-				IsEnabled="False"
 				Grid.Row="0"
 				Content="&gt;"
 				FontSize="20"

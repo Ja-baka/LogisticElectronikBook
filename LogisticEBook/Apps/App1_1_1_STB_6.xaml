@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="Ссылка на СТБ стр. 6" 
 		Height="450" 
-		Width="800">
+		Width="800"
+>
 	<Grid
 		Background="#f5e8ae"
 	>

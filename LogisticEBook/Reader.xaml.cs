@@ -22,30 +22,28 @@ namespace LogisticEBook
 	public partial class Reader : Window
 	{
 		private int _currentPage;
+		private int _currentTopic;
 		private readonly Page[] _pages;
-		private readonly MainPage _mainPage;
 
 		public Reader()
 		{
 			InitializeComponent();
-			_pages = new Page[3] 
+
+			_pages = new Page[3]
 			{ 
 				new Page1_1_1(), 
 				new Page1_1_2(),
 				new Page1_1_3()
 			};
 			_currentPage = 0;
-			_mainPage = new MainPage();
 
-			MainFrame.NavigationService.Navigate(_mainPage);
-			_mainPage.LectureOpened += (sender, e) => SwitchReadingMode();
+			OpenCurrentPage();
 		}
 
-		private void SwitchReadingMode()
+		public void OpenLecture(int topicNumber)
 		{
-			ButtonExit.IsEnabled = ButtonExit.IsEnabled == false;
-			ButtonNext.IsEnabled = ButtonNext.IsEnabled == false;
-			ButtonPrew.IsEnabled = ButtonPrew.IsEnabled == false;
+			ShowDialog();
+			_currentTopic = topicNumber;
 		}
 
 		private void ButtonNext_Click(object sender, RoutedEventArgs e)
@@ -54,7 +52,7 @@ namespace LogisticEBook
 				_currentPage == _pages.Length - 1
 				? 0 
 				: _currentPage + 1;
-			GoToCurrentPage();
+			OpenCurrentPage();
 		}
 
 		private void ButtonPrew_Click(object sender, RoutedEventArgs e)
@@ -63,18 +61,17 @@ namespace LogisticEBook
 				_currentPage == 0
 				? _pages.Length - 1
 				: _currentPage - 1;
-			GoToCurrentPage();
+			OpenCurrentPage();
 		}
 
-		private void GoToCurrentPage()
+		private void OpenCurrentPage()
 		{
 			MainFrame.NavigationService.Navigate(_pages[_currentPage]);
 		}
 
 		private void ButtonExit_Click(object sender, RoutedEventArgs e)
 		{
-			MainFrame.NavigationService.Navigate(_mainPage);
-			SwitchReadingMode();
+			Close();
 		}
 	}
 }
