@@ -20,19 +20,11 @@ namespace LogisticEBook.Pages
 	/// </summary>
 	public partial class Page1_1 : Page
 	{
-		private Window _currentWindow;
-		private Dictionary<Run, Window> _windows;
-
 		public Page1_1()
 		{
 			InitializeComponent();
 
-			_windows = new Dictionary<Run, Window>
-			{
-				{ StorageDefinition, new Apps.App1_1_Storage() }
-			};
-
-			_currentWindow = _windows[StorageDefinition];
+			PopUpBehavior.Open(this);
 		}
 
 		private void HyperlinkSTB_Click(object sender, RoutedEventArgs e)
@@ -42,33 +34,14 @@ namespace LogisticEBook.Pages
 		
 		private void Definition_MouseEnter(object sender, MouseEventArgs e)
 		{
-			Point pointToWindow = e.GetPosition(this);
-			Point pointToScreen = PointToScreen(pointToWindow);
+			PopUpBehavior.Show(sender, e);
+			Point pointToScreen = PointToScreen(new Point(0, 0));
 
-			DefineApp(sender);
-
-			_currentWindow.Left = pointToScreen.X;
-			_currentWindow.Top = pointToScreen.Y - _currentWindow.Height * 1.75;
-
-			_currentWindow.Show();
 		}
 
 		private void Definition_MouseLeave(object sender, MouseEventArgs e)
 		{
-			_currentWindow.Hide();
-		}
-
-		private void DefineApp(object sender)
-		{
-			if (sender is Run run)
-			{
-				_currentWindow = _windows[run];
-			}
-			else
-			{
-				throw new ArgumentException
-					("Событие должно вызываться только у элементов Run");
-			}
+			PopUpBehavior.Hide(sender, e);
 		}
 	}
 }
