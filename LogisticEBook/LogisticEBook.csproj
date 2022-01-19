@@ -8,22 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Resource Include="Resources\STB_6.png">
+    <None Remove="Resources\Storage_STB_6.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Storage_STB_6.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Pages\Page1_1_3.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="Pages\Page1_1_3.xaml">
-      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
-      <SubType>Designer</SubType>
-    </Page>
   </ItemGroup>
 
 </Project>

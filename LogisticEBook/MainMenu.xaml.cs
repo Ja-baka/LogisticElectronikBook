@@ -43,5 +43,10 @@ namespace LogisticEBook
 		{
 			OpenTopicByIndex(1);
 		}
+
+		private void Window_Closed(object sender, EventArgs e)
+		{
+			System.Diagnostics.Process.GetCurrentProcess().Kill();
+		}
 	}
 }

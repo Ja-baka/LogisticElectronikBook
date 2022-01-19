@@ -28,7 +28,7 @@ namespace LogisticEBook
 		static Reader()
 		{
 			_pages = new Page[2][];
-			_pages[0] = new Page[] { new Page1_1_1(), new Page1_1_2(), new Page1_1_3() };
+			_pages[0] = new Page[] { new Page1_1() };
 			_pages[1] = new Page[] { new Page1_2_1() };
 		}
 
@@ -37,29 +37,6 @@ namespace LogisticEBook
 			InitializeComponent();
 
 			_currentTopic = topicIndex;
-			OpenCurrentPage();
-		}
-
-		public void OpenLecture(int topicIndex)
-		{
-			ShowDialog();
-		}
-
-		private void ButtonNext_Click(object sender, RoutedEventArgs e)
-		{
-			_currentPage = 
-				_currentPage == _pages[_currentTopic].Length - 1
-				? 0 
-				: _currentPage + 1;
-			OpenCurrentPage();
-		}
-
-		private void ButtonPrew_Click(object sender, RoutedEventArgs e)
-		{
-			_currentPage = 
-				_currentPage == 0
-				? _pages[_currentTopic].Length - 1
-				: _currentPage - 1;
 			OpenCurrentPage();
 		}
 

@@ -1,0 +1,16 @@
+﻿<Window x:Class="LogisticEBook.Apps.App1_1_Storage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LogisticEBook.Apps"
+        mc:Ignorable="d"
+        Title="СТБ 2133-2010 Классификация складской инфраструктуры" Height="160" Width="800">
+    <Grid>
+		<Image
+			Source="/Resources/Storage_STB_6.jpg"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Center"
+		/>
+	</Grid>
+</Window>

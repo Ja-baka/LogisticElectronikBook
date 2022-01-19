@@ -8,7 +8,7 @@
         Title="Выбор темы" 
 		Height="450" 
 		Width="800"
-		WindowStartupLocation="CenterScreen"
+		WindowStartupLocation="CenterScreen" Closed="Window_Closed"
 >
 	<Grid
 		Background="AliceBlue"

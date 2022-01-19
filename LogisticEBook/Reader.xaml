@@ -35,43 +35,13 @@
 			Click="ButtonExit_Click"
 		/>
 
-		<StackPanel
-			Grid.Row="0"
-			Orientation="Horizontal"
-			HorizontalAlignment="Center"
-		>
-			<Button 
-				Name="ButtonPrew"
-				Grid.Row="0"
-				Content="&lt;"
-				FontSize="20"
-				FontWeight="Bold"
-				Margin="10"
-				Click="ButtonPrew_Click"
-				IsEnabled="False"
-			/>
-			<Button 
-				Name="ButtonNext"
-				Grid.Row="0"
-				Content="&gt;"
-				FontSize="20"
-				FontWeight="Bold"
-				Margin="10"
-				Click="ButtonNext_Click"
-				IsEnabled="False"
-			/>
-		</StackPanel>
 
-		<ScrollViewer
+		<Frame
+			NavigationUIVisibility="Hidden"
 			Grid.Row="1"
-		>
-			<Frame
-				NavigationUIVisibility="Hidden"
-				Grid.Row="1"
-				Name="MainFrame" 
-				Background="AliceBlue"
-			/>
-		</ScrollViewer>
+			Name="MainFrame" 
+			Background="AliceBlue"
+		/>
 	</Grid>
 
 </Window>

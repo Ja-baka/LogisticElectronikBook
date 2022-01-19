@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace LogisticEBook.Apps
 {
 	/// <summary>
-	/// Логика взаимодействия для App1_1_1_STB_6.xaml
+	/// Логика взаимодействия для App1_1_Storage.xaml
 	/// </summary>
-	public partial class App1_1_1_STB_6 : Window
+	public partial class App1_1_Storage : Window
 	{
-		public App1_1_1_STB_6()
+		public App1_1_Storage()
 		{
 			InitializeComponent();
-		}
-
-		private void ButtonExit_Click(object sender, RoutedEventArgs e)
-		{
-			Close();
 		}
 	}
 }
