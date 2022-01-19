@@ -20,7 +20,7 @@ namespace LogisticEBook
 	{
 		private static Window _currentWindow;
 		private static object _callingWindow;
-		private static readonly Dictionary<string, Window>? _windows;
+		private static readonly Dictionary<string, Window> _windows;
 
 		static PopUpBehavior()
 		{
@@ -30,13 +30,10 @@ namespace LogisticEBook
 			};
 		}
 
-		public static void Open(object callingWindow)
+		public static void Show(object sender, MouseEventArgs e, object callingWindow)
 		{
 			_callingWindow = callingWindow;
-		}
 
-		public static void Show(object sender, MouseEventArgs e)
-		{
 			Point pointToWindow = e.GetPosition((IInputElement) _callingWindow);
 			Point pointToScreen = ((Visual)_callingWindow).PointToScreen(pointToWindow);
 

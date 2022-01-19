@@ -23,8 +23,6 @@ namespace LogisticEBook.Pages
 		public Page1_1()
 		{
 			InitializeComponent();
-
-			PopUpBehavior.Open(this);
 		}
 
 		private void HyperlinkSTB_Click(object sender, RoutedEventArgs e)
@@ -34,9 +32,7 @@ namespace LogisticEBook.Pages
 		
 		private void Definition_MouseEnter(object sender, MouseEventArgs e)
 		{
-			PopUpBehavior.Show(sender, e);
-			Point pointToScreen = PointToScreen(new Point(0, 0));
-
+			PopUpBehavior.Show(sender, e, this);
 		}
 
 		private void Definition_MouseLeave(object sender, MouseEventArgs e)
