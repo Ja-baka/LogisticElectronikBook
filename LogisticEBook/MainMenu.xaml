@@ -28,6 +28,17 @@
 				FontSize="16"
 			>
 				<Hyperlink
+					Name="Hyperlink0"
+					Click="Hyperlink1_1_Click"
+				>
+					Введение
+				</Hyperlink>
+			</TextBlock>
+			<TextBlock
+				Margin="20,0,0,0"
+				FontSize="16"
+			>
+				<Hyperlink
 					Name="Hyperlink1_1"
 					Click="Hyperlink1_1_Click"
 				>

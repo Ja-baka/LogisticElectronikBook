@@ -29,7 +29,7 @@ namespace LogisticEBook
 		{
 			_pages = new Page[2][];
 			_pages[0] = new Page[] { new Page1_1() };
-			_pages[1] = new Page[] { new Page1_2_1() };
+			_pages[1] = new Page[] { new Page1_2() };
 		}
 
 		public Reader(int topicIndex)
