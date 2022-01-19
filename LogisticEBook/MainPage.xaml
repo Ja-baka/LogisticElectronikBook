@@ -15,6 +15,11 @@
 		<StackPanel
 			Margin="20"
 		>
+			<FlowDocumentPageViewer>
+				<FlowDocument>
+					
+				</FlowDocument>
+			</FlowDocumentPageViewer>
 			<TextBlock
 				Text="Раздел 1. Оборудование, сооружения и устройства для хранения грузов"
 				FontSize="20"

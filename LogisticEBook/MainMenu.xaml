@@ -13,50 +13,44 @@
 	<Grid
 		Background="AliceBlue"
 	>
-		<StackPanel
-			Margin="20"
-			HorizontalAlignment="Center"
-			VerticalAlignment="Top"
+		<FlowDocumentScrollViewer 
+			IsSelectionEnabled="False"
 		>
-			<TextBlock
-				Text="Раздел 1. Оборудование, сооружения и устройства для хранения грузов"
-				FontSize="20"
-				FontWeight="Bold"
-			/>
-			<TextBlock
-				Margin="20,0,0,0"
-				FontSize="16"
+			<FlowDocument
+				FontFamily="Arial"
 			>
-				<Hyperlink
-					Name="Hyperlink0"
-					Click="Hyperlink1_1_Click"
-				>
-					Введение
-				</Hyperlink>
-			</TextBlock>
-			<TextBlock
-				Margin="20,0,0,0"
-				FontSize="16"
-			>
-				<Hyperlink
-					Name="Hyperlink1_1"
-					Click="Hyperlink1_1_Click"
-				>
-					1.1 Грузы и устройства для их храниения. Общее понятие и классификация
-				</Hyperlink>
-			</TextBlock>
-			<TextBlock
-				Margin="20,0,0,0"
-				FontSize="16"
-			>
-				<Hyperlink
-					Name="Hyperlink1_2"
-					Click="Hyperlink1_2_Click"
-				>
-					1.2 Грузовая единица
-				</Hyperlink>
-			</TextBlock>
+				<FlowDocument.Resources>
+					<Style
+					TargetType="{x:Type Paragraph}"
+					>
+						<Setter 
+							Property="Margin" 
+							Value="0"
+						/>
+						<Setter
+							Property="TextIndent"
+							Value="20"
+						/>
+					</Style>
+				</FlowDocument.Resources>
 
-		</StackPanel>
+				<Paragraph
+					TextIndent="0"
+					FontWeight="Bold"
+				>
+					Раздел 1. Оборудование, сооружения и устройства для хранения грузов
+				</Paragraph>
+				
+				<Paragraph>
+					<Hyperlink
+						Name="Hyperlink0"
+						Click="Hyperlink1_1_Click"
+					>
+						Введние
+					</Hyperlink>
+				</Paragraph>
+			</FlowDocument>
+		</FlowDocumentScrollViewer>
+		
 	</Grid>
 </Window>

@@ -23,13 +23,16 @@ namespace LogisticEBook
 	{
 		private int _currentTopic;
 		private int _currentPage;
-		private static readonly Page[][] _pages;
+		private static readonly Dictionary<string, Page> _pages;
 
 		static Reader()
 		{
-			_pages = new Page[2][];
-			_pages[0] = new Page[] { new Page1_1() };
-			_pages[1] = new Page[] { new Page1_2() };
+			_pages = new Dictionary<string, Page>
+			{
+				{ "0",   new Page0()   },
+				{ "1.1", new Page1_1() },
+				{ "1.2", new Page1_2() }
+			};
 		}
 
 		public Reader(int topicIndex)
