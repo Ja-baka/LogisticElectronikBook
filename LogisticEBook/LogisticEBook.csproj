@@ -8,11 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\Storage_STB_6.jpg" />
+    <None Remove="Resources\0_Storage.jpg" />
+    <None Remove="Resources\1_1_Cargo.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Resources\Storage_STB_6.jpg">
+    <Resource Include="Resources\0_Storage.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_1_Cargo.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

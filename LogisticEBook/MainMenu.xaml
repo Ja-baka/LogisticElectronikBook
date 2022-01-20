@@ -21,7 +21,8 @@
 			>
 				<FlowDocument.Resources>
 					<Style
-					TargetType="{x:Type Paragraph}"
+						TargetType
+							="{x:Type Paragraph}"
 					>
 						<Setter 
 							Property="Margin" 
@@ -30,6 +31,14 @@
 						<Setter
 							Property="TextIndent"
 							Value="20"
+						/>
+					</Style>
+					<Style
+						TargetType="Hyperlink"
+					>
+						<EventSetter
+							Event="Click"
+							Handler="Hyperlink_Click"
 						/>
 					</Style>
 				</FlowDocument.Resources>
@@ -44,9 +53,23 @@
 				<Paragraph>
 					<Hyperlink
 						Name="Hyperlink0"
-						Click="Hyperlink1_1_Click"
 					>
 						Введние
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink
+						Name="Hyperlink1_1"
+					>
+						1.1 Грузы и устройства для их храниения. Общее понятие и классификация
+					</Hyperlink>
+				</Paragraph>
+				<Paragraph>
+					<Hyperlink
+						Name="Hyperlink1_2"
+					>
+						1.2 Грузовая единица
 					</Hyperlink>
 				</Paragraph>
 			</FlowDocument>

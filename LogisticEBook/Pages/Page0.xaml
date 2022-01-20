@@ -8,41 +8,25 @@
       d:DesignHeight="900" d:DesignWidth="800"
       Title="Page0">
 
-	<Grid 
-		Background="#f5e8ae"
-	>
-		<FlowDocumentReader
-				ViewingMode="Scroll"
-			>
-			<FlowDocument
-					FontFamily="Segoe UI"
-				>
+	<Grid Background="#f5e8ae">
+		<FlowDocumentReader ViewingMode="Scroll">
+			<FlowDocument FontFamily="Segoe UI">
 				<FlowDocument.Resources>
-					<Style
-						TargetType
-							="{x:Type Paragraph}"
-					>
-						<Setter 
-							Property="Margin" 
-							Value="10"
-						/>
-						<Setter
-							Property="TextIndent"
-							Value="20"
-						/>
+					<Style TargetType="Paragraph">
+						<Setter Property="Margin" Value="10"/>
+						<Setter Property="TextIndent" Value="20"/>
+					</Style>
+					
+					<Style TargetType="Span">
+						<Setter Property="FontWeight" Value="Bold"/>
+						<EventSetter Event="MouseDown" Handler="OpenPopUp"/>
 					</Style>
 				</FlowDocument.Resources>
-				
-				<Paragraph
-					TextAlignment="Center"
-					TextIndent="0"
-				>
-					<Run
-						Text="Введение"
-						FontSize="20"
-						FontWeight="Bold"
-					/>
+
+				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+						Введение
 				</Paragraph>
+				
 				<Paragraph>
 					В настоящее время наблюдается заметный рост спроса на логистические услуги складов и складских комплексов как в Республике Беларусь, так и во многих других странах. Это обусловлено тем, что перемещение материальных потоков в логистической цепи невозможно без концентрации в определенных местах необходимых запасов, для хранения которых предназначены соответствующие склады (хранилища).
 				</Paragraph>
@@ -50,16 +34,12 @@
 					Хранилище – это помещение для хранения, сбережения чего-либо; место для хранения ценностей; вместилище для жидкости; резервуар.
 				</Paragraph>
 				<Paragraph>
-					Склад –это здание, сооружение и разнообразные устройства, предназначенные для приемки, размещения и хранения, поступивших на них товаров, подготовки их к потреблению и отпуску потребителю.
+					Склад – это здание, сооружение и разнообразные устройства, предназначенные для приемки, размещения и хранения, поступивших на них товаров, подготовки их к потреблению и отпуску потребителю.
 				</Paragraph>
 				<Paragraph>
-					<Run
-						Text="Склад"
-						Name="StorageDefinition"
-						FontWeight="Bold"
-						MouseEnter="Definition_MouseEnter"
-						MouseLeave="Definition_MouseLeave"
-					/>
+					<Span Name="StorageDefinition">
+						Склад
+					</Span>
 					- объект транспортно-логистической системы (здание, сооружение, ангар, либо их отдельная часть, либо открытая площадка, либо площадка под навесом), расположенный на изолированной территории или совместно с производственными, торговыми и другими помещениями и предназначенный для приема, хранения, переработки и отправки грузов.
 				</Paragraph>
 				<Paragraph>

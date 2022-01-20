@@ -25,19 +25,10 @@ namespace LogisticEBook.Pages
 			InitializeComponent();
 		}
 
-		private void HyperlinkSTB_Click(object sender, RoutedEventArgs e)
+		private void OpenPopUp(object sender, MouseEventArgs e)
 		{
-			throw new NotImplementedException();
-		}
-		
-		private void Definition_MouseEnter(object sender, MouseEventArgs e)
-		{
-			PopUpBehavior.Show(sender, e, this);
-		}
-
-		private void Definition_MouseLeave(object sender, MouseEventArgs e)
-		{
-			PopUpBehavior.Hide(sender, e);
+			PopUp popUp = new();
+			popUp.Show(sender);
 		}
 	}
 }
