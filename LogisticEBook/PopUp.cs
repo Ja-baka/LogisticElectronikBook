@@ -20,14 +20,14 @@ namespace LogisticEBook
 {
 	public class PopUp
 	{
-		private readonly Dictionary<string, Window> _windows;
+		private readonly List<Type> _windows;
 
 		public PopUp()
 		{
-			_windows = new Dictionary<string, Window>
+			_windows = new List<Type>
 			{
-				{ "StorageDefinition", new StorageDefinition() },
-				{ "CargoDefinition", new CargoDefinition() },
+				typeof(StorageDefinition),
+				typeof(CargoDefinition),
 			};
 		}
 
@@ -39,17 +39,31 @@ namespace LogisticEBook
 				return;
 			}
 
-			string name = element.Name;
+			var subset = from w in _windows 
+						 where w.Name == element.Name
+						 select w;
 
-			if (_windows.ContainsKey(name) == false)
+			if (subset.Any() == false)
 			{
 				MessageBox.Show("Не найдено приложение для этого элемента");
 				return;
 			}
+			else if (subset.Count() > 1)
+			{
+				MessageBox.Show("Было надено больше одного приложения");
+			}
 
-			Window window = _windows[name];
-			window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-			window.ShowDialog();
+			Type type = subset.ToArray()[0];
+	
+			object? instance = Activator.CreateInstance(type);
+			if (instance is Window window)
+			{
+				window.ShowDialog();
+			}
+			else
+			{
+				MessageBox.Show($"{type} не является окном!");
+			}
 		}
 	}
 }

@@ -20,6 +20,7 @@
 					</Style>
 					<Style TargetType="Span">
 						<Setter Property="FontWeight" Value="Bold"/>
+						<Setter Property="Cursor" Value="Hand"/>
 						<EventSetter Event="MouseDown"  Handler="OpenPopUp"/>
 					</Style>
 					<Style TargetType="List">
