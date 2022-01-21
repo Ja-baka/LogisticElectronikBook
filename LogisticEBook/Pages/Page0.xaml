@@ -16,10 +16,15 @@
 						<Setter Property="Margin" Value="10"/>
 						<Setter Property="TextIndent" Value="20"/>
 					</Style>
-					
 					<Style TargetType="Span">
 						<Setter Property="FontWeight" Value="Bold"/>
-						<EventSetter Event="MouseDown" Handler="OpenPopUp"/>
+						<Setter Property="Cursor" Value="Hand"/>
+						<Setter Property="FontStyle" Value="Italic"/>
+						<Setter Property="Foreground" Value="CornflowerBlue"/>
+						<EventSetter Event="MouseDown"  Handler="OpenPopUp"/>
+					</Style>
+					<Style TargetType="List">
+						<Setter Property="Margin" Value="10"/>
 					</Style>
 				</FlowDocument.Resources>
 

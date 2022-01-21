@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LogisticEBook.Apps"
         mc:Ignorable="d"
-        Title="Груз" Height="350" Width="600">
+        Title="Груз" Height="400" Width="650">
     <Grid>
-		<Image Source="/Resources/1_1_Cargo.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+		<Image Source="/Resources/1_1/Cargo.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 </Window>

@@ -10,24 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace LogisticEBook.Pages
+namespace LogisticEBook.Apps
 {
 	/// <summary>
-	/// Логика взаимодействия для Page0.xaml
+	/// Логика взаимодействия для SolidCargo.xaml
 	/// </summary>
-	public partial class Page0 : Page
+	public partial class SolidCargo : Window
 	{
-		public Page0()
+		public SolidCargo()
 		{
 			InitializeComponent();
-		}
-
-		private void OpenPopUp(object sender, MouseEventArgs e)
-		{
-			PopUp.Show(sender);
 		}
 	}
 }

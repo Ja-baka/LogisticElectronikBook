@@ -18,21 +18,38 @@ using LogisticEBook.Apps;
 
 namespace LogisticEBook
 {
-	public class PopUp
+	public static class PopUp
 	{
-		private readonly List<Type> _windows;
-
-		public PopUp()
+		public static void Show(object sender)
 		{
-			_windows = new List<Type>
+			var _windows = new List<Window>
 			{
-				typeof(StorageDefinition),
-				typeof(CargoDefinition),
+				new StorageDefinition(),
+				new CargoDefinition(),
+				new SolidCargo(),
+				new BulkCargo(),
+				new LiquidCargo(),
+				new GaseousCargo(),
+				new FiveGroups(),
+				new SDTarnPiece(),
+				new SDBulk(),
+				new SDLiquid(),
+				new SDStationary(),
+				new SDCombinedMaterial(),
+				new SDWithSpecialEquipment(),
+				new SDWithoutSpecialEquipment(),
+				new SDHigh(),
+				new SDContainerTypes(),
+				new SDStructuresTypes(),
+				new Topic1_2PrimaryCargoUnit(),
+				new Topic1_2EnlargedCargoUnit(),
+				new Topic1_2Pallets(),
+				new Topic1_2PalletsSize(),
+				new Topic1_2RackPallets(),
+				new Topic1_2BoxPallets(),
+				new Topic1_2Packaging(),
 			};
-		}
 
-		public void Show(object sender)
-		{
 			if (sender is not FrameworkContentElement element)
 			{
 				MessageBox.Show("Объект не имеет поля Name");
@@ -40,7 +57,7 @@ namespace LogisticEBook
 			}
 
 			var subset = from w in _windows 
-						 where w.Name == element.Name
+						 where w.GetType().Name == element.Name
 						 select w;
 
 			if (subset.Any() == false)
@@ -53,17 +70,9 @@ namespace LogisticEBook
 				MessageBox.Show("Было надено больше одного приложения");
 			}
 
-			Type type = subset.ToArray()[0];
-	
-			object? instance = Activator.CreateInstance(type);
-			if (instance is Window window)
-			{
-				window.ShowDialog();
-			}
-			else
-			{
-				MessageBox.Show($"{type} не является окном!");
-			}
+			Window window = subset.ToArray()[0];
+			window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+			window.ShowDialog();
 		}
 	}
 }

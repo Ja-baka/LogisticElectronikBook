@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+using PowerPoint = Microsoft.Office.Interop.PowerPoint;
+
 namespace LogisticEBook
 {
 	/// <summary>
@@ -49,14 +51,29 @@ namespace LogisticEBook
 
 		private void Hyperlink_Click(object sender, RoutedEventArgs e)
 		{
-			if (sender is Hyperlink)
+			if (sender is Hyperlink hyperlink)
 			{ 
-				string number = _topics[sender as Hyperlink];
+				string number = _topics[hyperlink];
 				OpenTopicByIndex(number);
 			}
 			else
 			{
-				MessageBox.Show("Данный метод может вызываться только у гиперссылок");
+				MessageBox.Show("Неверный элемент");
+			}
+		}
+
+		private void OpenPresentation(object sender, RoutedEventArgs e)
+		{
+			if (sender is FrameworkContentElement element)
+			{
+				string path = System.IO.Directory.GetCurrentDirectory()
+					+ @"/Presentations/" + element.Name + ".pptx";
+				dynamic app = new PowerPoint.Application();
+				app.Presentations.Open2007(path);
+			}
+			else
+			{
+				MessageBox.Show("Неверный элемент");
 			}
 		}
 	}

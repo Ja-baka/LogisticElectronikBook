@@ -9,14 +9,114 @@
 
   <ItemGroup>
     <None Remove="Resources\0_Storage.jpg" />
+    <None Remove="Resources\1_1\Слайд 10.png" />
+    <None Remove="Resources\1_1\Слайд 4.jpg" />
+    <None Remove="Resources\1_1\Слайд 9.png" />
+    <None Remove="Resources\1_1\фото 1 твердые грузы.jpg" />
+    <None Remove="Resources\1_1\фото 10 устройства для сып.товаров.jpg" />
+    <None Remove="Resources\1_1\фото 11.jpg" />
+    <None Remove="Resources\1_1\фото 2 сыпучие грузы.jpg" />
+    <None Remove="Resources\1_1\фото 3 жидкие грузы.jpg" />
+    <None Remove="Resources\1_1\фото 4 газообразные грузы.jpg" />
+    <None Remove="Resources\1_1\фото 5 склады тарно-штучных грузов.jpg" />
+    <None Remove="Resources\1_1\фото 6 устройства для жидких.jpg" />
+    <None Remove="Resources\1_1\фото 7 стационарные склады.jpg" />
+    <None Remove="Resources\1_1\фото 8 комбинированные склады.jpg" />
+    <None Remove="Resources\1_1\фото 9 мезонин.jpg" />
     <None Remove="Resources\1_1_Cargo.jpg" />
+    <None Remove="Resources\1_2\foto_12_pervichnaya_gruzovaya_edinitsa.jpg" />
+    <None Remove="Resources\1_2\foto_13_ukrupnennaya_gruzovaya_edinitsa.jpg" />
+    <None Remove="Resources\1_2\foto_14_poddony.jpg" />
+    <None Remove="Resources\1_2\foto_15_razmery_pallet.jpg" />
+    <None Remove="Resources\1_2\foto_16_stoechnye_poddony.jpg" />
+    <None Remove="Resources\1_2\foto_17_yaschichnye_poddony.jpg" />
+    <None Remove="Resources\1_2\foto_18_paketirovanie.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Resources\0_Storage.jpg">
+    <COMReference Include="Microsoft.Office.Interop.PowerPoint">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>12</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>91493440-5a91-11cf-8700-00aa0060263b</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+      <Aliases>global</Aliases>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\1_1\Слайд 4.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\1_1_Cargo.jpg">
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\0\Storage.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_1\Cargo.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_1\Слайд 10.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_1\Слайд 9.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_1\фото 1 твердые грузы.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_1\фото 10 устройства для сып.товаров.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_1\фото 11.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_1\фото 2 сыпучие грузы.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_1\фото 3 жидкие грузы.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_1\фото 4 газообразные грузы.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_1\фото 5 склады тарно-штучных грузов.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_1\фото 6 устройства для жидких.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_1\фото 7 стационарные склады.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_1\фото 8 комбинированные склады.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_1\фото 9 мезонин.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_2\foto_12_pervichnaya_gruzovaya_edinitsa.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_2\foto_13_ukrupnennaya_gruzovaya_edinitsa.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_2\foto_14_poddony.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_2\foto_15_razmery_pallet.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_2\foto_16_stoechnye_poddony.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_2\foto_17_yaschichnye_poddony.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_2\foto_18_paketirovanie.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

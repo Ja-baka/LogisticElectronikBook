@@ -5,61 +5,437 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:LogisticEBook.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="1000" d:DesignWidth="800"
+      d:DesignHeight="5000" d:DesignWidth="800"
       Title="Page1_2_1">
 
-	<Grid 
-		Background="#f5e8ae"
-	>
-			<StackPanel
-			VerticalAlignment="Top"
-			Margin="25, 0"
-		>
-				<TextBlock
-				Text="Тестовая страница"
-				FontSize="16"
-				FontWeight="Bold"
-				Margin="10"
-				HorizontalAlignment="Center"
-				VerticalAlignment="Top"
-			/>
+	<Grid Background="#f5e8ae">
+		<FlowDocumentReader ViewingMode="Scroll">
+			<FlowDocument FontFamily="Segoe UI">
 
-				<TextBlock
-				Margin="0,2"
-				TextWrapping="Wrap"
-				FontSize="14"
-				TextAlignment="Justify"
-	
-			>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non turpis eros. Ut elementum arcu ut volutpat fermentum. Ut tempor, enim ut dictum euismod, sem ligula accumsan tortor, a tincidunt justo sapien nec est. Nam sagittis enim tincidunt mauris pulvinar pellentesque. Integer vel ultrices tellus, sit amet hendrerit massa. Nullam eleifend interdum mauris, vehicula congue mauris laoreet eget. Nullam bibendum vehicula ante ut eleifend. Vivamus cursus non urna at varius. Cras nec bibendum ipsum, quis lacinia purus. Quisque sed nulla luctus, porta velit at, faucibus sapien. Sed molestie hendrerit lacus, non fermentum lorem pellentesque sed. Cras cursus lacus non mi porttitor finibus ac at odio. Morbi dolor urna, pellentesque vel venenatis id, accumsan a augue. Ut ut pharetra enim. Maecenas feugiat auctor justo ac suscipit. Fusce at leo enim.
-<LineBreak />
-Proin eleifend quis ligula in rhoncus. Sed eu felis ipsum. Quisque porta purus diam, ac gravida augue vehicula in. Integer pretium aliquam nunc vehicula eleifend. Nulla nec eros nisl. Cras ultricies efficitur urna sit amet tincidunt. Aliquam congue aliquet interdum. Nunc pellentesque, est non congue tristique, eros leo sollicitudin enim, quis molestie quam metus et urna. Donec non tempus nisi.
-<LineBreak />
+				<FlowDocument.Resources>
+					<Style TargetType="Paragraph">
+						<Setter Property="Margin" Value="10"/>
+						<Setter Property="TextIndent" Value="20"/>
+					</Style>
+					<Style TargetType="Span">
+						<Setter Property="FontWeight" Value="Bold"/>
+						<Setter Property="Cursor" Value="Hand"/>
+						<Setter Property="Foreground" Value="CornflowerBlue"/>
+						<Setter Property="FontStyle" Value="Italic"/>
+						<EventSetter Event="MouseDown"  Handler="OpenPopUp"/>
+					</Style>
+					<Style TargetType="List">
+						<Setter Property="Margin" Value="10"/>
+					</Style>
+				</FlowDocument.Resources>
 
-Aenean ultricies velit sed lacus sagittis blandit. Vestibulum ac justo eu purus interdum pharetra a vel est. Vivamus vitae urna id nibh aliquet sagittis et id dui. Sed nec sapien metus. Pellentesque semper nisl non tortor tristique varius in hendrerit tellus. Nunc consequat dapibus mauris, eu laoreet velit vehicula molestie. Vivamus eget lectus sit amet enim aliquam aliquam sit amet ut sem. Nunc sit amet suscipit eros. Morbi est risus, tristique id fermentum quis, sagittis in enim.
-<LineBreak />
+				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+					1.2 ГРУЗОВАЯ ЕДИНИЦА
+					<LineBreak/>
+					1.2.1. Понятие грузовой единицы, ее виды
+				</Paragraph>
 
-Donec tempor, nisi vel scelerisque bibendum, nulla ante luctus nunc, ac ornare massa augue ut orci. Vivamus in dolor sagittis, aliquam nisl vitae, ornare purus. Cras et porttitor enim, a volutpat dui. Etiam sit amet luctus odio. Aenean fringilla nibh nec velit aliquet, ultricies tincidunt eros faucibus. Nullam consequat eu est lacinia iaculis. Sed leo nisl, efficitur vitae tellus eu, sagittis consequat nisi. Aenean auctor est ut dignissim interdum. Curabitur sit amet neque magna. Sed tincidunt magna at eros ornare, quis elementum massa cursus.
-<LineBreak />
 
-Proin non sapien enim. Morbi eu ex tristique, imperdiet ex vel, malesuada dolor. Sed placerat molestie tincidunt. Fusce id sollicitudin nulla. Integer ac risus luctus, venenatis dolor at, ullamcorper nibh. Pellentesque tincidunt lacinia tincidunt. Nullam ultrices velit non dignissim lacinia. Maecenas eleifend tellus et nisi pulvinar, non ultricies sapien pellentesque.
-<LineBreak />
+				<Paragraph>
+					Одним из ключевых понятий логистики является понятие грузовой единицы. 
+				</Paragraph>
 
-Morbi ante erat, bibendum non turpis sed, egestas tincidunt orci. Maecenas risus lacus, interdum hendrerit mi quis, efficitur gravida nibh. Donec nec scelerisque nisi. Fusce varius consequat augue eget convallis. Nullam sapien lacus, tincidunt ac faucibus vel, consectetur a nisi. Integer ut ante laoreet, blandit ipsum vitae, fringilla ex. Duis sollicitudin turpis elit, ut pretium tortor sollicitudin in. Nullam sit amet est in odio hendrerit faucibus. Fusce aliquam nunc id ullamcorper scelerisque. Nunc eget imperdiet felis, et fringilla arcu. Morbi convallis risus venenatis, congue nisi nec, vehicula augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis fermentum odio nisi, sit amet dapibus sapien sodales at. Sed dictum, orci pulvinar imperdiet semper, est lacus suscipit arcu, id aliquet orci justo a elit. Pellentesque suscipit orci et aliquam rutrum.
-<LineBreak />
+				<Paragraph>
+					Грузовая единица - некоторое количество грузов, которые погружают, транспортируют, выгружают и хранят как единую массу.
+				</Paragraph>
 
-Integer non dictum turpis, ultrices egestas lorem. Cras augue felis, volutpat at sollicitudin in, iaculis in sapien. Maecenas feugiat condimentum lacus, quis consectetur mauris malesuada nec. Donec ultricies accumsan nibh, vel lobortis sem ornare suscipit. Nulla sed malesuada turpis. Nam et mauris malesuada, sollicitudin turpis luctus, sodales ligula. Praesent eleifend faucibus sem, id consectetur metus. Nunc id sagittis neque, eget pretium lectus.
-<LineBreak />
+				<Paragraph>
+					Грузовая единица – это тот элемент логистики, который своими параметрами связывает технологические процессы участников логистического процесса в единое целое. Формироваться грузовая единица может как на производственных участках, так и на складах.
+				</Paragraph>
 
-Nulla sed orci at neque gravida viverra vel sit amet augue. Vivamus aliquam auctor rhoncus. Duis blandit metus non porttitor ullamcorper. Suspendisse auctor diam vel ligula ultrices, quis malesuada nisl dapibus. Duis pharetra tempor blandit. Curabitur laoreet tortor a gravida semper. Duis dapibus, odio sit amet condimentum dapibus, mauris diam tempor turpis, eu pulvinar ex ex convallis justo.
-<LineBreak />
+				<Paragraph>
+					Выделяют два основных вида грузовых единиц:
+				</Paragraph>
 
-Phasellus purus magna, cursus sed ligula vel, rhoncus sollicitudin est. Phasellus ac quam augue. Aenean quis mollis massa, eget mattis enim. Donec pellentesque, sem scelerisque sodales gravida, sem urna placerat justo, et rutrum enim justo sed lorem. Morbi sollicitudin finibus ullamcorper. Etiam quis erat ut metus aliquet pharetra ut in erat. Integer vitae dictum purus, quis accumsan justo. Sed varius metus est, id aliquam est condimentum vitae. Duis ligula erat, lobortis a efficitur vitae, laoreet quis odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut at quam eget nisl scelerisque iaculis. Quisque tortor nisi, venenatis quis ipsum id, mattis porta nulla. Integer sodales magna ac lectus varius efficitur.
-<LineBreak />
+				<List>
+					<ListItem>
+						<Paragraph>
+							<Span Name="Topic1_2PrimaryCargoUnit">
+								первичную грузовую единицу
+							</Span>
+							– груз в транспортной таре, например, в ящиках, бочках, мешках и т. п.;
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							<Span Name="Topic1_2EnlargedCargoUnit">
+								укрупненную грузовую единицу
+							</Span>
+							– грузовой пакет, сформированный на поддоне из первичных грузовых единиц.
+						</Paragraph>
+					</ListItem>
+				</List>
 
-Cras gravida nulla ac ipsum commodo convallis. Sed ac mi mattis, mattis nulla sed, pellentesque nibh. Nullam porta ultrices est, id ullamcorper nulla malesuada a. Nunc in ultrices tortor. Sed nec elit pulvinar, ornare ipsum ac, sollicitudin ex. Nunc tempor condimentum urna eu vulputate. Praesent vel neque et erat imperdiet pretium. Aliquam erat volutpat.
-<LineBreak />
-				</TextBlock>
-			</StackPanel>
+				<Paragraph>
+					Первичная грузовая единица проходит каналы товародвижения, как правило, без переформирования, т.е. ящик из гофрированного картона с печеньем, упакованный на кондитерской фабрике, скорее всего, пройдет всех оптовиков и дойдет до магазина нераспечатанным.
+				</Paragraph>
+
+				<Paragraph>
+					Укрупненная грузовая единица, сформированная из ящиков с печеньем на этой же фабрике, на какой-либо стадии товародвижения, скорее всего, будет расформирована, возможно, при подборе ассортимента у первого же оптовика.
+				</Paragraph>
+
+				<Paragraph>
+					Расформирование грузовой единицы ведет к дополнительным издержкам.
+				</Paragraph>
+
+				<Paragraph>
+					Задача выбора размера грузовой единицы может решаться как на уровне склада отдельного предприятия, так и при формировании сквозной логистической цепи. При этом следует принимать во внимание тенденцию укрупнения грузовых единиц в перевозках.
+				</Paragraph>
+
+				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+					1.2.2. Роль грузовой единицы в логистике и её характеристики
+				</Paragraph>
+
+				<Paragraph>
+					Существенными характеристиками грузовой единицы являются:
+				</Paragraph>
+
+				<List>
+					<ListItem>
+						<Paragraph>
+							вес и размеры грузовой единицы;
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							-	способность к сохранению целостности, а также первоначальной геометрической формы в процессе разнообразных логистических операций.
+						</Paragraph>
+					</ListItem>
+				</List>
+
+				<Paragraph>
+					Размеры грузовых единиц, а также оборудования для их погрузки, транспортировки, разгрузки и хранения должны быть согласованы между собой. Это позволяет эффективно использовать материально-техническую базу участников логистического процесса на всех этапах движения материального потока.
+				</Paragraph>
+
+				<Paragraph>
+					В качестве основания, платформы для формирования грузовой единицы используются стандартные поддоны размером 1200×800 и  1200х1000 мм, грузоподъемностью до 1000 и 1500кг соответственно. На этих поддонах можно рационально уложить любой груз, упакованный в стандартную транспортную тару. Этим достигается унификация размеров транспортной тары.
+				</Paragraph>
+
+				<Paragraph>
+					Верное решение по выбору грузовой единицы при проектировании логистического процесса обеспечивает:
+				</Paragraph>
+
+				<List>
+					<ListItem>
+						<Paragraph>
+							единовременное транспортирование большего количества товара;
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							эффективное использование площади и объема склада;
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							возможность использования стандартного оборудования при погрузочно-разгрузочных и транспортно-складских (ПРТС) работах;
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							ускорение ПРТС работ;
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							минимизацию риска повреждения товара;
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							повышение безопасности логистических процессов.
+						</Paragraph>
+					</ListItem>
+				</List>
+
+				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+					1.2.3. Базовый модуль
+				</Paragraph>
+
+				<Paragraph>
+					В логистике применяется разнообразная материально-техническая база. Для того чтобы она была соизмерима, используют некоторую условную единицу площади, так называемый базовый модуль.
+				</Paragraph>
+
+				<Paragraph>
+					Базовый модуль - представляет собой прямоугольник со сторонами 600×400 мм, который должен укладываться кратное число раз на площади грузовой платформы транспортного средства, на рабочей поверхности складского оборудования и т. п.
+				</Paragraph>
+
+				<Paragraph>
+					Использование единого модуля позволяет привести в гар¬моническое соответствие размеры материально-технической базы на всем пути движения материального потока, начиная от первичного источника сырья, вплоть до конечного потребителя.
+				</Paragraph>
+
+				<Paragraph>
+					На основании базового модуля разработана единая система унифицированных размеров транспортной тары. Принцип создания этой системы заключается в том, что площадь поддона разделяют на сетку кратных поддону размеров, которые определяют наружные и внутренние размеры транспортной тары.
+				</Paragraph>
+
+				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+					1.2.4. Поддоны (паллеты)
+				</Paragraph>
+
+				<Paragraph>
+					<Span  Name="Topic1_2Pallets">
+						Поддоны
+					</Span>
+					представляют собой устройства, предназначенные для формирования грузовых пакетов, штабелирования и транспортирования грузов. По своему использованию они универсальны.
+				</Paragraph>
+
+				<Paragraph>
+					Основные габаритные
+					<Span Name="Topic1_2PalletsSize">
+						размеры паллет:
+					</Span>
+				</Paragraph>
+
+				<Paragraph>
+					Европаллета (EUR-паллет) имеет размеры: 1200х800х145 мм. Верхняя часть европаллета состоит из чередующихся досок, нижняя же часть состоит только из трех досок.
+				</Paragraph>
+
+				<Paragraph>
+					Финпаллета (FIN-паллет, финский паллет) имеет размеры: 1200х1000х145мм. Верхняя часть финпаллета состоит из семи чередующихся досок, нижняя же часть состоит только из трех досок.
+				</Paragraph>
+
+				<Paragraph>
+					В разных странах существуют свои требования по размерам изготовляемых паллет.
+				</Paragraph>
+
+				<List>
+					<ListItem>
+						<Paragraph>
+							США используют паллеты размерами 1016×1219 мм и 1219×1219 мм. Применяются также паллеты иного размера.
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							Китай, Япония, Австралия применяет паллеты размерами 1100х1100 мм.
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							В Европе используется практически одного размера паллета размером 800х1200 мм. Её разрешается использовать для транспортировки грузов до 2 тонн. Эти евпропаллеты соответствуют стандарту качества UIC 435-2.
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							В Финляндии применяется финская паллета (FIN-паллета) с размерами 1000х1200 мм. Максимальная разрешённая грузоподъемность ее – 2,5 тонны, изготовляется на основании европейского стандарта ISO 3676.
+						</Paragraph>
+					</ListItem>
+				</List>
+
+				<Paragraph>
+					Международная организация по стандартизации (ISO) определила требования к паллетам, которые применяются для международных грузоперевозок. В соответствии с ними паллеты могут быть следующих размеров:
+				</Paragraph>
+
+				<List>
+					<ListItem>
+						<Paragraph>
+							800 x 1000 мм,
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							800 x 1000 мм - это размер европаллеты,
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							1000 x 1200 мм,
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							1200 x 1600 мм,
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							1200 x 1800 мм,
+						</Paragraph>
+					</ListItem>
+				</List>
+
+				<Paragraph>
+					Для контейнерных перевозок согласно требованиям ISO паллеты должны соответствовать размерам:
+				</Paragraph>
+
+				<List>
+					<ListItem>
+						<Paragraph>
+							825 x 1000 мм,
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							1000 x 1200 мм,
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							1100 x 1100 мм,
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							1100 x 1320 мм,
+						</Paragraph>
+					</ListItem>
+				</List>
+
+				<Paragraph>
+					В зависимости от конструкции поддоны подразделяют на: плоские, стоечные и ящичные
+				</Paragraph>
+
+				<Paragraph>
+					Плоские поддоны изготовляют одно- и двухнастильными. Однонастильный поддон имеет только погрузочную площадку (сплошную или решетчатую) и опирается на пол брусьями по всей ширине или стойками по углам, двухнастильный — погрузочную и опорную площадки. При изготовлении поддонов используются лесоматериалы и металл. Деревянные поддоны крепятся обычными гвоздями, проволочными скобами, шурупами, болтами. Наиболее надежным является болтовое крепление. Плоские поддоны применяются для транспортирования и перевозки тарно-штучных и пакетированных грузов.
+				</Paragraph>
+
+				<Paragraph>
+					По способу захвата вилочным погрузчиком поддоны подразделяются на двухзаходные и четырехзаходные. Четырехзаходный поддон размером 800x1200 мм и максимальном грузоподъемностью 1 т принят как стандартный для всех отраслей экономики.
+				</Paragraph>
+
+				<Paragraph>
+					<Span Name="Topic1_2RackPallets">
+						Стоечные поддоны
+					</Span>
+					отличаются от плоских тем, что они имеют стойки, которые позволяют делать многоярусную укладку поддонов и предназначены для пакетирования и хранения легкоповреждаемых штучных грузов (товары в картонных коробках, фольге, бумаге и т. д.).
+				</Paragraph>
+
+				<Paragraph>
+					Стоечные поддоны применяются для механизированного перемещения, погрузки, разгрузки и складирования мелких и легко повреждаемых товаров. Сформированные на стоечных поддонах пакеты с грузом штабелируют на складе в 3 - 5 ярусов или устанавливают в ячейки стеллажей.
+				</Paragraph>
+
+				<Paragraph Name="Topic1_2BoxPallets">
+					<Span>
+						Ящичные поддоны
+					</Span>
+					используются для мелкоштучных и легкоповреждаемых товаров, которые не могут быть уложены на плоские или стоечные поддоны (свертки, связки и т. п.)
+				</Paragraph>
+
+				<Paragraph>
+					В целях экономии складской площади при хранении порожних поддонов, а также эффективного использования объема кузова транспортных средств при вывозе тары стоечные и ящичные поддоны делают складывающимися.
+				</Paragraph>
+
+				<Paragraph>
+					Пластмассовые поддоны бывают двух типов плоские однонастильные четырехзаходные и ящичные. Преимущества таких поддонов: красивый внешний вид, малая масса при той же грузоподъемности, гладкая поверхность без острых углов, не требуется специальной окраски. Недостатки - высокая стоимость, хрупкость, сложность ремонта.
+				</Paragraph>
+
+				<Paragraph>
+					В настоящее время появились специальные шкафные складные поддоны для транспортировки тяжелых материалов (подшипники, скобяные изделия). Обе короткие стороны имеют откидные верхние половины для удобства отбора товаров при штабелировании и укладке на полках. У шкафных и бордюровых поддонов сеточных или полностенных складной конструкции откидную половину делают только на одной длинной стороне. Сеточные поддоны имеют сетки также лишь на длинных стенах. Их короткая сторона сделана из крепленого листового металла. Поддоны предназначены для манипуляции как с легким товаром, так и с тяжелыми материалами.
+				</Paragraph>
+
+				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+					1.2.5. Пакетирование
+				</Paragraph>
+
+				<Paragraph>
+					<Span Name="Topic1_2Packaging">
+						Пакетирование
+					</Span>
+					- это операция формирования на поддоне грузовой единицы и последующее связывание груза и поддона в единое целое
+				</Paragraph>
+
+				<Paragraph>
+					Согласно СТБ 2047-2010 «Логистическая деятельность. Термины и определения» пакетирование - операция по формированию укрупненной грузовой единицы на поддонах, контейнерах или других средствах.
+				</Paragraph>
+
+				<Paragraph>
+					Пакетирование обеспечивает:
+				</Paragraph>
+
+				<List>
+					<ListItem>
+						<Paragraph>
+							сохранность продукта на пути движения к потребителю;
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							возможность достижения высоких показателей эффективности при выполнении погрузочно-разгрузочных и транспортно-складских работ за счет их комплексной механизации и автоматизации;
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							максимальное использование грузоподъемности и вместимости подвижного состава на всех видах транспорта;
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							возможность перегрузки без переформирования;
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							безопасность выполнения погрузочно-разгрузочных и транс¬портно-складских работ.
+						</Paragraph>
+					</ListItem>
+				</List>
+
+				<Paragraph>
+					На практике применяют различные методы пакетирования грузовых единиц, такие как обандероливание стальными или полиэтиленовыми лентами, веревками, резиновыми сцепками, клейкой лентой и др.
+				</Paragraph>
+
+				<Paragraph>
+					Пакетирование грузов с помощью термоусадочной пленки является одним из наиболее прогрессивных методов формирования грузовых единиц.
+				</Paragraph>
+					
+				<Paragraph>
+					Преимущества этого метода заключаются в высокой степени сохранности грузов, так как достигается повышенная устойчивость грузового пакета, увеличивается безопасность работы с грузом, защита грузов от пыли, грязи и влаги, снижается возможность хищения грузов, а любое нарушение упаковки сразу становится заметным.
+				</Paragraph>
+
+				<Paragraph>
+					Упаковывать в термоусадочную пленку можно грузы различных размеров и формы, например, кирпич, бакалейные товары, книги, металлические детали неправильной формы и многое другое.
+				</Paragraph>
+
+				<Paragraph>
+					При использовании автоматического и полуавтоматического оборудования затраты труда на пакетирование в термоусадочную пленку в 3-4 раза меньше затрат труда на пакетирование с помощью стальной ленты. Кроме того, хранящаяся в стеллаже обандероленная пленкой грузовая единица может быть вскрыта для отборки части пакета. При этом целостность грузовой единицы не нарушается, что также дает экономию рабочего времени: не требует повторной упаковки груза.
+				</Paragraph>
+
+				<Paragraph>
+					Контроль знаний
+				</Paragraph>
+
+				<List MarkerStyle="Decimal">
+					<ListItem>
+						<Paragraph>
+							Какова сущность понятия «грузовая единица»?
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							Перечислите и охарактеризуйте виды грузовых единиц.
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							Какими логистическими характеристиками обладает грузовая единица?
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							Какие устройства используются для формирования грузовых пакетов, штабелирования и транспортирования грузов?
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							Назовите основные размеры паллет.
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							Что такое пакетирование?
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							Какие преимущества дает пакетирование грузов?
+						</Paragraph>
+					</ListItem>
+				</List>
+			</FlowDocument>
+		</FlowDocumentReader>
 	</Grid>
 </Page>
