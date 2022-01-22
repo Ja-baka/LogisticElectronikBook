@@ -30,7 +30,8 @@ namespace LogisticEBook
 			{
 				{ "0",   new Page0()   },
 				{ "1.1", new Page1_1() },
-				{ "1.2", new Page1_2() }
+				{ "1.2", new Page1_2() },
+				{ "1.3", new Page1_3() },
 			};
 		}
 

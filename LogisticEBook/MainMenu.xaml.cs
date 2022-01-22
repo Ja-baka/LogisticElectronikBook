@@ -30,18 +30,9 @@ namespace LogisticEBook
 			{
 				{ Hyperlink0, "0" },
 				{ Hyperlink1_1, "1.1" },
-				{ Hyperlink1_2, "1.2" }
+				{ Hyperlink1_2, "1.2" },
+				{ Hyperlink1_3, "1.3" },
 			};
-		}
-
-		private void OpenTopicByIndex(string topicIndex)
-		{
-			Hide();
-
-			Reader reader = new Reader(topicIndex);
-			reader.ShowDialog();
-			
-			Show();
 		}
 
 		private void Window_Closed(object sender, EventArgs e)
@@ -60,6 +51,16 @@ namespace LogisticEBook
 			{
 				MessageBox.Show("Неверный элемент");
 			}
+		}
+
+		private void OpenTopicByIndex(string topicIndex)
+		{
+			Hide();
+
+			Reader reader = new(topicIndex);
+			reader.ShowDialog();
+			
+			Show();
 		}
 
 		private void OpenPresentation(object sender, RoutedEventArgs e)

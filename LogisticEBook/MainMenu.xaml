@@ -47,7 +47,7 @@
 				</Paragraph>
 				<Paragraph  TextIndent="40">
 					<Span Name="Presentation1_1">
-						Презентация
+						1.1 Презентация
 					</Span>
 				</Paragraph>
 				
@@ -55,6 +55,23 @@
 					<Hyperlink Name="Hyperlink1_2">
 						1.2 Грузовая единица
 					</Hyperlink>
+				</Paragraph>
+				<Paragraph TextIndent="40">
+					<Span Name="Presentation1_2">
+						1.2 Презентация
+					</Span>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink Name="Hyperlink1_3">
+						1.3 Общие требования к устройствам для хранения грузов
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph TextIndent="40">
+					<Span>
+						ТКП 45-3.02-95-2008
+					</Span>
 				</Paragraph>
 			</FlowDocument>
 		</FlowDocumentScrollViewer>
