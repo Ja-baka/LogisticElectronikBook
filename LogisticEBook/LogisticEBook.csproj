@@ -31,6 +31,14 @@
     <None Remove="Resources\1_2\foto_16_stoechnye_poddony.jpg" />
     <None Remove="Resources\1_2\foto_17_yaschichnye_poddony.jpg" />
     <None Remove="Resources\1_2\foto_18_paketirovanie.jpg" />
+    <None Remove="Resources\1_4\foto_19_zakryty_sklad.jpg" />
+    <None Remove="Resources\1_4\foto_20_sklady.jpg" />
+    <None Remove="Resources\1_4\foto_21_otkryty_sklad.jpg" />
+    <None Remove="Resources\1_4\foto_22_poluzakryty_sklad.jpg" />
+    <None Remove="Resources\1_4\слайд_12.jpg" />
+    <None Remove="Resources\1_5\foto_23_shtabelnoe_khranenie.jpg" />
+    <None Remove="Resources\1_5\foto_24_stellazhnoe_khranenie.jpg" />
+    <None Remove="Resources\1_5\foto_25.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -126,6 +134,30 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\1_2\foto_18_paketirovanie.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_4\foto_19_zakryty_sklad.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_4\foto_20_sklady.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_4\foto_21_otkryty_sklad.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_4\foto_22_poluzakryty_sklad.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_4\слайд_12.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_5\foto_23_shtabelnoe_khranenie.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_5\foto_24_stellazhnoe_khranenie.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_5\foto_25.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

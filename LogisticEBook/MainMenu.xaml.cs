@@ -33,6 +33,9 @@ namespace LogisticEBook
 				{ "1_1", new Page1_1() },
 				{ "1_2", new Page1_2() },
 				{ "1_3", new Page1_3() },
+				{ "1_4", new Page1_4() },
+				{ "1_5", new Page1_5() },
+				{ "1_6", new Page1_6() },
 			};
 		}
 

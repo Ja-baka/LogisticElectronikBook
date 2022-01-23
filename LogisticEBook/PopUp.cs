@@ -48,6 +48,15 @@ namespace LogisticEBook
 				new Topic1_2RackPallets(),
 				new Topic1_2BoxPallets(),
 				new Topic1_2Packaging(),
+				new Topic1_4TypesOfWarehouses(),
+				new Topic1_4ClosedWarehouse(),
+				new Topic1_4OpenWarehouse(),
+				new Topic1_4SemiClosedWareHouse(),
+				new Topic1_4WarehouseElements(),
+				new Topic1_5ShelveStorage(),
+				new Topic1_5StackedStorage(),
+				new Topic1_5Shelf(),
+				new Topic1_5TypeOfShelfs(),
 			};
 
 			if (sender is not FrameworkContentElement element)
@@ -68,11 +77,17 @@ namespace LogisticEBook
 			else if (subset.Count() > 1)
 			{
 				MessageBox.Show("Было надено больше одного приложения");
+				foreach (Window window in subset)
+				{
+					window.Show();
+				}
 			}
-
-			Window window = subset.ToArray()[0];
-			window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-			window.ShowDialog();
+			else
+			{
+				Window window = subset.ToArray()[0];
+				window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+				window.ShowDialog();
+			}
 		}
 	}
 }
