@@ -24,5 +24,10 @@ namespace LogisticEBook.Pages
 		{
 			InitializeComponent();
 		}
+
+		private void OpenPopUp(object sender, MouseButtonEventArgs e)
+		{
+			PopUp.Show(sender);
+		}
 	}
 }
