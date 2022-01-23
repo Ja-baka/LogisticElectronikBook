@@ -21,13 +21,7 @@
 					
 					<Style TargetType="Hyperlink">
 						<EventSetter Event="Click" Handler="Hyperlink_Click"/>
-					</Style>
-
-					<Style TargetType="Span">
-						<EventSetter Event="MouseDown" Handler="OpenPresentation"/>
-						<Setter Property="Cursor" Value="Hand"/>
-					</Style>
-					
+					</Style>					
 				</FlowDocument.Resources>
 
 				<Paragraph TextIndent="0" FontWeight="Bold">
@@ -35,43 +29,61 @@
 				</Paragraph>
 				
 				<Paragraph>
-					<Hyperlink Name="Hyperlink0">
+					<Hyperlink Name="Topic0">
 						Введние
 					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>
-					<Hyperlink Name="Hyperlink1_1">
+					<Hyperlink Name="Topic1_1">
 						1.1 Грузы и устройства для их храниения. Общее понятие и классификация
 					</Hyperlink>
 				</Paragraph>
 				<Paragraph  TextIndent="40">
-					<Span Name="Presentation1_1">
+					<Hyperlink Name="Presentation1_1">
 						1.1 Презентация
-					</Span>
+					</Hyperlink>
 				</Paragraph>
 				
 				<Paragraph>
-					<Hyperlink Name="Hyperlink1_2">
+					<Hyperlink Name="Topic1_2">
 						1.2 Грузовая единица
 					</Hyperlink>
 				</Paragraph>
 				<Paragraph TextIndent="40">
-					<Span Name="Presentation1_2">
+					<Hyperlink Name="Presentation1_2">
 						1.2 Презентация
-					</Span>
+					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>
-					<Hyperlink Name="Hyperlink1_3">
+					<Hyperlink Name="Topic1_3">
 						1.3 Общие требования к устройствам для хранения грузов
 					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph TextIndent="40">
-					<Span>
-						ТКП 45-3.02-95-2008
-					</Span>
+					<Hyperlink Name="Word1_3">
+						1.3 ТКП 45-3.02-95-2008
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink Name="Topic1_4">
+						1.4 Характеристика строительной части хранилищ
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink Name="Topic1_5">
+						1.5 Стеллажное оборудование
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink Name="Topic1_6">
+						1.6 Устройства для хранения сыпучих грузов
+					</Hyperlink>
 				</Paragraph>
 			</FlowDocument>
 		</FlowDocumentScrollViewer>

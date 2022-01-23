@@ -11,8 +11,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using LogisticEBook.Pages;
 
 using PowerPoint = Microsoft.Office.Interop.PowerPoint;
+using Word = Microsoft.Office.Interop.Word;
 
 namespace LogisticEBook
 {
@@ -21,18 +23,22 @@ namespace LogisticEBook
 	/// </summary>
 	public partial class MainMenu : Window
 	{
-		private Dictionary<Hyperlink, string> _topics;
+		private static readonly Dictionary<string, Page> _topics;
+
+		static MainMenu()
+		{
+			_topics = new Dictionary<string, Page>
+			{
+				{ "0",   new Page0() },
+				{ "1_1", new Page1_1() },
+				{ "1_2", new Page1_2() },
+				{ "1_3", new Page1_3() },
+			};
+		}
 
 		public MainMenu()
 		{
 			InitializeComponent();
-			_topics = new Dictionary<Hyperlink, string>
-			{
-				{ Hyperlink0, "0" },
-				{ Hyperlink1_1, "1.1" },
-				{ Hyperlink1_2, "1.2" },
-				{ Hyperlink1_3, "1.3" },
-			};
 		}
 
 		private void Window_Closed(object sender, EventArgs e)
@@ -42,40 +48,80 @@ namespace LogisticEBook
 
 		private void Hyperlink_Click(object sender, RoutedEventArgs e)
 		{
-			if (sender is Hyperlink hyperlink)
-			{ 
-				string number = _topics[hyperlink];
-				OpenTopicByIndex(number);
-			}
-			else
+			if (sender is not FrameworkContentElement element)
 			{
 				MessageBox.Show("Неверный элемент");
 			}
-		}
 
-		private void OpenTopicByIndex(string topicIndex)
-		{
-			Hide();
-
-			Reader reader = new(topicIndex);
-			reader.ShowDialog();
-			
-			Show();
-		}
-
-		private void OpenPresentation(object sender, RoutedEventArgs e)
-		{
-			if (sender is FrameworkContentElement element)
+			else if (element.Name.Contains("Topic"))
 			{
-				string path = System.IO.Directory.GetCurrentDirectory()
-					+ @"/Presentations/" + element.Name + ".pptx";
+				OpenTopic(element.Name);
+			}
+
+			else if (element.Name.Contains("Presentation"))
+			{
+				OpenPresentation(element.Name);
+			}
+
+			else if (element.Name.Contains("Word"))
+			{
+				OpenWord(element.Name);
+			}
+		}
+
+		private void OpenWord(string wordName)
+		{
+			string path = System.IO.Directory.GetCurrentDirectory()
+				+ @"/Words/" + wordName + ".docx";
+
+			try
+			{
+				Word.Application app = new();
+				app.Documents.Open(path);
+			}
+			catch
+			{
+				MessageBox.Show("Ошибка при открытии документа");
+			}
+		}
+
+		private static void OpenPresentation(string presentaionName)
+		{
+			string path = System.IO.Directory.GetCurrentDirectory()
+				+ @"/Presentations/" + presentaionName + ".pptx";
+			try
+			{
 				dynamic app = new PowerPoint.Application();
 				app.Presentations.Open2007(path);
 			}
-			else
+			catch
 			{
-				MessageBox.Show("Неверный элемент");
+				MessageBox.Show("Ошибка при открытии презентации");
 			}
+		}
+
+		private void OpenTopic(string topicName)
+		{
+			topicName = RemovePrefix(topicName);
+			Hide();
+
+			try
+			{
+				Reader reader = new(_topics[topicName]);
+				reader.ShowDialog();
+			}
+			catch
+			{
+				MessageBox.Show("Тема не найдена");
+			}
+
+			Show();
+		}
+
+		private static string RemovePrefix(string originString)
+		{
+			var array = originString.Where(x => char.IsLetter(x) == false);
+			return new string (array.ToArray());
 		}
 	}
 }

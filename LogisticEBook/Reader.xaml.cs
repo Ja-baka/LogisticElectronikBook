@@ -21,32 +21,12 @@ namespace LogisticEBook
 	/// </summary>
 	public partial class Reader : Window
 	{
-		private string _currentTopic;
-		private static readonly Dictionary<string, Page> _pages;
-
-		static Reader()
-		{
-			_pages = new Dictionary<string, Page>
-			{
-				{ "0",   new Page0()   },
-				{ "1.1", new Page1_1() },
-				{ "1.2", new Page1_2() },
-				{ "1.3", new Page1_3() },
-			};
-		}
-
-		public Reader(string topicIndex)
+		public Reader(Page page)
 		{
 			InitializeComponent();
 
-			_currentTopic = topicIndex;
-			OpenCurrentPage();
-		}
-
-		private void OpenCurrentPage()
-		{
 			NavigationService navigation = MainFrame.NavigationService;
-			navigation.Navigate(_pages[_currentTopic]);
+			navigation.Navigate(page);
 		}
 
 		private void ButtonExit_Click(object sender, RoutedEventArgs e)
