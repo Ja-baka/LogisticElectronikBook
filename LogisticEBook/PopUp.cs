@@ -20,53 +20,58 @@ namespace LogisticEBook
 {
 	public static class PopUp
 	{
+		private static readonly List<Type> _windows;
+
+		static PopUp()
+		{
+			_windows = new List<Type>
+			{
+				typeof(StorageDefinition),
+				typeof(CargoDefinition),
+				typeof(SolidCargo),
+				typeof(BulkCargo),
+				typeof(LiquidCargo),
+				typeof(GaseousCargo),
+				typeof(FiveGroups),
+				typeof(SDTarnPiece),
+				typeof(SDBulk),
+				typeof(SDLiquid),
+				typeof(SDStationary),
+				typeof(SDCombinedMaterial),
+				typeof(SDWithSpecialEquipment),
+				typeof(SDWithoutSpecialEquipment),
+				typeof(SDHigh),
+				typeof(SDContainerTypes),
+				typeof(SDStructuresTypes),
+				typeof(Topic1_2PrimaryCargoUnit),
+				typeof(Topic1_2EnlargedCargoUnit),
+				typeof(Topic1_2Pallets),
+				typeof(Topic1_2PalletsSize),
+				typeof(Topic1_2RackPallets),
+				typeof(Topic1_2BoxPallets),
+				typeof(Topic1_2Packaging),
+				typeof(Topic1_4TypesOfWarehouses),
+				typeof(Topic1_4ClosedWarehouse),
+				typeof(Topic1_4OpenWarehouse),
+				typeof(Topic1_4SemiClosedWareHouse),
+				typeof(Topic1_4WarehouseElements),
+				typeof(Topic1_5ShelveStorage),
+				typeof(Topic1_5StackedStorage),
+				typeof(Topic1_5Shelf),
+				typeof(Topic1_5TypeOfShelfs),
+			};
+		}
+
 		public static void Show(object sender)
 		{
-			var _windows = new List<Window>
-			{
-				new StorageDefinition(),
-				new CargoDefinition(),
-				new SolidCargo(),
-				new BulkCargo(),
-				new LiquidCargo(),
-				new GaseousCargo(),
-				new FiveGroups(),
-				new SDTarnPiece(),
-				new SDBulk(),
-				new SDLiquid(),
-				new SDStationary(),
-				new SDCombinedMaterial(),
-				new SDWithSpecialEquipment(),
-				new SDWithoutSpecialEquipment(),
-				new SDHigh(),
-				new SDContainerTypes(),
-				new SDStructuresTypes(),
-				new Topic1_2PrimaryCargoUnit(),
-				new Topic1_2EnlargedCargoUnit(),
-				new Topic1_2Pallets(),
-				new Topic1_2PalletsSize(),
-				new Topic1_2RackPallets(),
-				new Topic1_2BoxPallets(),
-				new Topic1_2Packaging(),
-				new Topic1_4TypesOfWarehouses(),
-				new Topic1_4ClosedWarehouse(),
-				new Topic1_4OpenWarehouse(),
-				new Topic1_4SemiClosedWareHouse(),
-				new Topic1_4WarehouseElements(),
-				new Topic1_5ShelveStorage(),
-				new Topic1_5StackedStorage(),
-				new Topic1_5Shelf(),
-				new Topic1_5TypeOfShelfs(),
-			};
-
 			if (sender is not FrameworkContentElement element)
 			{
 				MessageBox.Show("Объект не имеет поля Name");
 				return;
 			}
 
-			var subset = from w in _windows 
-						 where w.GetType().Name == element.Name
+			var subset = from w in _windows
+						 where w.Name == element.Name
 						 select w;
 
 			if (subset.Any() == false)
@@ -77,16 +82,24 @@ namespace LogisticEBook
 			else if (subset.Count() > 1)
 			{
 				MessageBox.Show("Было надено больше одного приложения");
-				foreach (Window window in subset)
+			}
+
+			Type type = subset.ToArray()[0];
+			object? instance = Activator.CreateInstance(type);
+
+			if (instance is Window window)
+			{
+				try
 				{
-					window.Show();
+					window.ShowDialog();
+				}
+				catch (InvalidOperationException)
+				{
 				}
 			}
 			else
 			{
-				Window window = subset.ToArray()[0];
-				window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-				window.ShowDialog();
+				MessageBox.Show($"{type} не является окном!");
 			}
 		}
 	}

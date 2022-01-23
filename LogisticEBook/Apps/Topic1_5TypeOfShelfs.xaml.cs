@@ -25,11 +25,11 @@ namespace LogisticEBook.Apps
 		{
 			InitializeComponent();
 
-			//OpenPresentation();
-			//Close();
+			OpenPresentation();
+			Close();
 		}
 
-		
+
 
 		private void OpenPresentation()
 		{
