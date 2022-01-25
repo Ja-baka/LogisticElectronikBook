@@ -20,11 +20,11 @@ namespace LogisticEBook
 {
 	public static class PopUp
 	{
-		private static readonly List<Type> _windows;
+		private static readonly Type[] _windows;
 
 		static PopUp()
 		{
-			_windows = new List<Type>
+			_windows = new Type[]
 			{
 				typeof(StorageDefinition),
 				typeof(CargoDefinition),
@@ -62,6 +62,7 @@ namespace LogisticEBook
 				typeof(Topic1_5ConsoleRacks),
 				typeof(Topic1_5MezzanineRacks),
 				typeof(Topic1_5FrontalRacks),
+				typeof(Topic1_5SixTypesOfRacks),
 			};
 		}
 
@@ -73,21 +74,19 @@ namespace LogisticEBook
 				return;
 			}
 
-			var subset = from w in _windows
-						 where w.Name == element.Name
-						 select w;
+			Type[] types = _windows.Where(x => x.Name == element.Name).ToArray();
 
-			if (subset.Any() == false)
+			if (types.Any() == false)
 			{
 				MessageBox.Show("Не найдено приложение для этого элемента");
 				return;
 			}
-			else if (subset.Count() > 1)
+			else if (types.Length > 1)
 			{
 				MessageBox.Show("Было надено больше одного приложения");
 			}
 
-			Type type = subset.ToArray()[0];
+			Type type = types[0];
 			object? instance = Activator.CreateInstance(type);
 
 			if (instance is Window window)

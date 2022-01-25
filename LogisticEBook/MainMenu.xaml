@@ -18,16 +18,16 @@
 						<Setter Property="Margin" Value="5"/>
 						<Setter Property="TextIndent" Value="20"/>
 					</Style>
-					
+
 					<Style TargetType="Hyperlink">
 						<EventSetter Event="Click" Handler="Hyperlink_Click"/>
-					</Style>					
+					</Style>
 				</FlowDocument.Resources>
 
 				<Paragraph TextIndent="0" FontWeight="Bold">
 					Раздел 1. Оборудование, сооружения и устройства для хранения грузов
 				</Paragraph>
-				
+
 				<Paragraph>
 					<Hyperlink Name="Topic0">
 						Введние
@@ -44,7 +44,7 @@
 						1.1 Презентация
 					</Hyperlink>
 				</Paragraph>
-				
+
 				<Paragraph>
 					<Hyperlink Name="Topic1_2">
 						1.2 Грузовая единица
@@ -97,8 +97,149 @@
 						1.6 Презентация
 					</Hyperlink>
 				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink Name="Topic1_7">
+						1.7 Устройства для хранения жидких грузов
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph TextIndent="40">
+					<Hyperlink Name="Presentation1_7">
+						1.7 Презентация
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph TextIndent="0" FontWeight="Bold">
+					Раздел 2. Средства механизации складских работ
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						2.1 Классификация подъемно-транспортного оборудования
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						2.2 Краны и монорельсовый транспорт
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						2.3 Краны- штабелеры
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						2.4 Средства напольного транспорта
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						2.5 Машины непрерывного действия
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						2.6 Грузовые лифты
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						2.7 Промышленные роботы и манипуляторы
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						2.8 Устройства для механизации вспомогательных операций
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph TextIndent="0" FontWeight="Bold">
+					Раздел 3 Устройства для погрузки и разгрузки транспорта
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						3.1 Устройства для разгрузки грузов из крытых вагонов
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						3.2 Устройства для разгрузки грузов из полувагонов и платформ
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						3.3 Устройства для погрузки грузов в вагоны
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						3.4 Устройства для погрузки и выгрузки грузов из автомобилей
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						3.5 Требования к технологии и организации погрузочно-разгрузочных работ
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph TextIndent="0" FontWeight="Bold">
+					Раздел 4 Механизация работ на складах тарно-штучных грузов
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						4.1 Общие вопросы механизации и автоматизации складских работ
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						4.2 Механизированные и автоматизированные склады тарно-штучных грузов и гибких автоматизированных производств
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						4.3 Механизация вспомогательных операций на складах
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph TextIndent="0" FontWeight="Bold">
+					Раздел 5 Автоматизированные системы управления складами
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						5.1 Общая структура асу промышленного предприятия
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						5.2 Автоматизированные системы управления технологическими процессами организаций и складов
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink>
+						5.3 Системы автоматического управления подъемно-транспортным оборудованием на складах
+					</Hyperlink>
+				</Paragraph>
 			</FlowDocument>
 		</FlowDocumentScrollViewer>
-		
 	</Grid>
 </Window>

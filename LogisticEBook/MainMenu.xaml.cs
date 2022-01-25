@@ -70,6 +70,11 @@ namespace LogisticEBook
 			{
 				OpenWord(element.Name);
 			}
+
+			else if (element.Name == string.Empty)
+			{
+				MessageBox.Show("Тема находится в разработке");
+			}
 		}
 
 		private void OpenWord(string wordName)
