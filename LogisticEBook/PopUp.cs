@@ -59,6 +59,9 @@ namespace LogisticEBook
 				typeof(Topic1_5StackedStorage),
 				typeof(Topic1_5Shelf),
 				typeof(Topic1_5TypeOfShelfs),
+				typeof(Topic1_5ConsoleRacks),
+				typeof(Topic1_5MezzanineRacks),
+				typeof(Topic1_5FrontalRacks),
 			};
 		}
 

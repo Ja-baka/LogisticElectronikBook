@@ -36,9 +36,13 @@
     <None Remove="Resources\1_4\foto_21_otkryty_sklad.jpg" />
     <None Remove="Resources\1_4\foto_22_poluzakryty_sklad.jpg" />
     <None Remove="Resources\1_4\слайд_12.jpg" />
+    <None Remove="Resources\1_5\ConsoleRacks - Копировать.mp4" />
     <None Remove="Resources\1_5\foto_23_shtabelnoe_khranenie.jpg" />
     <None Remove="Resources\1_5\foto_24_stellazhnoe_khranenie.jpg" />
     <None Remove="Resources\1_5\foto_25.jpg" />
+    <None Remove="Resources\1_5\Frontalnye_palletnye_stellazhi_dlya_sklada.mp4" />
+    <None Remove="Resources\1_5\Topic1_5ConsoleRacks old.mp4" />
+    <None Remove="Resources\1_5\Topic1_5ConsoleRacks.mp4" />
   </ItemGroup>
 
   <ItemGroup>

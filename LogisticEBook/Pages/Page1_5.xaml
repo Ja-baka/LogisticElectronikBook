@@ -148,17 +148,23 @@
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-							универсальные паллетные;
+							<Span Name="Topic1_5FrontalRacks">
+								универсальные паллетные;
+							</Span>
 						</Paragraph>
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-							мезонинные (многоэтажные);
+							<Span Name="Topic1_5MezzanineRacks">
+								мезонинные (многоэтажные);
+							</Span>
 						</Paragraph>
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-							консольные;
+							<Span Name="Topic1_5ConsoleRacks">
+								консольные;
+							</Span>
 						</Paragraph>
 					</ListItem>
 					<ListItem>
