@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,6 +37,7 @@ namespace LogisticEBook
 				{ "1_4", new Page1_4() },
 				{ "1_5", new Page1_5() },
 				{ "1_6", new Page1_6() },
+				{ "1_7", new Page1_7() },
 			};
 		}
 
@@ -46,7 +48,7 @@ namespace LogisticEBook
 
 		private void Window_Closed(object sender, EventArgs e)
 		{
-			System.Diagnostics.Process.GetCurrentProcess().Kill();
+			Process.GetCurrentProcess().Kill();
 		}
 
 		private void Hyperlink_Click(object sender, RoutedEventArgs e)
@@ -71,21 +73,56 @@ namespace LogisticEBook
 				OpenWord(element.Name);
 			}
 
+			else if (element.Name.Contains("Test"))
+			{
+				OpenTest(element.Name);
+			}
+
 			else if (element.Name == string.Empty)
 			{
 				MessageBox.Show("Тема находится в разработке");
 			}
 		}
 
-		private void OpenWord(string wordName)
+		private static void OpenTest(string name)
+		{
+			name = RemovePrefix(name);
+
+			string fileName = name switch
+			{
+				"1_1" => @"http://82.209.208.36:8080/moodle/mod/quiz/view.php?id=9115",
+				"1_2" => @"http://82.209.208.36:8080/moodle/mod/quiz/view.php?id=9116",
+				"1_3" => @"http://82.209.208.36:8080/moodle/mod/quiz/view.php?id=8407",
+				"1_4" => @"http://82.209.208.36:8080/moodle/mod/quiz/view.php?id=8411",
+				_ => string.Empty,
+			};
+
+			if (fileName == string.Empty)
+			{
+				MessageBox.Show("Тест не найден");
+				return;
+			}
+
+			string message = "Тестирование проводится на базе moodle " +
+				"и тест будет доступен во время соответствующего занятия";
+
+			MessageBox.Show(message, "Предупреждение", MessageBoxButton.OK);
+
+			ProcessStartInfo processStartInfo = new(fileName)
+			{
+				UseShellExecute = true,
+			};
+			Process.Start(processStartInfo);
+		}
+
+		private static void OpenWord(string wordName)
 		{
 			string path = System.IO.Directory.GetCurrentDirectory()
 				+ @"/Words/" + wordName + ".docx";
 
 			try
 			{
-				Word.Application app = new();
-				app.Documents.Open(path);
+				OpenFile(path);
 			}
 			catch
 			{
@@ -96,16 +133,25 @@ namespace LogisticEBook
 		private static void OpenPresentation(string presentaionName)
 		{
 			string path = System.IO.Directory.GetCurrentDirectory()
-				+ @"/Presentations/" + presentaionName + ".pptx";
+				+ @"/Presentations0/" + presentaionName + ".pptx";
+
 			try
 			{
-				dynamic app = new PowerPoint.Application();
-				app.Presentations.Open2007(path);
+				OpenFile(path);
 			}
 			catch
 			{
 				MessageBox.Show("Ошибка при открытии презентации");
 			}
+		}
+
+		private static void OpenFile(string path)
+		{
+			ProcessStartInfo processStartInfo = new(path)
+			{
+				UseShellExecute = true,
+			};
+			Process.Start(processStartInfo);
 		}
 
 		private void OpenTopic(string topicName)
@@ -128,8 +174,8 @@ namespace LogisticEBook
 
 		private static string RemovePrefix(string originString)
 		{
-			var array = originString.Where(x => char.IsLetter(x) == false);
-			return new string (array.ToArray());
+			var rezult = originString.Where(x => char.IsLetter(x) == false);
+			return new string (rezult.ToArray());
 		}
 	}
 }

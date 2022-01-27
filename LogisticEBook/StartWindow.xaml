@@ -1,0 +1,36 @@
+﻿<Window x:Class="LogisticEBook.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LogisticEBook"
+        mc:Ignorable="d"
+        Title="StartWindow" Height="450" Width="800"
+		WindowStartupLocation="CenterScreen">
+	<Grid>
+		<Image Source="/Resources/Backgorund.jpg" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
+		<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+			<TextBlock Foreground="White" FontSize="40" TextWrapping="Wrap" FontFamily="Impact" TextAlignment="Center">
+				<TextBlock.Effect>
+					<DropShadowEffect/>
+				</TextBlock.Effect>
+			Оборудование хранилищ и устройства для погрузочно-разгрузочных работ
+			</TextBlock>
+			<Button Foreground="Black" Background="White" Height="100" Width="250" FontSize="35" Margin="25" FontFamily="Impact" Click="Button_Click">
+				<Button.Effect>
+					<DropShadowEffect/>
+				</Button.Effect>
+				Открыть
+			</Button>
+		</StackPanel>
+	</Grid>
+</Window>

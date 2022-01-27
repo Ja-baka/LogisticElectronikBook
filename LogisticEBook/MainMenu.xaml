@@ -41,7 +41,12 @@
 				</Paragraph>
 				<Paragraph  TextIndent="40">
 					<Hyperlink Name="Presentation1_1">
-						1.1 Презентация
+						Презентация
+					</Hyperlink>
+				</Paragraph>
+				<Paragraph  TextIndent="40">
+					<Hyperlink Name="Test1_1">
+						Тест
 					</Hyperlink>
 				</Paragraph>
 
@@ -52,7 +57,13 @@
 				</Paragraph>
 				<Paragraph TextIndent="40">
 					<Hyperlink Name="Presentation1_2">
-						1.2 Презентация
+						Презентация
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph  TextIndent="40">
+					<Hyperlink Name="Test1_2">
+						Тест
 					</Hyperlink>
 				</Paragraph>
 
@@ -64,7 +75,13 @@
 
 				<Paragraph TextIndent="40">
 					<Hyperlink Name="Word1_3">
-						1.3 ТКП 45-3.02-95-2008
+						ТКП 45-3.02-95-2008
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph  TextIndent="40">
+					<Hyperlink Name="Test1_3">
+						Тест
 					</Hyperlink>
 				</Paragraph>
 
@@ -73,16 +90,32 @@
 						1.4 Характеристика строительной части хранилищ
 					</Hyperlink>
 				</Paragraph>
+				<Paragraph  TextIndent="40">
+					<Hyperlink Name="Presentation1_4">
+						Презентация
+					</Hyperlink>
+				</Paragraph>
 
 				<Paragraph TextIndent="40">
 					<Hyperlink Name="Word1_4">
-						1.4 СТБ склад
+						СТБ склад
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph  TextIndent="40">
+					<Hyperlink Name="Test1_4">
+						Тест
 					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>
 					<Hyperlink Name="Topic1_5">
 						1.5 Стеллажное оборудование
+					</Hyperlink>
+				</Paragraph>
+				<Paragraph  TextIndent="40">
+					<Hyperlink Name="Presentation1_5">
+						Презентация
 					</Hyperlink>
 				</Paragraph>
 
@@ -94,7 +127,7 @@
 
 				<Paragraph TextIndent="40">
 					<Hyperlink Name="Presentation1_6">
-						1.6 Презентация
+						Презентация
 					</Hyperlink>
 				</Paragraph>
 
@@ -106,7 +139,7 @@
 
 				<Paragraph TextIndent="40">
 					<Hyperlink Name="Presentation1_7">
-						1.7 Презентация
+						Презентация
 					</Hyperlink>
 				</Paragraph>
 

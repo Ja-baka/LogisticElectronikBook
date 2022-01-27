@@ -63,6 +63,12 @@ namespace LogisticEBook
 				typeof(Topic1_5MezzanineRacks),
 				typeof(Topic1_5FrontalRacks),
 				typeof(Topic1_5SixTypesOfRacks),
+				typeof(Topic1_6Photo10),
+				typeof(Topic1_6Photo11),
+				typeof(Topic1_6Photo12),
+				typeof(Topic1_6Photo13),
+				typeof(Topic1_7Photo_14),
+				typeof(Topic1_7Photo_15_16),
 			};
 		}
 
@@ -78,7 +84,7 @@ namespace LogisticEBook
 
 			if (types.Any() == false)
 			{
-				MessageBox.Show("Не найдено приложение для этого элемента");
+				MessageBox.Show($"Не найдено приложение для элемента {element.Name}");
 				return;
 			}
 			else if (types.Length > 1)
