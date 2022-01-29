@@ -19,11 +19,12 @@
 			</Image.RenderTransform>
 		</Image>
 		<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-			<TextBlock Foreground="White" FontSize="40" TextWrapping="Wrap" FontFamily="Impact" TextAlignment="Center">
+			<TextBlock Foreground="White" FontSize="35" TextWrapping="Wrap" FontFamily="Impact" TextAlignment="Center" Margin="10">
 				<TextBlock.Effect>
 					<DropShadowEffect/>
 				</TextBlock.Effect>
-			Оборудование хранилищ и устройства для погрузочно-разгрузочных работ
+				Вас приветствует электронное пособие по дисциплине
+				"Оборудование хранилищ и устройства для погрузочно-разгрузочных работ"
 			</TextBlock>
 			<Button Foreground="Black" Background="White" Height="100" Width="250" FontSize="35" Margin="25" FontFamily="Impact" Click="Button_Click">
 				<Button.Effect>

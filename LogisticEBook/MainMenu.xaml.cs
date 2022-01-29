@@ -25,12 +25,13 @@ namespace LogisticEBook
 	public partial class MainMenu : Window
 	{
 		private static readonly Dictionary<string, Page> _topics;
+		private string _name = string.Empty;
 
 		static MainMenu()
 		{
 			_topics = new Dictionary<string, Page>
 			{
-				{ "0",   new Page0() },
+				{ "0",   new Page0()   },
 				{ "1_1", new Page1_1() },
 				{ "1_2", new Page1_2() },
 				{ "1_3", new Page1_3() },
@@ -53,42 +54,62 @@ namespace LogisticEBook
 
 		private void Hyperlink_Click(object sender, RoutedEventArgs e)
 		{
-			if (sender is not FrameworkContentElement element)
+			if (sender is FrameworkContentElement element)
+			{
+				_name = element.Name;
+			}
+			else
 			{
 				MessageBox.Show("Неверный элемент");
+				return;
 			}
 
-			else if (element.Name.Contains("Topic"))
+			if (_name.Contains("Topic"))
 			{
-				OpenTopic(element.Name);
+				OpenTopic();
 			}
-
-			else if (element.Name.Contains("Presentation"))
+			else if (_name.Contains("Presentation"))
 			{
-				OpenPresentation(element.Name);
+				OpenPresentation();
 			}
-
-			else if (element.Name.Contains("Word"))
+			else if (_name.Contains("Word"))
 			{
-				OpenWord(element.Name);
+				OpenWord();
 			}
-
-			else if (element.Name.Contains("Test"))
+			else if (_name.Contains("Test"))
 			{
-				OpenTest(element.Name);
+				OpenTest();
 			}
-
-			else if (element.Name == string.Empty)
+			else if (_name == "Glossary")
+			{
+				OpenGlossary();
+			}
+			else if (_name == string.Empty)
 			{
 				MessageBox.Show("Тема находится в разработке");
 			}
+			else
+			{
+				MessageBox.Show("Ошибка в имени темы");
+			}
 		}
 
-		private static void OpenTest(string name)
+		private void OpenGlossary()
 		{
-			name = RemovePrefix(name);
+			Hide();
 
-			string fileName = name switch
+			PageGlossary page = new();
+			Reader reader = new(page);
+			reader.ShowDialog();
+
+			Show();
+		}
+
+		private void OpenTest()
+		{
+			_name = RemovePrefix(_name);
+
+			string fileName = _name switch
 			{
 				"1_1" => @"http://82.209.208.36:8080/moodle/mod/quiz/view.php?id=9115",
 				"1_2" => @"http://82.209.208.36:8080/moodle/mod/quiz/view.php?id=9116",
@@ -99,7 +120,7 @@ namespace LogisticEBook
 
 			if (fileName == string.Empty)
 			{
-				MessageBox.Show("Тест не найден");
+				MessageBox.Show("Тест в разработке");
 				return;
 			}
 
@@ -115,10 +136,10 @@ namespace LogisticEBook
 			Process.Start(processStartInfo);
 		}
 
-		private static void OpenWord(string wordName)
+		private void OpenWord()
 		{
 			string path = System.IO.Directory.GetCurrentDirectory()
-				+ @"/Words/" + wordName + ".docx";
+				+ @"/Words/" + _name + ".docx";
 
 			try
 			{
@@ -126,14 +147,14 @@ namespace LogisticEBook
 			}
 			catch
 			{
-				MessageBox.Show("Ошибка при открытии документа");
+				MessageBox.Show("Документ в разработке");
 			}
 		}
 
-		private static void OpenPresentation(string presentaionName)
+		private void OpenPresentation()
 		{
 			string path = System.IO.Directory.GetCurrentDirectory()
-				+ @"/Presentations0/" + presentaionName + ".pptx";
+				+ @"/Presentations/" + _name + ".pptx";
 
 			try
 			{
@@ -141,11 +162,11 @@ namespace LogisticEBook
 			}
 			catch
 			{
-				MessageBox.Show("Ошибка при открытии презентации");
+				MessageBox.Show("Презентация в разработке");
 			}
 		}
 
-		private static void OpenFile(string path)
+		private void OpenFile(string path)
 		{
 			ProcessStartInfo processStartInfo = new(path)
 			{
@@ -154,25 +175,25 @@ namespace LogisticEBook
 			Process.Start(processStartInfo);
 		}
 
-		private void OpenTopic(string topicName)
+		private void OpenTopic()
 		{
-			topicName = RemovePrefix(topicName);
+			_name = RemovePrefix(_name);
 			Hide();
 
 			try
 			{
-				Reader reader = new(_topics[topicName]);
+				Reader reader = new(_topics[_name]);
 				reader.ShowDialog();
 			}
 			catch
 			{
-				MessageBox.Show("Тема не найдена");
+				MessageBox.Show("Тема в разработке");
 			}
 
 			Show();
 		}
 
-		private static string RemovePrefix(string originString)
+		private string RemovePrefix(string originString)
 		{
 			var rezult = originString.Where(x => char.IsLetter(x) == false);
 			return new string (rezult.ToArray());

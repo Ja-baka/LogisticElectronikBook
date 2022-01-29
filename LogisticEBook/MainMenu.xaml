@@ -24,14 +24,20 @@
 					</Style>
 				</FlowDocument.Resources>
 
-				<Paragraph TextIndent="0" FontWeight="Bold">
-					Раздел 1. Оборудование, сооружения и устройства для хранения грузов
+				<Paragraph>
+					<Hyperlink Name="Glossary">
+						Глоссарий
+					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>
 					<Hyperlink Name="Topic0">
 						Введние
 					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph TextIndent="0" FontWeight="Bold">
+					Раздел 1. Оборудование, сооружения и устройства для хранения грузов
 				</Paragraph>
 
 				<Paragraph>
@@ -134,12 +140,6 @@
 				<Paragraph>
 					<Hyperlink Name="Topic1_7">
 						1.7 Устройства для хранения жидких грузов
-					</Hyperlink>
-				</Paragraph>
-
-				<Paragraph TextIndent="40">
-					<Hyperlink Name="Presentation1_7">
-						Презентация
 					</Hyperlink>
 				</Paragraph>
 
