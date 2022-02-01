@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LogisticEBook"
         mc:Ignorable="d"
-        Title="StartWindow" Height="450" Width="800"
+        Title="" Height="450" Width="800"
 		WindowStartupLocation="CenterScreen">
-	<Grid>
-		<Image Source="/Resources/Backgorund.jpg" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center">
+	<Grid Background="Black">
+		<Image Source="/Resources/Backgorund.jpg" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.5">
 			<Image.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform ScaleX="1" ScaleY="1"/>
@@ -18,20 +18,35 @@
 				</TransformGroup>
 			</Image.RenderTransform>
 		</Image>
+
+		<Button Name="ButtonAuthors" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Background="LightGray" Click="ButtonAuthors_Click">
+			Об авторах
+		</Button>
+		
 		<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-			<TextBlock Foreground="White" FontSize="35" TextWrapping="Wrap" FontFamily="Impact" TextAlignment="Center" Margin="10">
+			<TextBlock Foreground="White" FontSize="45" TextWrapping="Wrap" FontFamily="Impact" TextAlignment="Center" Margin="10" MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave">
 				<TextBlock.Effect>
 					<DropShadowEffect/>
 				</TextBlock.Effect>
-				Вас приветствует электронное пособие по дисциплине
-				"Оборудование хранилищ и устройства для погрузочно-разгрузочных работ"
+				Складские устройства и оборудование
 			</TextBlock>
-			<Button Foreground="Black" Background="White" Height="100" Width="250" FontSize="35" Margin="25" FontFamily="Impact" Click="Button_Click">
-				<Button.Effect>
+			<TextBlock Foreground="White" FontSize="20" TextWrapping="Wrap" FontFamily="Impact" TextAlignment="Center" Visibility="Hidden" Name="Description" Margin="100, 10">
+				<TextBlock.Effect>
 					<DropShadowEffect/>
-				</Button.Effect>
-				Открыть
-			</Button>
+				</TextBlock.Effect>
+				Электронное учебное пособие по учебной дисциплине "Оборудование хранилищ и устройства для погрузочно-разгрузочных работ", специальность "Операционная деятельность в логистике"
+			</TextBlock>
 		</StackPanel>
+
+
+		<Button Foreground="Black" Background="White" Height="50" Width="350" FontSize="35" Margin="25" FontFamily="Impact" Click="Button_Click" VerticalAlignment="Bottom">
+			<Button.Style>
+				<Style/>
+			</Button.Style>
+			<Button.Effect>
+				<DropShadowEffect/>
+			</Button.Effect>
+			Перейти к пособию
+		</Button>
 	</Grid>
 </Window>

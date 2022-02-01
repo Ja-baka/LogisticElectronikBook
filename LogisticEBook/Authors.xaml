@@ -1,0 +1,41 @@
+﻿<Window x:Class="LogisticEBook.Authors"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LogisticEBook"
+        mc:Ignorable="d"
+        Title="Authors" Height="450" Width="800">
+	<Grid>
+		<FlowDocumentScrollViewer>
+			<FlowDocument FontSize="25" TextAlignment="Left">
+				<Paragraph>
+					<InlineUIContainer BaselineAlignment="Baseline">
+						<Image Source="/Resources/Authors/Owl.png" Width="40"/>
+					</InlineUIContainer>
+					Учереждение образования Полоцкий государственный экономический колледж
+					<LineBreak/>
+					Творческая группа:
+				</Paragraph>
+
+				<List>
+					<ListItem>
+						<Paragraph>
+							Петридис Н.Г., предователь логистических дисциплин;
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							Балаш О.М., преподаватель информационных технологий;
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							Сятковский Н.В., учащийся специальности "Программное обеспечение информационных технологий".
+						</Paragraph>
+					</ListItem>
+				</List>
+			</FlowDocument>
+		</FlowDocumentScrollViewer>
+	</Grid>
+</Window>

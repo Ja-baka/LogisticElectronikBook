@@ -30,5 +30,21 @@ namespace LogisticEBook
             mainMenu.Show();
             Close();
 		}
+
+		private void TextBlock_MouseEnter(object sender, MouseEventArgs e)
+		{
+            Description.Visibility = Visibility.Visible;
+        }
+
+		private void TextBlock_MouseLeave(object sender, MouseEventArgs e)
+		{
+            Description.Visibility = Visibility.Hidden;
+		}
+
+		private void ButtonAuthors_Click(object sender, RoutedEventArgs e)
+		{
+            Authors authors = new();
+            authors.ShowDialog();
+		}
 	}
 }

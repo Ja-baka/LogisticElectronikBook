@@ -41,15 +41,14 @@ namespace LogisticEBook.Pages
             _name = "LogisticEBook.Pages." + _name;
 
 			Assembly assembly = Assembly.Load("LogisticEBook");
-			Type? type = assembly.GetType(_name);
-			dynamic? page = Activator.CreateInstance(type);
+			Type type = assembly.GetType(_name);
+			dynamic page = Activator.CreateInstance(type);
 			NavigationService.Navigate(page);
 		}
 
         private string RemovePostfix()
         {
             string[] array = _name.Split("_");
-
 
             return array[0] == "Page0"
                 ? array[0]

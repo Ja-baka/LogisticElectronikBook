@@ -124,10 +124,10 @@ namespace LogisticEBook
 				return;
 			}
 
-			string message = "Тестирование проводится на базе moodle " +
+			string message = "Тестирование проводится на базе Moodle " +
 				"и тест будет доступен во время соответствующего занятия";
 
-			MessageBox.Show(message, "Предупреждение", MessageBoxButton.OK);
+			MessageBox.Show(message, "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Information);
 
 			ProcessStartInfo processStartInfo = new(fileName)
 			{

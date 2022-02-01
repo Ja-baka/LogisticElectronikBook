@@ -12,16 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace LogisticEBook.Apps
+namespace LogisticEBook
 {
-	/// <summary>
-	/// Логика взаимодействия для Topic1_2Packaging.xaml
-	/// </summary>
-	public partial class Topic1_2Packaging : Window
-	{
-		public Topic1_2Packaging()
-		{
-			InitializeComponent();
-		}
-	}
+    /// <summary>
+    /// Логика взаимодействия для Authors.xaml
+    /// </summary>
+    public partial class Authors : Window
+    {
+        public Authors()
+        {
+            InitializeComponent();
+        }
+    }
 }
