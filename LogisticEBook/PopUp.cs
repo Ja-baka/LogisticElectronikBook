@@ -70,6 +70,22 @@ namespace LogisticEBook
 				typeof(Topic1_6Photo13),
 				typeof(Topic1_7Photo_14),
 				typeof(Topic1_7Photo_15_16),
+				typeof(Topic2_1Photo_1),
+				typeof(Topic2_1Photo_2),
+				typeof(Topic2_1Photo_3),
+				typeof(Topic2_1Photo_4),
+				typeof(Topic2_1Photo_5),
+				typeof(Topic2_1Photo_6),
+				typeof(Topic2_1Photo_7),
+				typeof(Topic2_1Photo_8),
+				typeof(Topic2_1Photo_9),
+				typeof(Topic2_1Photo_10),
+				typeof(Topic2_1Photo_11),
+				typeof(Topic2_1Photo_12),
+				typeof(Topic2_1Photo_13),
+				typeof(Topic2_1Photo_14),
+				typeof(Topic2_1Photo_15),
+				typeof(Topic2_1Photo_16),
 			};
 		}
 

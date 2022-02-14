@@ -148,8 +148,14 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic2_1">
 						2.1 Классификация подъемно-транспортного оборудования
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph TextIndent="40">
+					<Hyperlink Name="Quiz2_1">
+						Викторина
 					</Hyperlink>
 				</Paragraph>
 

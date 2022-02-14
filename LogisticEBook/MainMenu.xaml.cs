@@ -39,6 +39,7 @@ namespace LogisticEBook
 				{ "1_5", new Page1_5() },
 				{ "1_6", new Page1_6() },
 				{ "1_7", new Page1_7() },
+				{ "2_1", new Page2_1() },
 			};
 		}
 
@@ -84,6 +85,10 @@ namespace LogisticEBook
 			{
 				OpenGlossary();
 			}
+			else if (_name.Contains("Quiz"))
+			{
+				OpenQuiz();
+			}
 			else if (_name == string.Empty)
 			{
 				MessageBox.Show("Тема находится в разработке");
@@ -92,6 +97,29 @@ namespace LogisticEBook
 			{
 				MessageBox.Show("Ошибка в имени темы");
 			}
+		}
+
+		private void OpenQuiz()
+		{
+			_name = RemovePrefix(_name);
+
+			try
+			{
+				Window window = _name switch
+				{
+					"2_1" => new Quizes.Quiz2_1(),
+					_ => throw new Exception(),
+				};
+
+				Hide();
+				window.ShowDialog();
+			}
+			catch
+			{
+				MessageBox.Show("Тема в разработке");
+			}
+
+			Show();
 		}
 
 		private void OpenGlossary()
