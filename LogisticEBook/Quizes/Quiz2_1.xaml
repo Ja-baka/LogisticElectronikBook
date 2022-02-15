@@ -5,35 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LogisticEBook.Quizes"
         mc:Ignorable="d"
-        Title="Викторина" Height="450" Width="800">
-	<Grid Margin="50">
+        Title="Викторина" Height="600" Width="800" WindowStartupLocation="CenterScreen">
+	<Grid x:Name="MainGrid">
 		<Grid.Resources>
 			<Style TargetType="TextBlock">
-				<Setter Property="HorizontalAlignment" Value="Left"/>
 				<Setter Property="VerticalAlignment" Value="Center"/>
 				<Setter Property="FontSize" Value="16"/>
 			</Style>
 		</Grid.Resources>
-		
 		<Grid.RowDefinitions>
-			<RowDefinition></RowDefinition>
-			<RowDefinition></RowDefinition>
-			<RowDefinition></RowDefinition>
-			<RowDefinition></RowDefinition>
-			<RowDefinition></RowDefinition>
+			<RowDefinition Height="30"/>
+			<RowDefinition Height="300"/>
+			<RowDefinition/>
 		</Grid.RowDefinitions>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition></ColumnDefinition>
-			<ColumnDefinition></ColumnDefinition>
-			<ColumnDefinition></ColumnDefinition>
-		</Grid.ColumnDefinitions>
 
-		<TextBlock Grid.Row="0" Grid.Column="1">Полочный стеллаж</TextBlock>
-		<TextBlock Grid.Row="1" Grid.Column="1">Гравитационный стеллаж</TextBlock>
-		<TextBlock Grid.Row="2" Grid.Column="1">Консольные стеллажи</TextBlock>
-		<TextBlock Grid.Row="3" Grid.Column="1">Мезонинный стеллаж</TextBlock>
-		<TextBlock Grid.Row="4" Grid.Column="1">Паллетные стеллажи</TextBlock>
+		<TextBlock Name="TextBlockScore" Text="Правильных ответов: 0"/>
+		<TextBlock Name="TextBlockQuestionOrder" Text="Вопрос: 1/5" HorizontalAlignment="Center"/>
 		
+		<Image Name="ImagePhoto" Source="/Quizes/Images/2_1/Photo_1.jpg" Grid.Row="1"/>
+		<TextBlock Name="TextBlockRight" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" />
 		
+		<TextBlock Name="TextBlockQuestion" Grid.Row="2" VerticalAlignment="Top" TextWrapping="Wrap" TextAlignment="Center" Margin="0,20,0,0">
+			Определение
+		</TextBlock>
+
+		<Grid Grid.Row="2" Margin="100,110,100,10">
+			<Grid.Resources>
+				<Style TargetType="Button">
+					<Setter Property="Margin" Value="5"/>
+					<Setter Property="FontWeight" Value="Bold"/>
+					<Setter Property="FontSize" Value="14"/>
+					<EventSetter Event="Click" Handler="AnswerChecker"/>
+				</Style>
+			</Grid.Resources>
+
+			<Grid.RowDefinitions>
+				<RowDefinition/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+
+			<Button Name="ButtonAnswer1" Grid.Row="0" Grid.Column="0" Content="Вариант 1" Tag="Wrong Answer"/>
+			<Button Name="ButtonAnswer2" Grid.Row="0" Grid.Column="1" Content="Вариант 2" Tag="Wrong Answer"/>
+			<Button Name="ButtonAnswer3" Grid.Row="1" Grid.Column="0" Content="Вариант 3" Tag="Wrong Answer"/>
+			<Button Name="ButtonAnswer4" Grid.Row="1" Grid.Column="1" Content="Вариант 4" Tag="Wrong Answer"/>
+		</Grid>
 	</Grid>
 </Window>

@@ -58,6 +58,9 @@
     <None Remove="Resources\2_1\Photo_2.jpg" />
     <None Remove="Resources\2_1\Photo_3.jpg" />
     <None Remove="Resources\2_1\Photo_4.jpg" />
+    <None Remove="Resources\2_1\Photo_7.jpg" />
+    <None Remove="Resources\2_1\Photo_8.jpg" />
+    <None Remove="Resources\2_1\Photo_9.jpg" />
     <None Remove="Resources\Authors\Owl.png" />
     <None Remove="Resources\Backgorund.jpg" />
   </ItemGroup>
@@ -82,6 +85,12 @@
       <Isolated>false</Isolated>
       <EmbedInteropTypes>true</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\2_1\Photo_7.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -224,6 +233,12 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\2_1\Photo_4.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_1\Photo_8.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_1\Photo_9.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Authors\Owl.png">

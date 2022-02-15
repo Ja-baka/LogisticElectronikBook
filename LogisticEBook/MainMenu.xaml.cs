@@ -116,7 +116,7 @@ namespace LogisticEBook
 			}
 			catch
 			{
-				MessageBox.Show("Тема в разработке");
+				MessageBox.Show("Викторина находится в разработке");
 			}
 
 			Show();
