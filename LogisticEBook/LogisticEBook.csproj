@@ -79,6 +79,17 @@
     <None Remove="Resources\2_2\22_23.png" />
     <None Remove="Resources\2_3\24a.png" />
     <None Remove="Resources\2_3\24b.png" />
+    <None Remove="Resources\2_4\25.png" />
+    <None Remove="Resources\2_4\26.png" />
+    <None Remove="Resources\2_4\27a.png" />
+    <None Remove="Resources\2_4\27b.png" />
+    <None Remove="Resources\2_4\28.png" />
+    <None Remove="Resources\2_4\29.png" />
+    <None Remove="Resources\2_4\30a.png" />
+    <None Remove="Resources\2_4\30b.png" />
+    <None Remove="Resources\2_4\31.png" />
+    <None Remove="Resources\2_4\32.png" />
+    <None Remove="Resources\2_4\33.png" />
     <None Remove="Resources\Authors\Owl.png" />
     <None Remove="Resources\Backgorund.jpg" />
   </ItemGroup>
@@ -103,6 +114,42 @@
       <Isolated>false</Isolated>
       <EmbedInteropTypes>true</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\2_4\25.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_4\26.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_4\27a.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_4\27b.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_4\28.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_4\29.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_4\30a.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_4\30b.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_4\31.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_4\32.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_4\33.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>

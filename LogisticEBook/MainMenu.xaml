@@ -190,8 +190,14 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic2_4">
 						2.4 Средства напольного транспорта
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph TextIndent="40">
+					<Hyperlink Name="Presentation2_4">
+						Презентация
 					</Hyperlink>
 				</Paragraph>
 

@@ -42,6 +42,7 @@ namespace LogisticEBook
 				{ "2_1", new Page2_1() },
 				{ "2_2", new Page2_2() },
 				{ "2_3", new Page2_3() },
+				{ "2_4", new Page2_4() },
 			};
 		}
 
