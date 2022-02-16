@@ -70,6 +70,15 @@
     <None Remove="Resources\2_1\Photo_7.jpg" />
     <None Remove="Resources\2_1\Photo_8.jpg" />
     <None Remove="Resources\2_1\Photo_9.jpg" />
+    <None Remove="Resources\2_2\17.png" />
+    <None Remove="Resources\2_2\18.png" />
+    <None Remove="Resources\2_2\19.png" />
+    <None Remove="Resources\2_2\20.png" />
+    <None Remove="Resources\2_2\21.png" />
+    <None Remove="Resources\2_2\22.png" />
+    <None Remove="Resources\2_2\22_23.png" />
+    <None Remove="Resources\2_3\24a.png" />
+    <None Remove="Resources\2_3\24b.png" />
     <None Remove="Resources\Authors\Owl.png" />
     <None Remove="Resources\Backgorund.jpg" />
   </ItemGroup>
@@ -275,6 +284,33 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\2_1\Photo_9.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_2\17.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_2\18.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_2\19.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_2\20.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_2\21.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_2\22.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_2\22_23.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_3\24a.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_3\24b.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Authors\Owl.png">

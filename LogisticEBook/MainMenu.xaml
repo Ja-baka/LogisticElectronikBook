@@ -154,20 +154,38 @@
 				</Paragraph>
 
 				<Paragraph TextIndent="40">
+					<Hyperlink Name="Presentation2_1">
+						Презентация
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph TextIndent="40">
 					<Hyperlink Name="Quiz2_1">
 						Викторина
 					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic2_2">
 						2.2 Краны и монорельсовый транспорт
 					</Hyperlink>
 				</Paragraph>
 
+				<Paragraph TextIndent="40">
+					<Hyperlink Name="Presentation2_2">
+						Презентация
+					</Hyperlink>
+				</Paragraph>
+
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic2_3">
 						2.3 Краны- штабелеры
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph TextIndent="40">
+					<Hyperlink Name="Presentation2_3">
+						Презентация
 					</Hyperlink>
 				</Paragraph>
 

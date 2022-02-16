@@ -36,7 +36,7 @@ namespace LogisticEBook.Quizes
 				Answer2 = "Полочный стеллаж",
 				Answer3 = "Паллетные стеллажи",
 				Answer4 = "Мезонинный стеллаж",
-				ImageNumber = 1,
+				ImagePath = "/2_1/Photo_1.jpg",
 				NumberOfCorrectAnswer = 2
 			},
 			new Question() 
@@ -46,7 +46,7 @@ namespace LogisticEBook.Quizes
 				Answer2 = "Консольные стеллажи",
 				Answer3 = "Паллетные стеллажи",
 				Answer4 = "Полочный стеллаж",
-				ImageNumber = 2,
+				ImagePath = "/2_1/Photo_2.jpg",
 				NumberOfCorrectAnswer = 1
 			},
 			new Question() 
@@ -56,7 +56,7 @@ namespace LogisticEBook.Quizes
 				Answer2 = "Мезонинный стеллаж",
 				Answer3 = "Консольные стеллажи",
 				Answer4 = "Паллетные стеллажи",
-				ImageNumber = 3,
+				ImagePath = "/2_1/Photo_3.jpg",
 				NumberOfCorrectAnswer = 3
 			},
 			new Question() 
@@ -66,7 +66,7 @@ namespace LogisticEBook.Quizes
 				Answer2 = "Гравитационный стеллаж",
 				Answer3 = "Консольные стеллажи",
 				Answer4 = "Мезонинный стеллаж",
-				ImageNumber = 4,
+				ImagePath = "/2_1/Photo_4.jpg",
 				NumberOfCorrectAnswer = 4
 			},
 			new Question() 
@@ -76,7 +76,7 @@ namespace LogisticEBook.Quizes
 				Answer2 = "Мезонинный стеллаж",
 				Answer3 = "Консольные стеллажи",
 				Answer4 = "Гравитационный стеллаж",
-				ImageNumber = 5,
+				ImagePath = "/2_1/Photo_5.jpg",
 				NumberOfCorrectAnswer = 1
 			},
 		};
@@ -177,7 +177,7 @@ namespace LogisticEBook.Quizes
 			buttons[question.NumberOfCorrectAnswer - 1].Tag = "Correct Answer";
 
 			ImagePhoto.Source = new BitmapImage(new Uri(
-				$"pack://application:,,,/Quizes/Images/2_1/Photo_{question.ImageNumber}.jpg"));
+				$"pack://application:,,,/Quizes/Images" + question.ImagePath));
 		}
 
 		private void StartGame()
