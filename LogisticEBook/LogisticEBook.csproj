@@ -90,6 +90,13 @@
     <None Remove="Resources\2_4\31.png" />
     <None Remove="Resources\2_4\32.png" />
     <None Remove="Resources\2_4\33.png" />
+    <None Remove="Resources\2_5\34.png" />
+    <None Remove="Resources\2_5\35a.png" />
+    <None Remove="Resources\2_5\35b.png" />
+    <None Remove="Resources\2_5\35g.png" />
+    <None Remove="Resources\2_5\35v.png" />
+    <None Remove="Resources\2_5\36.png" />
+    <None Remove="Resources\2_6\37.png" />
     <None Remove="Resources\Authors\Owl.png" />
     <None Remove="Resources\Backgorund.jpg" />
   </ItemGroup>
@@ -358,6 +365,27 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\2_3\24b.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_5\34.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_5\35a.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_5\35b.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_5\35g.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_5\35v.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_5\36.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\2_6\37.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Authors\Owl.png">

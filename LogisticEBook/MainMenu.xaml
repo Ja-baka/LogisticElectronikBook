@@ -201,18 +201,25 @@
 					</Hyperlink>
 				</Paragraph>
 
+
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic2_5">
 						2.5 Машины непрерывного действия
 					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic2_6">
 						2.6 Грузовые лифты
 					</Hyperlink>
 				</Paragraph>
 
+				<Paragraph TextIndent="40">
+					<Hyperlink Name="Presentation2_6">
+						Презентация
+					</Hyperlink>
+				</Paragraph>
+				
 				<Paragraph>
 					<Hyperlink>
 						2.7 Промышленные роботы и манипуляторы

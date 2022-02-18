@@ -415,54 +415,40 @@
 					Контроль знаний
 				</Paragraph>
 
-				<Paragraph>
-					1. Как классифицируется напольный транспорт?
-				</Paragraph>
-
-				<Paragraph>
-					2. Что такое погрузчик?
-				</Paragraph>
-
-				<Paragraph>
-					3. Какие погрузчики используются для насыпных грузов, контейнеров, укрупненных грузовых единиц?
-				</Paragraph>
-
-				<Paragraph>
-					4. Для чего используются штабелеры?
-				</Paragraph>
-
-				<Paragraph>
-					5. Перечислите виды штабелеров.
-				</Paragraph>
-
-				<Paragraph>
-					6. Что такое рохли?
-				</Paragraph>
-
-				<Paragraph>
-					7. В чем отличие горизонтальных и вертикальных подборщиков заказов?
-
-
-				</Paragraph>
-
-				<Paragraph>
-					Контроль знаний
-				</Paragraph>
-
 				<List MarkerStyle="Decimal">
 					<ListItem>
 						<Paragraph>
-
+							Как классифицируется напольный транспорт?
 						</Paragraph>
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-
+							Что такое погрузчик?
 						</Paragraph>
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-
+							Какие погрузчики используются для насыпных грузов, контейнеров, укрупненных грузовых единиц?
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							Для чего используются штабелеры?
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							Перечислите виды штабелеров.
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							Что такое рохли?
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							В чем отличие горизонтальных и вертикальных подборщиков заказов?
 						</Paragraph>
 					</ListItem>
 				</List>
