@@ -221,8 +221,14 @@
 				</Paragraph>
 				
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic2_7">
 						2.7 Промышленные роботы и манипуляторы
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph TextIndent="40">
+					<Hyperlink Name="Presentation2_7">
+						Презентация
 					</Hyperlink>
 				</Paragraph>
 

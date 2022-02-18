@@ -22,7 +22,7 @@
 		<Button Name="ButtonAuthors" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Background="LightGray" Click="ButtonAuthors_Click">
 			Об авторах
 		</Button>
-		
+
 		<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 			<TextBlock Foreground="White" FontSize="45" TextWrapping="Wrap" FontFamily="Impact" TextAlignment="Center" Margin="10" MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave">
 				<TextBlock.Effect>

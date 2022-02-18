@@ -113,6 +113,7 @@ namespace LogisticEBook
 				typeof(Topic2_5Photo_35g),
 				typeof(Topic2_5Photo_36),
 				typeof(Topic2_6Photo_37),
+				typeof(Topic2_7Photo_38),
 			};
 		}
 
