@@ -18,9 +18,9 @@ namespace LogisticEBook.Apps
 	/// <summary>
 	/// Логика взаимодействия для Topic1_5ConsoleRacks.xaml
 	/// </summary>
-	public partial class Topic1_5ConsoleRacks : Window
+	public partial class Topic1_5Video_8 : Window
 	{
-		public Topic1_5ConsoleRacks()
+		public Topic1_5Video_8()
 		{
 			InitializeComponent();
 

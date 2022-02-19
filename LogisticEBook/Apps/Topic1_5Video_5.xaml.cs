@@ -15,19 +15,20 @@ using System.Windows.Shapes;
 namespace LogisticEBook.Apps
 {
     /// <summary>
-    /// Логика взаимодействия для Topic1_5FrontalRacks.xaml
+    /// Логика взаимодействия для Topic1_5SixTypesOfRacks.xaml
     /// </summary>
-    public partial class Topic1_5FrontalRacks : Window
+    public partial class Topic1_5Video_5 : Window
     {
-        public Topic1_5FrontalRacks()
+        public Topic1_5Video_5()
         {
             InitializeComponent();
 
 			Uri path = new(System.IO.Directory.GetCurrentDirectory()
-				+ @"/Resources/1_5/FrontalRacks.mp4");
+				+ @"/Resources/1_5/SixTypesOfRacks.mp4");
 
 			MediaPlayer.Source = path;
 		}
+
 		private void ButtonPlay_Click(object sender, RoutedEventArgs e)
 		{
 			MediaPlayer.Play();

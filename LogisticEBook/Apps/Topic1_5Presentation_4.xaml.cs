@@ -19,9 +19,9 @@ namespace LogisticEBook.Apps
 	/// <summary>
 	/// Логика взаимодействия для Topic1_5TypeOfShelfs.xaml
 	/// </summary>
-	public partial class Topic1_5TypeOfShelfs : Window
+	public partial class Topic1_5Presentation_4 : Window
 	{
-		public Topic1_5TypeOfShelfs()
+		public Topic1_5Presentation_4()
 		{
 			InitializeComponent();
 

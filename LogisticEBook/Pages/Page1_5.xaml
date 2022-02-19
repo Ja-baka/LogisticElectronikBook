@@ -42,7 +42,7 @@
 				<List>
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_5ShelveStorage">
+							<Span Name="Topic1_5Photo_1">
 								стеллажный,
 							</Span>
 							при котором тарно-штучные товары могут храниться как в упакованном, так и в распакованном виде. Он связан с широкой внутрискладской подсортировкой товаров;
@@ -51,7 +51,7 @@
 
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_5StackedStorage">
+							<Span Name="Topic1_5Photo_2">
 								штабельный,
 							</Span>
 							при котором товары хранятся в основном в таре, без распаковки с использованием различных типов поддонов (плоских, стоечных, ящичных).
@@ -118,7 +118,7 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="Topic1_5Shelf">
+					<Span Name="Topic1_5Photo_3">
 						Стеллаж
 					</Span>
 					– это стационарная сборно-разборная многоярусная конструкция, предназначенная для хранения тарных и штучных грузов.
@@ -128,7 +128,7 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="Topic1_5TypeOfShelfs">
+					<Span Name="Topic1_5Presentation_4">
 						Конструкция стеллажей
 					</Span>
 					зависит от вида хранимых материалов и размеров помещений.
@@ -140,7 +140,7 @@
 
 				<Paragraph>
 					В зависимости от назначения выделяют следующие
-					<Span Name="Topic1_5SixTypesOfRacks">
+					<Span Name="Topic1_5Video_5">
 						виды стеллажей:
 					</Span>
 				</Paragraph>
@@ -153,21 +153,21 @@
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_5FrontalRacks">
-								универсальные паллетные;
-							</Span>
-						</Paragraph>
-					</ListItem>
-					<ListItem>
-						<Paragraph>
-							<Span Name="Topic1_5MezzanineRacks">
+							<Span Name="Topic1_5Video_6">
 								мезонинные (многоэтажные);
 							</Span>
 						</Paragraph>
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_5ConsoleRacks">
+							<Span Name="Topic1_5Video_7">
+								универсальные паллетные;
+							</Span>
+						</Paragraph>
+					</ListItem>
+					<ListItem>
+						<Paragraph>
+							<Span Name="Topic1_5Video_8">
 								консольные;
 							</Span>
 						</Paragraph>
