@@ -44,7 +44,7 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="CargoDefinition">
+					<Span Name="Topic1_1Photo_1">
 						Груз
 					</Span>
 					– это все предметы с момента принятия их к транспортировке у заказчика до сдачи получателю.
@@ -59,7 +59,7 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="SolidCargo">
+					<Span Name="Topic1_1Photo_2">
 						Твердые грузы
 					</Span>
 					 образуют обширную группу штучных грузов, которые могут быть классифицированы по нескольким признакам: по способам транспортировки (перевозимые в открытом и в крытом подвижном составе, автотранспортом); по назначению и отраслям народного хозяйства (металл, лесные грузы, изделия лёгкой промышленности, каучук и резинотехнические изделия, бумага и целлюлоза, строительные материалы, волокнистые грузы, промышленные товары народного потребления, химические материалы и т. д.); по способам переработки и складирования (тарно-штучные, длинномерные, крупногабаритные, контейнеры и т.д.).
@@ -70,7 +70,7 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="BulkCargo">
+					<Span Name="Topic1_1Photo_3">
 						Сыпучие грузы
 					</Span>
 					делятся на две большие группы по технологии и условиям перевозок и хранения: грузы открытого хранения, перевозимые в открытом транспорте и подвижном составе (песок, щебень, песчано-гравийная смесь, руда, уголь); грузы закрытого хранения, транспортируемые обычно в крытом транспорте и подвижном составе (цемент, зерно, химические материалы, минеральные удобрения).
@@ -78,14 +78,14 @@
 
 				<Paragraph>
 					К
-					<Span Name="LiquidCargo">
+					<Span Name="Topic1_1Photo_4">
 						жидким грузам
 					</Span>
 					относят нефть, бензин, керосин, дизельное и моторное топливо, мазут, растительные масла и др.
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="GaseousCargo">
+					<Span Name="Topic1_1Photo_5">
 						Газообразные грузы
 					</Span>
 					- пропан, азот и др.
@@ -97,7 +97,7 @@
 
 				<Paragraph>
 					По условиям хранения и перевозки грузы делятся на
-					<Span Name="FiveGroups">
+					<Span Name="Topic1_1Photo_6">
 						пять групп:
 					</Span>
 					обычные, скоропортящиеся (мясо, рыба, фрукты), с резким запахом (краска, бензин), антисанитарные (отходы, мусор), живность.
@@ -117,21 +117,21 @@
 						<List>
 							<ListItem>
 								<Paragraph>
-									<Span Name="SDTarnPiece">
+									<Span Name="Topic1_1Photo_7">
 										устройства для хранения тарно-штучных грузов;
 									</Span>
 								</Paragraph>
 							</ListItem>
 							<ListItem>
 								<Paragraph>
-									<Span Name="SDBulk">
+									<Span Name="Topic1_1Photo_8">
 										для хранения навалочных и насыпных грузов;
 									</Span>
 								</Paragraph>
 							</ListItem>
 							<ListItem>
 								<Paragraph>
-									<Span Name="SDLiquid">
+									<Span Name="Topic1_1Photo_9">
 										для хранения наливных грузов и газообразных грузов;
 									</Span>
 								</Paragraph>
@@ -143,7 +143,7 @@
 						<List>
 							<ListItem>
 								<Paragraph>
-									<Span Name="SDStationary">
+									<Span Name="Topic1_1Photo_10">
 										стационарные;
 									</Span>
 								</Paragraph>
@@ -192,7 +192,7 @@
 							</ListItem>
 							<ListItem>
 								<Paragraph>
-									<Span Name="SDCombinedMaterial">
+									<Span Name="Topic1_1Photo_11">
 										комбинированные;
 									</Span>
 								</Paragraph>
@@ -206,14 +206,14 @@
 						<List>
 							<ListItem>
 								<Paragraph>
-									<Span Name="SDWithSpecialEquipment">
+									<Span Name="Topic1_1Photo_12">
 										со специальным оборудованием;
 									</Span>
 								</Paragraph>
 							</ListItem>
 							<ListItem>
 								<Paragraph>
-									<Span Name="SDWithoutSpecialEquipment">
+									<Span Name="Topic1_1Photo_13">
 										без специального оборудования и сооружений;
 									</Span>
 								</Paragraph>
@@ -230,7 +230,7 @@
 							</ListItem>
 							<ListItem>
 								<Paragraph>
-									<Span Name="SDHigh">
+									<Span Name="Topic1_1Photo_14">
 										высотные;
 									</Span>
 								</Paragraph>
@@ -239,7 +239,7 @@
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-							<Span Name="SDContainerTypes">
+							<Span Name="Topic1_1Photo_15">
 								по видам емкостей:
 							</Span>
 						</Paragraph>
@@ -263,7 +263,7 @@
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-							<Span Name="SDStructuresTypes">
+							<Span Name="Topic1_1Photo_16">
 								по конструкции:
 							</Span>
 						</Paragraph>
