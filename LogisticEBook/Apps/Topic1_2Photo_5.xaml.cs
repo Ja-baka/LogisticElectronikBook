@@ -17,9 +17,9 @@ namespace LogisticEBook.Apps
 	/// <summary>
 	/// Логика взаимодействия для Topic1_2RackPallets.xaml
 	/// </summary>
-	public partial class Topic1_2RackPallets : Window
+	public partial class Topic1_2Photo_5 : Window
 	{
-		public Topic1_2RackPallets()
+		public Topic1_2Photo_5()
 		{
 			InitializeComponent();
 		}

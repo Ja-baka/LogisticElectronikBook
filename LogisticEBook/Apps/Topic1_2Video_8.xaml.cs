@@ -17,9 +17,9 @@ namespace LogisticEBook.Apps
     /// <summary>
     /// Логика взаимодействия для Topic1_2AutoPackaging.xaml
     /// </summary>
-    public partial class Topic1_2AutoPackaging : Window
+    public partial class Topic1_2Video_8 : Window
     {
-        public Topic1_2AutoPackaging()
+        public Topic1_2Video_8()
         {
             InitializeComponent();
 

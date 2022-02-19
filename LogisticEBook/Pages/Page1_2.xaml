@@ -55,7 +55,7 @@
 				<List>
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_2PrimaryCargoUnit">
+							<Span Name="Topic1_2Photo_1">
 								первичную грузовую единицу
 							</Span>
 							– груз в транспортной таре, например, в ящиках, бочках, мешках и т. п.;
@@ -63,7 +63,7 @@
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_2EnlargedCargoUnit">
+							<Span Name="Topic1_2Photo_2">
 								укрупненную грузовую единицу
 							</Span>
 							– грузовой пакет, сформированный на поддоне из первичных грузовых единиц.
@@ -178,7 +178,7 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Span  Name="Topic1_2Pallets">
+					<Span Name="Topic1_2Photo_3">
 						Поддоны
 					</Span>
 					представляют собой устройства, предназначенные для формирования грузовых пакетов, штабелирования и транспортирования грузов. По своему использованию они универсальны.
@@ -186,7 +186,7 @@
 
 				<Paragraph>
 					Основные габаритные
-					<Span Name="Topic1_2PalletsSize">
+					<Span Name="Topic1_2Photo_4">
 						размеры паллет:
 					</Span>
 				</Paragraph>
@@ -298,7 +298,7 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="Topic1_2RackPallets">
+					<Span Name="Topic1_2Photo_5">
 						Стоечные поддоны
 					</Span>
 					отличаются от плоских тем, что они имеют стойки, которые позволяют делать многоярусную укладку поддонов и предназначены для пакетирования и хранения легкоповреждаемых штучных грузов (товары в картонных коробках, фольге, бумаге и т. д.).
@@ -309,7 +309,7 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="Topic1_2BoxPallets">
+					<Span Name="Topic1_2Photo_6">
 						Ящичные поддоны
 					</Span>
 					используются для мелкоштучных и легкоповреждаемых товаров, которые не могут быть уложены на плоские или стоечные поддоны (свертки, связки и т. п.)
@@ -341,11 +341,11 @@
 
 				<Paragraph>
 					Пакетирование может осуществляться
-					<Span Name="Topic1_2HandlePackaging">
+					<Span Name="Topic1_2Video_7">
 						вручную с помощью оброллера
 					</Span>
 					или
-					<Span Name="Topic1_2AutoPackaging">
+					<Span Name="Topic1_2Video_8">
 						с помощью упаковочных устройств (автоматизированных обмотчиков)
 					</Span>
 					и др.

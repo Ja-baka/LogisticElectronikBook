@@ -1,13 +1,13 @@
-﻿<Window x:Class="LogisticEBook.Apps.Topic1_2PalletsSize"
+﻿<Window x:Class="LogisticEBook.Apps.Topic1_2Photo_2"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LogisticEBook.Apps"
         mc:Ignorable="d"
-        Title="Topic1_2PalletsSize" Height="450" Width="800">
+        Title="Topic1_2EnlargedCargoUnit" Height="450" Width="800">
     <Grid>
-        <Image Source="/Resources/1_2/foto_15_razmery_pallet.jpg" />
+        <Image Source="/Resources/1_2/foto_13_ukrupnennaya_gruzovaya_edinitsa.jpg" />
 
     </Grid>
 </Window>
