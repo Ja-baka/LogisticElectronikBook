@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace LogisticEBook.Apps
 {
 	/// <summary>
-	/// Логика взаимодействия для Topic1_4ClosedWarehouse.xaml
+	/// Логика взаимодействия для Topic1_4TypesOfWarehouses.xaml
 	/// </summary>
-	public partial class Topic1_4ClosedWarehouse : Window
+	public partial class Topic1_4Photo_1 : Window
 	{
-		public Topic1_4ClosedWarehouse()
+		public Topic1_4Photo_1()
 		{
 			InitializeComponent();
 		}

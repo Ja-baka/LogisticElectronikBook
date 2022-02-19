@@ -17,9 +17,9 @@ namespace LogisticEBook.Apps
 	/// <summary>
 	/// Логика взаимодействия для Topic1_4OpenWarehouse.xaml
 	/// </summary>
-	public partial class Topic1_4OpenWarehouse : Window
+	public partial class Topic1_4Photo_3 : Window
 	{
-		public Topic1_4OpenWarehouse()
+		public Topic1_4Photo_3()
 		{
 			InitializeComponent();
 		}
