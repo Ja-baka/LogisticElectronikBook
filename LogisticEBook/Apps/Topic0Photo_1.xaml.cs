@@ -17,9 +17,9 @@ namespace LogisticEBook.Apps
 	/// <summary>
 	/// Логика взаимодействия для App1_1_Storage.xaml
 	/// </summary>
-	public partial class StorageDefinition : Window
+	public partial class Topic0Photo_1 : Window
 	{
-		public StorageDefinition()
+		public Topic0Photo_1()
 		{
 			InitializeComponent();
 		}

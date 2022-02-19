@@ -26,7 +26,7 @@ namespace LogisticEBook
 		{
 			_windows = new Type[]
 			{
-				typeof(StorageDefinition),
+				typeof(Topic0Photo_1),
 				typeof(CargoDefinition),
 				typeof(SolidCargo),
 				typeof(BulkCargo),
