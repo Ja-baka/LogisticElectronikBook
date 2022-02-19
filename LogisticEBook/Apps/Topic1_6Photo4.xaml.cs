@@ -17,9 +17,9 @@ namespace LogisticEBook.Apps
 	/// <summary>
 	/// Логика взаимодействия для Topic1_6Photo13.xaml
 	/// </summary>
-	public partial class Topic1_6Photo13 : Window
+	public partial class Topic1_6Photo4 : Window
 	{
-		public Topic1_6Photo13()
+		public Topic1_6Photo4()
 		{
 			InitializeComponent();
 		}
