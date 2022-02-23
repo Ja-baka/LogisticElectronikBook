@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="SDStructuresTypes" Height="450" Width="800">
     <Grid>
-        <Image Source="/Resources/1_1/Слайд 10.png" />
+        <Image Source="/Resources/1_1/Слайд 10.jpg" />
 
     </Grid>
 </Window>
