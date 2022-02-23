@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="Склад" Height="160" Width="800">
 	<Grid>
-		<Image Source="/Resources/0/Storage.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+		<Image Source="/Resources/0/1.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 	</Grid>
 </Window>

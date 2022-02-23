@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Topic1_2EnlargedCargoUnit" Height="450" Width="800">
     <Grid>
-        <Image Source="/Resources/1_2/foto_13_ukrupnennaya_gruzovaya_edinitsa.jpg" />
+        <Image Source="/Resources/1_2/2.jpg" />
 
     </Grid>
 </Window>

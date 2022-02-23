@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="SDWithoutSpecialEquipment" Height="450" Width="800">
     <Grid>
-		<Image Source="/Resources/1_1/12.jpg" />
+		<Image Source="/Resources/1_1/13.jpg" />
 	</Grid>
 </Window>

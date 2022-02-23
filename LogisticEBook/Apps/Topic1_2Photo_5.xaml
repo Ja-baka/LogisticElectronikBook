@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Topic1_2RackPallets" Height="450" Width="800">
     <Grid>
-        <Image Source="/Resources/1_2/foto_16_stoechnye_poddony.jpg" />
+        <Image Source="/Resources/1_2/5.jpg" />
 
     </Grid>
 </Window>
