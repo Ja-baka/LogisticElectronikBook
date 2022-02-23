@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="FiveGroups" Height="450" Width="800">
     <Grid>
-        <Image Source="/Resources/1_1/Слайд 4.jpg" />
+        <Image Source="/Resources/1_1/6.jpg" />
 
     </Grid>
 </Window>

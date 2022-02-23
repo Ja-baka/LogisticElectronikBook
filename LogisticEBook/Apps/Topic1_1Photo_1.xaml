@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="Груз" Height="400" Width="650">
     <Grid>
-		<Image Source="/Resources/1_1/Cargo.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+		<Image Source="/Resources/1_1/1.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 </Window>

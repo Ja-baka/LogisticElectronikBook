@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="BulkCargo" Height="400" Width="800">
     <Grid>
-		<Image Source="/Resources/1_1/фото 2 сыпучие грузы.jpg"/>
+		<Image Source="/Resources/1_1/3.jpg"/>
 	</Grid>
 </Window>

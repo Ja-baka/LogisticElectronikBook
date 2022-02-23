@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="SDHigh" Height="450" Width="800">
     <Grid>
-        <Image Source="/Resources/1_1/фото 11.jpg" />
+        <Image Source="/Resources/1_1/13.jpg" />
 
     </Grid>
 </Window>

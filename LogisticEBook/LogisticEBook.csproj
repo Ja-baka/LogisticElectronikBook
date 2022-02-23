@@ -14,20 +14,19 @@
     <None Remove="Quizes\Images\2_1\Photo_4.jpg" />
     <None Remove="Quizes\Images\2_1\Photo_5.jpg" />
     <None Remove="Resources\0_Storage.jpg" />
-    <None Remove="Resources\1_1\Слайд 10.jpg" />
-    <None Remove="Resources\1_1\Слайд 4.jpg" />
-    <None Remove="Resources\1_1\Слайд 9.jpg" />
-    <None Remove="Resources\1_1\фото 1 твердые грузы.jpg" />
-    <None Remove="Resources\1_1\фото 10 устройства для сып.товаров.jpg" />
-    <None Remove="Resources\1_1\фото 11.jpg" />
-    <None Remove="Resources\1_1\фото 2 сыпучие грузы.jpg" />
-    <None Remove="Resources\1_1\фото 3 жидкие грузы.jpg" />
-    <None Remove="Resources\1_1\фото 4 газообразные грузы.jpg" />
-    <None Remove="Resources\1_1\фото 5 склады тарно-штучных грузов.jpg" />
-    <None Remove="Resources\1_1\фото 6 устройства для жидких.jpg" />
-    <None Remove="Resources\1_1\фото 7 стационарные склады.jpg" />
-    <None Remove="Resources\1_1\фото 8 комбинированные склады.jpg" />
-    <None Remove="Resources\1_1\фото 9 мезонин.jpg" />
+    <None Remove="Resources\1_1\10.jpg" />
+    <None Remove="Resources\1_1\11.jpg" />
+    <None Remove="Resources\1_1\12.jpg" />
+    <None Remove="Resources\1_1\13.jpg" />
+    <None Remove="Resources\1_1\14.jpg" />
+    <None Remove="Resources\1_1\15.jpg" />
+    <None Remove="Resources\1_1\3.jpg" />
+    <None Remove="Resources\1_1\4.jpg" />
+    <None Remove="Resources\1_1\5.jpg" />
+    <None Remove="Resources\1_1\6.jpg" />
+    <None Remove="Resources\1_1\7.jpg" />
+    <None Remove="Resources\1_1\8.jpg" />
+    <None Remove="Resources\1_1\9.jpg" />
     <None Remove="Resources\1_1_Cargo.jpg" />
     <None Remove="Resources\1_2\foto_12_pervichnaya_gruzovaya_edinitsa.jpg" />
     <None Remove="Resources\1_2\foto_13_ukrupnennaya_gruzovaya_edinitsa.jpg" />
@@ -209,7 +208,7 @@
     <Resource Include="Quizes\Images\2_1\Photo_5.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\1_1\Слайд 4.jpg">
+    <Resource Include="Resources\1_1\6.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
@@ -218,46 +217,40 @@
     <Resource Include="Resources\0\Storage.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\1_1\Cargo.jpg">
+    <Resource Include="Resources\1_1\15.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\1_1\Слайд 10.jpg">
+    <Resource Include="Resources\1_1\14.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\1_1\Слайд 9.jpg">
+    <Resource Include="Resources\1_1\12.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\1_1\фото 1 твердые грузы.jpg">
+    <Resource Include="Resources\1_1\13.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\1_1\фото 10 устройства для сып.товаров.jpg">
+    <Resource Include="Resources\1_1\3.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\1_1\фото 11.jpg">
+    <Resource Include="Resources\1_1\4.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\1_1\фото 2 сыпучие грузы.jpg">
+    <Resource Include="Resources\1_1\5.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\1_1\фото 3 жидкие грузы.jpg">
+    <Resource Include="Resources\1_1\7.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\1_1\фото 4 газообразные грузы.jpg">
+    <Resource Include="Resources\1_1\8.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\1_1\фото 5 склады тарно-штучных грузов.jpg">
+    <Resource Include="Resources\1_1\9.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\1_1\фото 6 устройства для жидких.jpg">
+    <Resource Include="Resources\1_1\10.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\1_1\фото 7 стационарные склады.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\1_1\фото 8 комбинированные склады.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\1_1\фото 9 мезонин.jpg">
+    <Resource Include="Resources\1_1\11.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\1_2\foto_12_pervichnaya_gruzovaya_edinitsa.jpg">

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="SolidCargo" Height="400" Width="650">
     <Grid>
-		<Image Source="/Resources/1_1/фото 1 твердые грузы.jpg" />
+		<Image Source="/Resources/1_1/2.jpg" />
 
 	</Grid>
 </Window>

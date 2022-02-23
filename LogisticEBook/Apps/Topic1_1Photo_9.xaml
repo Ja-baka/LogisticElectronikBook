@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="SDLiquid" Height="450" Width="600">
     <Grid>
-		<Image Source="/Resources/1_1/фото 7 стационарные склады.jpg"/>
+		<Image Source="/Resources/1_1/9.jpg"/>
 
 	</Grid>
 </Window>
