@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Topic1_5ShelveStorage" Height="450" Width="800">
     <Grid>
-        <Image Source="/Resources/1_5/foto_24_stellazhnoe_khranenie.jpg" />
+        <Image Source="/Resources/1_5/1.jpg" />
 
     </Grid>
 </Window>

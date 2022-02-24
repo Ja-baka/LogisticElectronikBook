@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Topic1_5StackedStorage" Height="450" Width="800">
     <Grid>
-        <Image Source="/Resources/1_5/foto_23_shtabelnoe_khranenie.jpg" />
+        <Image Source="/Resources/1_5/2.jpg" />
 
     </Grid>
 </Window>
