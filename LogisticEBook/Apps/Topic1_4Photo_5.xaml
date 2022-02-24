@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Topic1_4WarehouseElements" Height="450" Width="800">
     <Grid>
-        <Image Source="/Resources/1_4/слайд_12.jpg" />
+        <Image Source="/Resources/1_4/5.jpg" />
 
     </Grid>
 </Window>
