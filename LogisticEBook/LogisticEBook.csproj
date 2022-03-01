@@ -93,12 +93,12 @@
     <None Remove="Resources\2_4\7.jpg" />
     <None Remove="Resources\2_4\8.jpg" />
     <None Remove="Resources\2_4\9.jpg" />
-    <None Remove="Resources\2_5\34.jpg" />
-    <None Remove="Resources\2_5\35a.jpg" />
-    <None Remove="Resources\2_5\35b.jpg" />
-    <None Remove="Resources\2_5\35g.jpg" />
-    <None Remove="Resources\2_5\35v.jpg" />
-    <None Remove="Resources\2_5\36.jpg" />
+    <None Remove="Resources\2_5\1.jpg" />
+    <None Remove="Resources\2_5\2.jpg" />
+    <None Remove="Resources\2_5\3.jpg" />
+    <None Remove="Resources\2_5\4.jpg" />
+    <None Remove="Resources\2_5\5.jpg" />
+    <None Remove="Resources\2_5\6.jpg" />
     <None Remove="Resources\2_6\37.jpg" />
     <None Remove="Resources\2_7\38.jpg" />
     <None Remove="Resources\Authors\Owl.png" />
@@ -377,22 +377,22 @@
     <Resource Include="Resources\2_3\24b.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\2_5\34.jpg">
+    <Resource Include="Resources\2_5\1.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\2_5\35a.jpg">
+    <Resource Include="Resources\2_5\2.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\2_5\35b.jpg">
+    <Resource Include="Resources\2_5\3.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\2_5\35g.jpg">
+    <Resource Include="Resources\2_5\5.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\2_5\35v.jpg">
+    <Resource Include="Resources\2_5\4.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\2_5\36.jpg">
+    <Resource Include="Resources\2_5\6.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\2_6\37.jpg">
