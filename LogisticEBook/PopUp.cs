@@ -117,6 +117,7 @@ namespace LogisticEBook
 			};
 		}
 
+		[Obsolete]
 		public static void Show(object sender)
 		{
 			if (sender is not FrameworkContentElement element)
@@ -154,6 +155,29 @@ namespace LogisticEBook
 			{
 				MessageBox.Show($"{type} не является окном!");
 			}
+		}
+
+		public static void ShowWithoutWindow(string Name)
+		{
+
+		}
+
+		private static string MakePathFromTopicName(string name)
+		{
+			name = ReplacePart(name, "Topic", string.Empty);
+			name = ReplacePart(name, "Photo_", "/");
+
+			name = "/Resources/" + name + ".jpg";
+			return name;
+		}
+
+		private static string ReplacePart(string source, string oldPart, string newPart)
+		{
+			if (source.Contains(oldPart) == false)
+			{
+				throw new ArgumentException($"{source} должен содержать {oldPart}");
+			}
+			return source.Replace(oldPart, newPart);
 		}
 	}
 }
