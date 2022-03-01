@@ -71,13 +71,13 @@
     <None Remove="Resources\2_1\7.jpg" />
     <None Remove="Resources\2_1\8.jpg" />
     <None Remove="Resources\2_1\9.jpg" />
-    <None Remove="Resources\2_2\17.jpg" />
-    <None Remove="Resources\2_2\18.jpg" />
-    <None Remove="Resources\2_2\19.jpg" />
-    <None Remove="Resources\2_2\20.jpg" />
-    <None Remove="Resources\2_2\21.jpg" />
-    <None Remove="Resources\2_2\22.jpg" />
-    <None Remove="Resources\2_2\22_23.jpg" />
+    <None Remove="Resources\2_2\1.jpg" />
+    <None Remove="Resources\2_2\2.jpg" />
+    <None Remove="Resources\2_2\3.jpg" />
+    <None Remove="Resources\2_2\4.jpg" />
+    <None Remove="Resources\2_2\5.jpg" />
+    <None Remove="Resources\2_2\6.jpg" />
+    <None Remove="Resources\2_2\7.jpg" />
     <None Remove="Resources\2_3\24a.jpg" />
     <None Remove="Resources\2_3\24b.jpg" />
     <None Remove="Resources\2_4\25.jpg" />
@@ -342,25 +342,25 @@
     <Resource Include="Resources\2_1\9.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\2_2\17.jpg">
+    <Resource Include="Resources\2_2\1.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\2_2\18.jpg">
+    <Resource Include="Resources\2_2\2.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\2_2\19.jpg">
+    <Resource Include="Resources\2_2\3.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\2_2\20.jpg">
+    <Resource Include="Resources\2_2\4.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\2_2\21.jpg">
+    <Resource Include="Resources\2_2\5.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\2_2\22.jpg">
+    <Resource Include="Resources\2_2\6.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\2_2\22_23.jpg">
+    <Resource Include="Resources\2_2\7.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\2_3\24a.jpg">

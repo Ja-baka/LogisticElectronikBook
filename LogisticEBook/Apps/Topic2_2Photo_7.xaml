@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Topic2_2Photo_22_23" Height="450" Width="800">
     <Grid>
-        <Image Source="/Resources/2_2/22_23.jpg" />
+        <Image Source="/Resources/2_2/7.jpg" />
 
     </Grid>
 </Window>
