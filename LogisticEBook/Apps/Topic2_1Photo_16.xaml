@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:LogisticEBook.Apps"
         mc:Ignorable="d"
         Title="Topic2_1Photo_16" Height="450" Width="800">
-    <Grid>
-        <Image Source="/Resources/2_1/Photo_16.jpg" />
+	<Grid>
+		<Image Source="/Resources/2_1/16.jpg" />
 
-    </Grid>
+	</Grid>
 </Window>
