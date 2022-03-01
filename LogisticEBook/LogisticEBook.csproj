@@ -99,8 +99,8 @@
     <None Remove="Resources\2_5\4.jpg" />
     <None Remove="Resources\2_5\5.jpg" />
     <None Remove="Resources\2_5\6.jpg" />
-    <None Remove="Resources\2_6\37.jpg" />
-    <None Remove="Resources\2_7\38.jpg" />
+    <None Remove="Resources\2_6\1.jpg" />
+    <None Remove="Resources\2_7\1.jpg" />
     <None Remove="Resources\Authors\Owl.png" />
     <None Remove="Resources\Backgorund.jpg" />
   </ItemGroup>
@@ -395,10 +395,10 @@
     <Resource Include="Resources\2_5\6.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\2_6\37.jpg">
+    <Resource Include="Resources\2_6\1.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\2_7\38.jpg">
+    <Resource Include="Resources\2_7\1.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Authors\Owl.png">
