@@ -8,7 +8,7 @@ namespace LogisticEBook
 {
 	public enum AppType
 	{
-		Photo,
+		Photo, // TODO: заменить бы везде Photo на Image
 		Video,
 		Presentation
 	}

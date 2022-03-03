@@ -8,40 +8,20 @@
 		Title="Электронный учебник Логистика" 
 		Height="450" 
 		Width="800"
-		WindowStartupLocation="CenterScreen"
-	>
-	<Grid 
-		Background="White"
-	>
+		WindowStartupLocation="CenterScreen">
+	<Grid Background="White">
 		<Grid.RowDefinitions>
-			<RowDefinition
-				Height="50"
-			       />
-			<RowDefinition
-			/>
+			<RowDefinition Height="50"/>
+			<RowDefinition/>
 		</Grid.RowDefinitions>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition />
 		</Grid.ColumnDefinitions>
 
-		<Button
-			Name="ButtonExit"
-			Grid.Row="0"
-			Content="Вернуться в главное меню"
-			FontSize="14"
-			Margin="10"
-			HorizontalAlignment="Left"
-			VerticalAlignment="Center"
-			Click="ButtonExit_Click"
-		/>
+		<Button Name="ButtonExit" Grid.Row="0" Content="Вернуться в главное меню" FontSize="14" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Center" Click="ButtonExit_Click" />
 
 
-		<Frame
-			NavigationUIVisibility="Hidden"
-			Grid.Row="1"
-			Name="MainFrame" 
-			Background="AliceBlue"
-		/>
+		<Frame NavigationUIVisibility="Hidden" Grid.Row="1" Name="MainFrame" Background="AliceBlue"/>
 	</Grid>
 
 </Window>
