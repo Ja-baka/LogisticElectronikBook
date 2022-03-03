@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,30 +25,7 @@ namespace LogisticEBook
 	/// </summary>
 	public partial class MainMenu : Window
 	{
-		private static readonly Dictionary<string, Page> _topics;
 		private string _name = string.Empty;
-
-		static MainMenu()
-		{
-			_topics = new Dictionary<string, Page>
-			{
-				{ "0",   new Page0()   },
-				{ "1_1", new Page1_1() },
-				{ "1_2", new Page1_2() },
-				{ "1_3", new Page1_3() },
-				{ "1_4", new Page1_4() },
-				{ "1_5", new Page1_5() },
-				{ "1_6", new Page1_6() },
-				{ "1_7", new Page1_7() },
-				{ "2_1", new Page2_1() },
-				{ "2_2", new Page2_2() },
-				{ "2_3", new Page2_3() },
-				{ "2_4", new Page2_4() },
-				{ "2_5", new Page2_5() },
-				{ "2_6", new Page2_6() },
-				{ "2_7", new Page2_7() },
-			};
-		}
 
 		public MainMenu()
 		{
@@ -208,7 +186,11 @@ namespace LogisticEBook
 			_name = RemovePrefix(_name);
 			try
 			{
-				Reader reader = new(_topics[_name]);
+				Assembly assembly = Assembly.GetExecutingAssembly();
+				Type pageType = assembly.GetType("LogisticEBook.Pages.Page" + _name);
+				dynamic page = Activator.CreateInstance(pageType);
+
+				Reader reader = new(page);
 				reader.ShowDialog();
 			}
 			catch
