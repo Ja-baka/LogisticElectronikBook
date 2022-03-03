@@ -126,7 +126,7 @@ namespace LogisticEBook
 			}
 		}
 
-		private void OpenGlossary()
+		private static void OpenGlossary()
 		{
 			PageGlossary page = new();
 			Reader reader = new(page);
@@ -194,7 +194,7 @@ namespace LogisticEBook
 			}
 		}
 
-		private void OpenFile(string path)
+		private static void OpenFile(string path)
 		{
 			ProcessStartInfo processStartInfo = new(path)
 			{
@@ -217,7 +217,7 @@ namespace LogisticEBook
 			}
 		}
 
-		private string RemovePrefix(string originString)
+		private static string RemovePrefix(string originString)
 		{
 			var rezult = originString.Where(x => char.IsLetter(x) == false);
 			return new string (rezult.ToArray());

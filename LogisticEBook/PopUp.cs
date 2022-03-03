@@ -20,15 +20,6 @@ namespace LogisticEBook
 {
 	public static class PopUp
 	{
-		[Obsolete($"Используйте ShowInAppsViewer")]
-		public static void Show(object sender)
-		{
-			//string elementName = GetSenderName(sender);
-			//Type type = GetTypeByElementName(elementName);
-			//Window window = GetWindowFromType(type);
-			//TryOpenWindow(window);
-		}
-
 		public static void ShowInAppsViewer(object sender)
 		{
 			try

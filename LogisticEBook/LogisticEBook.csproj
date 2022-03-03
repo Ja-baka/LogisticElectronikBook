@@ -15,6 +15,7 @@
     <None Remove="Quizes\Images\2_1\Photo_5.jpg" />
     <None Remove="Resources\0\1.jpg" />
     <None Remove="Resources\0_Storage.jpg" />
+    <None Remove="Resources\1_1\1.jpg" />
     <None Remove="Resources\1_1\10.jpg" />
     <None Remove="Resources\1_1\11.jpg" />
     <None Remove="Resources\1_1\12.jpg" />
@@ -22,6 +23,7 @@
     <None Remove="Resources\1_1\14.jpg" />
     <None Remove="Resources\1_1\15.jpg" />
     <None Remove="Resources\1_1\16.jpg" />
+    <None Remove="Resources\1_1\2.jpg" />
     <None Remove="Resources\1_1\3.jpg" />
     <None Remove="Resources\1_1\4.jpg" />
     <None Remove="Resources\1_1\5.jpg" />
@@ -131,7 +133,13 @@
     <Resource Include="Resources\0\1.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\1_1\1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\1_1\10.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\1_1\2.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\2_3\1.jpg">
