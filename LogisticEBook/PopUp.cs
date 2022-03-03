@@ -158,7 +158,8 @@ namespace LogisticEBook
 			}
 			else if (appType == AppType.Presentation)
 			{
-				_ = new PresentationViewer(path);
+				PresentationViewer.OpenPresentation(path);
+				//_ = new PresentationViewerWindow(path);
 				return;
 			}
 			else
