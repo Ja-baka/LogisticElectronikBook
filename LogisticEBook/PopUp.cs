@@ -145,7 +145,8 @@ namespace LogisticEBook
 			}
 			else if (appType == AppType.Video)
 			{
-				// VideoViewer
+				VideoViewer viewer = new(path);
+				viewer.ShowDialog();
 			}
 			else if (appType == AppType.Presentation)
 			{
@@ -174,54 +175,13 @@ namespace LogisticEBook
 			}
 		}
 
-		private static void TryOpenWindow(Window window)
-		{
-			try
-			{
-				window.ShowDialog();
-			}
-			catch (InvalidOperationException)
-			{
-			}
-		}
-
-		private static Window GetWindowFromType(Type type)
-		{
-			object? instance = Activator.CreateInstance(type);
-
-			if (instance is not Window window)
-			{
-				throw new Exception($"{type} не является окном!");
-			}
-
-			return window;
-		}
-
-		private static Type GetTypeByElementName(string elementName)
-		{
-			IEnumerable<Type> enumerable = _windows.Where
-				(x => x.Name == elementName);
-			Type[] types = enumerable.ToArray();
-
-			if (types.Any() == false)
-			{
-				throw new Exception($"Не найдено приложение " +
-					$"для элемента {elementName}");
-			}
-			else if (types.Length > 1)
-			{
-				throw new Exception("Было надено больше одного приложения" +
-					$"для элемента {elementName}");
-			}
-			Type type = types[0];
-			return type;
-		}
 
 		private static string GetSenderName(object sender)
 		{
-			if (sender is not FrameworkContentElement element)
+			if (sender is not FrameworkContentElement element
+				|| element.Name == string.Empty)
 			{
-				throw new ArgumentException($"{sender} не имеет поля Name");
+				throw new ArgumentException($"{sender} не имеет имени");
 			}
 
 			return element.Name;
@@ -256,13 +216,50 @@ namespace LogisticEBook
 			return location + name + extetion;
 		}
 
-		private static string ReplacePart(string source, string oldPart, string newPart)
+		[Obsolete($"Используйте ShowInAppsViewer")]
+		private static void TryOpenWindow(Window window)
 		{
-			if (source.Contains(oldPart) == false)
+			try
 			{
-				throw new ArgumentException($"{source} должен содержать {oldPart}");
+				window.ShowDialog();
 			}
-			return source.Replace(oldPart, newPart);
+			catch (InvalidOperationException)
+			{
+			}
+		}
+
+		[Obsolete($"Используйте ShowInAppsViewer")]
+		private static Window GetWindowFromType(Type type)
+		{
+			object? instance = Activator.CreateInstance(type);
+
+			if (instance is not Window window)
+			{
+				throw new Exception($"{type} не является окном!");
+			}
+
+			return window;
+		}
+
+		[Obsolete($"Используйте ShowInAppsViewer")]
+		private static Type GetTypeByElementName(string elementName)
+		{
+			IEnumerable<Type> enumerable = _windows.Where
+				(x => x.Name == elementName);
+			Type[] types = enumerable.ToArray();
+
+			if (types.Any() == false)
+			{
+				throw new Exception($"Не найдено приложение " +
+					$"для элемента {elementName}");
+			}
+			else if (types.Length > 1)
+			{
+				throw new Exception("Было надено больше одного приложения" +
+					$"для элемента {elementName}");
+			}
+			Type type = types[0];
+			return type;
 		}
 	}
 }

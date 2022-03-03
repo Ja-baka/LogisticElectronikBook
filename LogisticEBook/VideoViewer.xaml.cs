@@ -19,9 +19,29 @@ namespace LogisticEBook
     /// </summary>
     public partial class VideoViewer : Window
     {
-        public VideoViewer()
+        public VideoViewer(string path)
         {
-            InitializeComponent();
-        }
-    }
+			InitializeComponent();
+
+			Uri uriPath = new(System.IO.Directory.GetCurrentDirectory()
+				+ path);
+
+			MediaPlayer.Source = uriPath;
+		}
+
+		private void ButtonPlay_Click(object sender, RoutedEventArgs e)
+		{
+			MediaPlayer.Play();
+		}
+
+		private void ButtonPause_Click(object sender, RoutedEventArgs e)
+		{
+			MediaPlayer.Pause();
+		}
+
+		private void ButtonStop_Click(object sender, RoutedEventArgs e)
+		{
+			MediaPlayer.Stop();
+		}
+	}
 }
