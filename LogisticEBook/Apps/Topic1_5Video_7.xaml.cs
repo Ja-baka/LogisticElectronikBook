@@ -24,7 +24,7 @@ namespace LogisticEBook.Apps
             InitializeComponent();
 
 			Uri path = new(System.IO.Directory.GetCurrentDirectory()
-				+ @"/Resources/1_5/FrontalRacks.mp4");
+				+ @"/Resources/1_5/7.mp4");
 
 			MediaPlayer.Source = path;
 		}

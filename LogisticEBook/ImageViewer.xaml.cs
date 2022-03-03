@@ -19,14 +19,10 @@ namespace LogisticEBook
 	/// </summary>
 	public partial class ImageViewer : Window
 	{
-		public ImageViewer()
+		public ImageViewer(string path)
 		{
 			InitializeComponent();
-		}
 
-		public ImageViewer(string path)
-			:this()
-		{
 			FillImageContainer(path);
 		}
 

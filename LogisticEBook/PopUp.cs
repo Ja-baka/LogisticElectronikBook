@@ -129,16 +129,48 @@ namespace LogisticEBook
 		public static void ShowInAppsViewer(object sender)
 		{
 			string elementName = GetSenderName(sender);
+
+			AppType appType = GetAppType(elementName);
 			string path = MakePathFromTopicName(elementName);
 
-			if (elementName.Contains("Photo")) // TODO: заменить бы Photo на Image
+			OpenAppByType(path, appType);
+		}
+
+		private static void OpenAppByType(string path, AppType appType)
+		{
+			if (appType == AppType.Photo) // TODO: заменить бы Photo на Image
 			{
 				ImageViewer viewer = new(path);
 				viewer.ShowDialog();
 			}
+			else if (appType == AppType.Video)
+			{
+				// VideoViewer
+			}
+			else if (appType == AppType.Presentation)
+			{
+				// PresentationViewer
+			}
+		}
+
+		private static AppType GetAppType(string elementName)
+		{
+			if (elementName.Contains("Photo"))
+			{
+				return AppType.Photo;
+			}
+			else if (elementName.Contains("Video"))
+			{
+				return AppType.Video;
+			}
+			else if (elementName.Contains("Presentation"))
+			{
+				return AppType.Presentation;
+			}
 			else
 			{
-				MessageBox.Show($"Некорректное название {elementName}");
+				throw new ArgumentException($"{elementName} " 
+					+ $"не относится ни к какому типу");
 			}
 		}
 

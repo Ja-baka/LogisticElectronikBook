@@ -117,7 +117,6 @@ namespace LogisticEBook
 					_ => throw new Exception(),
 				};
 
-				Hide();
 				window.ShowDialog();
 			}
 			catch
@@ -125,19 +124,13 @@ namespace LogisticEBook
 				MessageBox.Show("Викторина находится в разработке");
 				
 			}
-
-			Show();
 		}
 
 		private void OpenGlossary()
 		{
-			Hide();
-
 			PageGlossary page = new();
 			Reader reader = new(page);
 			reader.ShowDialog();
-
-			Show();
 		}
 
 		private void OpenTest()
@@ -213,8 +206,6 @@ namespace LogisticEBook
 		private void OpenTopic()
 		{
 			_name = RemovePrefix(_name);
-			Hide();
-
 			try
 			{
 				Reader reader = new(_topics[_name]);
@@ -224,8 +215,6 @@ namespace LogisticEBook
 			{
 				MessageBox.Show("Тема в разработке");
 			}
-
-			Show();
 		}
 
 		private string RemovePrefix(string originString)

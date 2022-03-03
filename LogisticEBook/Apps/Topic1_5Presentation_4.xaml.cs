@@ -29,21 +29,19 @@ namespace LogisticEBook.Apps
 			Close();
 		}
 
-
-
 		private void OpenPresentation()
 		{
 			string path = System.IO.Directory.GetCurrentDirectory()
-				+ @"/Presentations/Presentation1_5TypeOfShelfs.pptx";
+				+ @"/Presentations/4.pptx";
 
 			try
 			{
 				dynamic app = new PowerPoint.Application();
 				app.Presentations.Open2007(path);
 			}
-			catch
+			catch (Exception ex)
 			{
-				MessageBox.Show("Ошибка при открытии презентации");
+				MessageBox.Show($"Ошибка при открытии презентации\n{ex.Message}");
 			}
 		}
 	}
