@@ -131,7 +131,7 @@ namespace LogisticEBook
 			string elementName = GetSenderName(sender);
 
 			AppType appType = GetAppType(elementName);
-			string path = MakePathFromTopicName(elementName);
+			string path = MakePathFromTopicName(elementName, appType);
 
 			OpenAppByType(path, appType);
 		}
@@ -227,13 +227,33 @@ namespace LogisticEBook
 			return element.Name;
 		}
 
-		private static string MakePathFromTopicName(string name)
+		private static string MakePathFromTopicName(string name, AppType appType)
 		{
-			name = ReplacePart(name, "Topic", string.Empty);
-			name = ReplacePart(name, "Photo_", "/");
+			string extetion = string.Empty;
+			string location = string.Empty;
 
-			string path = "/Resources/" + name + ".jpg";
-			return path;
+			if (appType == AppType.Photo)
+			{
+				extetion = ".jpg";
+				location = "/Resources/";
+				name = name.Replace("Photo_", "/");
+			}
+			else if (appType == AppType.Video)
+			{
+				extetion = ".mp4";
+				location = "/Videos/";
+				name = name.Replace("Video_", "/");
+			}
+			else if (appType == AppType.Presentation)
+			{
+				extetion = ".pptx";
+				location = "/Presentations/";
+				name = name.Replace("Presentation_", "/");
+			}
+
+			name = name.Replace("Topic", string.Empty);
+
+			return location + name + extetion;
 		}
 
 		private static string ReplacePart(string source, string oldPart, string newPart)

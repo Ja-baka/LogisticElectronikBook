@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,7 +24,7 @@ namespace LogisticEBook.Apps
 		{
 			InitializeComponent();
 
-			Uri path = new(System.IO.Directory.GetCurrentDirectory()
+			Uri path = new(Directory.GetCurrentDirectory()
 				+ @"/Resources/1_2/7.mp4");
 
 			MediaPlayer.Source = path;
