@@ -27,8 +27,7 @@ namespace LogisticEBook.Pages
 
 		private void OpenPopUp(object sender, MouseButtonEventArgs e)
 		{
-			PopUp popUp = new();
-			popUp.ShowInAppsViewer(sender);
+			PopUp.ShowInAppsViewer(sender);
 		}
 	}
 }
