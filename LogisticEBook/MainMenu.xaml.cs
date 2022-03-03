@@ -123,6 +123,7 @@ namespace LogisticEBook
 			catch
 			{
 				MessageBox.Show("Викторина находится в разработке");
+				
 			}
 
 			Show();

@@ -117,49 +117,82 @@ namespace LogisticEBook
 			};
 		}
 
-		[Obsolete]
+		[Obsolete($"Используйте ShowInAppsViewer")]
 		public static void Show(object sender)
 		{
-			if (sender is not FrameworkContentElement element)
-			{
-				MessageBox.Show("Объект не имеет поля Name");
-				return;
-			}
+			string elementName = GetSenderName(sender);
+			Type type = GetTypeByElementName(elementName);
+			Window window = GetWindowFromType(type);
+			TryOpenWindow(window);
+		}
 
-			Type[] types = _windows.Where(x => x.Name == element.Name).ToArray();
+		public static void ShowInAppsViewer(object sender)
+		{
+			string elementName = GetSenderName(sender);
+			string path = MakePathFromTopicName(elementName);
 
-			if (types.Any() == false)
+			if (elementName.Contains("Photo")) // TODO: заменить бы Photo на Image
 			{
-				MessageBox.Show($"Не найдено приложение для элемента {element.Name}");
-				return;
-			}
-			else if (types.Length > 1)
-			{
-				MessageBox.Show("Было надено больше одного приложения");
-			}
-
-			Type type = types[0];
-			object? instance = Activator.CreateInstance(type);
-
-			if (instance is Window window)
-			{
-				try
-				{
-					window.ShowDialog();
-				}
-				catch (InvalidOperationException)
-				{
-				}
+				ImageViewer viewer = new(path);
+				viewer.ShowDialog();
 			}
 			else
 			{
-				MessageBox.Show($"{type} не является окном!");
+				MessageBox.Show($"Некорректное название {elementName}");
 			}
 		}
 
-		public static void ShowWithoutWindow(string Name)
+		private static void TryOpenWindow(Window window)
 		{
+			try
+			{
+				window.ShowDialog();
+			}
+			catch (InvalidOperationException)
+			{
+			}
+		}
 
+		private static Window GetWindowFromType(Type type)
+		{
+			object? instance = Activator.CreateInstance(type);
+
+			if (instance is not Window window)
+			{
+				throw new Exception($"{type} не является окном!");
+			}
+
+			return window;
+		}
+
+		private static Type GetTypeByElementName(string elementName)
+		{
+			IEnumerable<Type> enumerable = _windows.Where
+				(x => x.Name == elementName);
+			Type[] types = enumerable.ToArray();
+
+			if (types.Any() == false)
+			{
+				throw new Exception($"Не найдено приложение " +
+					$"для элемента {elementName}");
+			}
+			else if (types.Length > 1)
+			{
+				throw new Exception("Было надено больше одного приложения" +
+					$"для элемента {elementName}");
+			}
+			Type type = types[0];
+			return type;
+		}
+
+		private static string GetSenderName(object sender)
+		{
+			if (sender is not FrameworkContentElement element)
+			{
+				throw new ArgumentException($"{sender} не имеет поля Name");
+			}
+
+			return element.Name;
 		}
 
 		private static string MakePathFromTopicName(string name)
@@ -167,8 +200,8 @@ namespace LogisticEBook
 			name = ReplacePart(name, "Topic", string.Empty);
 			name = ReplacePart(name, "Photo_", "/");
 
-			name = "/Resources/" + name + ".jpg";
-			return name;
+			string path = "/Resources/" + name + ".jpg";
+			return path;
 		}
 
 		private static string ReplacePart(string source, string oldPart, string newPart)
