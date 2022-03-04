@@ -104,6 +104,7 @@ namespace LogisticEBook
 				extetion = ".jpg";
 				location = "/Resources/";
 				name = name.Replace("Photo_", "/");
+				name = name.Replace("_", "/");
 			}
 			else if (appType == AppType.Video)
 			{
