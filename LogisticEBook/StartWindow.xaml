@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:LogisticEBook"
         mc:Ignorable="d"
         Title="" Height="450" Width="800"
-		WindowStartupLocation="CenterScreen" Icon="/Resources/Authors/Owl.png" ResizeMode="CanResizeWithGrip">
+		WindowStartupLocation="CenterScreen" Icon="/Resources/Authors/Owl.png" ResizeMode="CanResizeWithGrip" MinWidth="800" MinHeight="450">
 	<Grid Background="Black">
 		<Image Source="/Resources/Backgorund.jpg" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.5">
 			<Image.RenderTransform>

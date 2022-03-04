@@ -19,6 +19,7 @@
 		</Grid.ColumnDefinitions>
 
 		<Button Name="ButtonExit" Grid.Row="0" Content="Вернуться в главное меню" FontSize="14" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Center" Click="ButtonExit_Click" />
+		<Button Name="ButtonSelect" Grid.Row="0" Content="Выделить" FontSize="14" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Center" Click="ButtonSelect_Click" />
 
 
 		<Frame NavigationUIVisibility="Hidden" Grid.Row="1" Name="MainFrame" Background="AliceBlue"/>
