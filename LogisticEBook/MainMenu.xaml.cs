@@ -25,6 +25,7 @@ namespace LogisticEBook
 	/// </summary>
 	public partial class MainMenu : Window
 	{
+		private const int ChaptersCount = 3;
 		private string _name = string.Empty;
 
 		public MainMenu()
@@ -186,8 +187,8 @@ namespace LogisticEBook
 			_name = RemovePrefix(_name);
 			try
 			{
-				Assembly assembly = Assembly.GetExecutingAssembly();
-				Type pageType = assembly.GetType("LogisticEBook.Pages.Page" + _name);
+				Type pageType = GetPageType();
+
 				dynamic page = Activator.CreateInstance(pageType);
 
 				Reader reader = new(page);
@@ -195,8 +196,28 @@ namespace LogisticEBook
 			}
 			catch
 			{
-				MessageBox.Show("Тема в разработке");
+				MessageBox.Show($"Тема в разработке");
 			}
+		}
+
+		private Type GetPageType()
+		{
+			Assembly assembly = Assembly.GetExecutingAssembly();
+			Type pageType = assembly.GetType("LogisticEBook.Pages.Page" + _name);
+			if (pageType != null)
+			{
+				return pageType;
+			}
+
+			// Проверка на дурака (меня).
+			// чтобы всё корректно работало - страницу нужно сначала создавать в папке Pages
+			// и только потом перемещать в соответствующий Chapter, ну либо менять namespace
+			for (int i = 0; i < ChaptersCount; i++)
+			{
+				pageType ??= assembly.GetType($"LogisticEBook.Pages.Chapter{i + 1}.Page{_name}");
+			}
+
+			return pageType;
 		}
 
 		private static string RemovePrefix(string originString)

@@ -233,8 +233,14 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic2_8">
 						2.8 Устройства для механизации вспомогательных операций
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph TextIndent="40">
+					<Hyperlink Name="Presentation2_8">
+						Презентация
 					</Hyperlink>
 				</Paragraph>
 
@@ -243,31 +249,43 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic3_1">
 						3.1 Устройства для разгрузки грузов из крытых вагонов
 					</Hyperlink>
 				</Paragraph>
 
-				<Paragraph>
-					<Hyperlink>
-						3.2 Устройства для разгрузки грузов из полувагонов и платформ
+				<Paragraph TextIndent="40">
+					<Hyperlink Name="Presentation3_1">
+						Презентация
 					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic3_2">
+						3.2 Устройства для разгрузки грузов из полувагонов и платформ
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph TextIndent="40">
+					<Hyperlink Name="Presentation3_2">
+						Презентация
+					</Hyperlink>
+				</Paragraph>
+
+				<Paragraph>
+					<Hyperlink Name="Topic3_3">
 						3.3 Устройства для погрузки грузов в вагоны
 					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic3_4">
 						3.4 Устройства для погрузки и выгрузки грузов из автомобилей
 					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic3_5">
 						3.5 Требования к технологии и организации погрузочно-разгрузочных работ
 					</Hyperlink>
 				</Paragraph>
@@ -277,19 +295,25 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic4_1">
 						4.1 Общие вопросы механизации и автоматизации складских работ
 					</Hyperlink>
 				</Paragraph>
 
+				<Paragraph TextIndent="40">
+					<Hyperlink Name="Presentation4_1">
+						Презентация
+					</Hyperlink>
+				</Paragraph>
+				
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic4_2">
 						4.2 Механизированные и автоматизированные склады тарно-штучных грузов и гибких автоматизированных производств
 					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic4_3">
 						4.3 Механизация вспомогательных операций на складах
 					</Hyperlink>
 				</Paragraph>
@@ -299,19 +323,25 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic5_1">
 						5.1 Общая структура асу промышленного предприятия
 					</Hyperlink>
 				</Paragraph>
 
+				<Paragraph TextIndent="40">
+					<Hyperlink Name="Presentation5_1">
+						Презентация
+					</Hyperlink>
+				</Paragraph>
+
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic5_2">
 						5.2 Автоматизированные системы управления технологическими процессами организаций и складов
 					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>
-					<Hyperlink>
+					<Hyperlink Name="Topic5_3">
 						5.3 Системы автоматического управления подъемно-транспортным оборудованием на складах
 					</Hyperlink>
 				</Paragraph>
