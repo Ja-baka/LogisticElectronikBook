@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LogisticEBook.Quizes"
         mc:Ignorable="d"
-        Title="Викторина" Height="600" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Викторина" Height="600" Width="800" WindowStartupLocation="CenterScreen" Icon="/Resources/Authors/Owl.png" ResizeMode="CanResizeWithGrip">
 	<Grid x:Name="MainGrid">
 		<Grid.Resources>
 			<Style TargetType="TextBlock">

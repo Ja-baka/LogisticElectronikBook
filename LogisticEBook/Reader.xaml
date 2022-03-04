@@ -8,7 +8,7 @@
 		Title="Электронный учебник Логистика" 
 		Height="450" 
 		Width="800"
-		WindowStartupLocation="CenterScreen">
+		WindowStartupLocation="CenterScreen" Icon="/Resources/Authors/Owl.png" ResizeMode="CanResizeWithGrip">
 	<Grid Background="White">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="50"/>
