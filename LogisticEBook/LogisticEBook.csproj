@@ -121,6 +121,8 @@
     <None Remove="Resources\3_4\1.jpg" />
     <None Remove="Resources\3_4\2.jpg" />
     <None Remove="Resources\3_4\3.jpg" />
+    <None Remove="Resources\4_1\1.jpg" />
+    <None Remove="Resources\4_3\1.jpg" />
     <None Remove="Resources\Authors\Owl.png" />
     <None Remove="Resources\Backgorund.jpg" />
   </ItemGroup>
@@ -481,12 +483,22 @@
     <Resource Include="Resources\3_4\3.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\4_1\1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\4_3\1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Authors\Owl.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Backgorund.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\Chapter4\" />
   </ItemGroup>
 
 </Project>
