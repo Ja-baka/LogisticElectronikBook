@@ -19,7 +19,11 @@
 		</Grid.ColumnDefinitions>
 
 		<Button Name="ButtonExit" Grid.Row="0" Content="Вернуться в главное меню" FontSize="14" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Center" Click="ButtonExit_Click" />
-		<Button Name="ButtonSelect" Grid.Row="0" Content="Выделить" FontSize="14" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Center" Click="ButtonSelect_Click" />
+
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+			<Button Name="ButtonDeselect" Grid.Row="0" Content="Отменить выделение" FontSize="14" Margin="10" Click="ButtonDeselect_Click" />
+			<Button Name="ButtonSelect" Grid.Row="0" Content="Выделить" FontSize="14" Margin="10" Click="ButtonSelect_Click" />
+		</StackPanel>
 
 
 		<Frame NavigationUIVisibility="Hidden" Grid.Row="1" Name="MainFrame" Background="AliceBlue"/>

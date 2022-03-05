@@ -17,6 +17,7 @@ using System.Xml.Linq;
 using LogisticEBook.Pages;
 using System.Runtime.InteropServices;
 using static LogisticEBook.Reader;
+//using Microsoft.Office.Interop.Word;
 
 namespace LogisticEBook
 {
@@ -43,22 +44,43 @@ namespace LogisticEBook
 		{
 			try
 			{
-				if (MainFrame.Content is not IFlowDocument page)
-				{
-					return;
-				}
-
-				TextPointer potStart = page.FlowDocumentReader.Selection.Start;
-				TextPointer potEnd = page.FlowDocumentReader.Selection.End;
-				TextRange range = new(potStart, potEnd);
-
-				MessageBox.Show("Выделенный текст:\n" + range.Text);
-
+				TextRange range = GetSelectedText();
+				range.ApplyPropertyValue(TextElement.BackgroundProperty, Brushes.Yellow);
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show("bruh:\n" + ex.Message + "\n" + ex.StackTrace);
+				HandleExeption(ex);
 			}
+		}
+		
+
+		private void ButtonDeselect_Click(object sender, RoutedEventArgs e)
+		{
+			try
+			{
+				TextRange range = GetSelectedText();
+				range.ApplyPropertyValue(TextElement.BackgroundProperty, Brushes.Transparent);
+			}
+			catch (Exception ex)
+			{
+				HandleExeption(ex);
+			}
+		}
+
+		private static void HandleExeption(Exception ex)
+			=> MessageBox.Show($"{ex.Message} \n {ex.StackTrace}");
+
+		private TextRange GetSelectedText()
+		{
+			if (MainFrame.Content is not IFlowDocument page)
+			{
+				throw new Exception("Страница не реализует интерфейс IFlowDocument");
+			}
+
+			TextPointer textSelectionStart = page.FlowDocumentReader.Selection.Start;
+			TextPointer textSelectionEnd = page.FlowDocumentReader.Selection.End;
+			TextRange range = new(textSelectionStart, textSelectionEnd);
+			return range;
 		}
 	}
 }
