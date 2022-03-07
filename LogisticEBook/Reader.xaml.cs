@@ -39,36 +39,28 @@ namespace LogisticEBook
 			Close();
 		}
 
-
 		private void ButtonSelect_Click(object sender, RoutedEventArgs e)
 		{
-			try
-			{
-				TextRange range = GetSelectedText();
-				range.ApplyPropertyValue(TextElement.BackgroundProperty, Brushes.Yellow);
-			}
-			catch (Exception ex)
-			{
-				HandleExeption(ex);
-			}
+			ChangeBackground(Brushes.Yellow);
 		}
-		
 
 		private void ButtonDeselect_Click(object sender, RoutedEventArgs e)
 		{
+			ChangeBackground(Brushes.Transparent);
+		}
+
+		private void ChangeBackground(SolidColorBrush brush)
+		{
 			try
 			{
 				TextRange range = GetSelectedText();
-				range.ApplyPropertyValue(TextElement.BackgroundProperty, Brushes.Transparent);
+				range.ApplyPropertyValue(TextElement.BackgroundProperty, brush);
 			}
 			catch (Exception ex)
 			{
-				HandleExeption(ex);
+				MessageBox.Show($"{ex.Message} \n {ex.StackTrace}");
 			}
 		}
-
-		private static void HandleExeption(Exception ex)
-			=> MessageBox.Show($"{ex.Message} \n {ex.StackTrace}");
 
 		private TextRange GetSelectedText()
 		{

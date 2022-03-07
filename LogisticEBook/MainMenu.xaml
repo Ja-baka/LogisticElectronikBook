@@ -124,16 +124,25 @@
 						Презентация
 					</Hyperlink>
 				</Paragraph>
+				<Paragraph  TextIndent="40">
+					<Hyperlink Name="Test1_5">
+						Тест
+					</Hyperlink>
+				</Paragraph>
 
 				<Paragraph>
 					<Hyperlink Name="Topic1_6">
 						1.6 Устройства для хранения сыпучих грузов
 					</Hyperlink>
 				</Paragraph>
-
 				<Paragraph TextIndent="40">
 					<Hyperlink Name="Presentation1_6">
 						Презентация
+					</Hyperlink>
+				</Paragraph>
+				<Paragraph TextIndent="40">
+					<Hyperlink Name="Test1_6">
+						Тест
 					</Hyperlink>
 				</Paragraph>
 
@@ -142,9 +151,13 @@
 						1.7 Устройства для хранения жидких грузов
 					</Hyperlink>
 				</Paragraph>
-
 				<Paragraph TextIndent="0" FontWeight="Bold">
 					Раздел 2. Средства механизации складских работ
+				</Paragraph>
+				<Paragraph  TextIndent="40">
+					<Hyperlink Name="Test1_7">
+						Тест
+					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>

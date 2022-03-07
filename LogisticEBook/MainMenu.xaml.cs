@@ -114,6 +114,19 @@ namespace LogisticEBook
 
 		private void OpenTest()
 		{
+			MessageBoxResult result = MessageBox.Show
+			(
+				"Тестирование проводится на базе Moodle "
+				+ "и тест будет доступен во время соответствующего занятия",
+				"Информация",
+				MessageBoxButton.OKCancel,
+				MessageBoxImage.Information
+			);
+			if (result == MessageBoxResult.Cancel)
+			{
+				return;
+			}
+
 			_name = RemovePrefix(_name);
 
 			string fileName = _name switch
@@ -122,6 +135,9 @@ namespace LogisticEBook
 				"1_2" => @"http://82.209.208.36:8080/moodle/mod/quiz/view.php?id=9116",
 				"1_3" => @"http://82.209.208.36:8080/moodle/mod/quiz/view.php?id=8407",
 				"1_4" => @"http://82.209.208.36:8080/moodle/mod/quiz/view.php?id=8411",
+				"1_5" => @"http://82.209.208.36:8080/moodle/mod/quiz/view.php?id=9117",
+				"1_6" => @"http://82.209.208.36:8080/moodle/mod/quiz/view.php?id=9401",
+				"1_7" => @"http://82.209.208.36:8080/moodle/mod/quiz/view.php?id=9402",
 				_ => string.Empty,
 			};
 
@@ -130,11 +146,6 @@ namespace LogisticEBook
 				MessageBox.Show("Тест в разработке");
 				return;
 			}
-
-			string message = "Тестирование проводится на базе Moodle " +
-				"и тест будет доступен во время соответствующего занятия";
-
-			MessageBox.Show(message, "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Information);
 
 			ProcessStartInfo processStartInfo = new(fileName)
 			{
