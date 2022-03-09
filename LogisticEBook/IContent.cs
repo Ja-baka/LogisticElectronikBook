@@ -2,6 +2,6 @@
 {
 	public interface IContent
 	{
-		System.Windows.Controls.FlowDocumentReader DocumentContent { get; }
+		System.Windows.Controls.FlowDocumentReader DocumentViewer { get; }
 	}
 }

@@ -25,11 +25,6 @@ namespace LogisticEBook.Pages
 			InitializeComponent();
 		}
 
-		public FlowDocumentReader DocumentContent => Reader;
-
-		private void OpenPopUp(object sender, MouseEventArgs e)
-		{
-			PopUp.ShowInAppsViewer(sender);
-		}
+		public FlowDocumentReader DocumentViewer => Reader;
 	}
 }

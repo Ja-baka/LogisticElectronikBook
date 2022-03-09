@@ -71,8 +71,8 @@ namespace LogisticEBook
 				throw new Exception("Страница не реализует интерфейс IFlowDocument");
 			}
 
-			TextPointer textSelectionStart = page.DocumentContent.Selection.Start;
-			TextPointer textSelectionEnd = page.DocumentContent.Selection.End;
+			TextPointer textSelectionStart = page.DocumentViewer.Selection.Start;
+			TextPointer textSelectionEnd = page.DocumentViewer.Selection.End;
 			TextRange range = new(textSelectionStart, textSelectionEnd);
 			return range;
 		}
@@ -88,9 +88,9 @@ namespace LogisticEBook
 
 				string path = "mydoc.xaml";
 				using FileStream fs = File.Open(path, FileMode.Create);
-				if (page.DocumentContent.Document != null)
+				if (page.DocumentViewer.Document != null)
 				{
-					XamlWriter.Save(page.DocumentContent.Document, fs);
+					XamlWriter.Save(page.DocumentViewer.Document, fs);
 					MessageBox.Show("Файл сохранен");
 				}
 			}
