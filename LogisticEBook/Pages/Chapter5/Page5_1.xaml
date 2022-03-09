@@ -16,7 +16,7 @@
 						<Setter Property="Margin" Value="10"/>
 						<Setter Property="TextIndent" Value="20"/>
 					</Style>
-					<Style TargetType="Span">
+					<Style TargetType="Hyperlink">
 						<Setter Property="FontWeight" Value="Bold"/>
 						<Setter Property="Cursor" Value="Hand"/>
 						<Setter Property="FontStyle" Value="Italic"/>

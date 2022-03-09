@@ -111,9 +111,9 @@
 
 				<Paragraph Style="{StaticResource Title}">
 					5.2.3.
-					<Span Name="Topic5_2Photo_1">
+					<Hyperlink Name="Topic5_2Photo_1">
 						Принцип работы WMS
-					</Span>
+					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>

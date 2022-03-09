@@ -36,17 +36,17 @@
 				<List>
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_2Photo_1">
+							<Hyperlink Name="Topic1_2Photo_1">
 								первичную грузовую единицу
-							</Span>
+							</Hyperlink>
 							– груз в транспортной таре, например, в ящиках, бочках, мешках и т. п.;
 						</Paragraph>
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_2Photo_2">
+							<Hyperlink Name="Topic1_2Photo_2">
 								укрупненную грузовую единицу
-							</Span>
+							</Hyperlink>
 							– грузовой пакет, сформированный на поддоне из первичных грузовых единиц.
 						</Paragraph>
 					</ListItem>
@@ -159,17 +159,17 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="Topic1_2Photo_3">
+					<Hyperlink Name="Topic1_2Photo_3">
 						Поддоны
-					</Span>
+					</Hyperlink>
 					представляют собой устройства, предназначенные для формирования грузовых пакетов, штабелирования и транспортирования грузов. По своему использованию они универсальны.
 				</Paragraph>
 
 				<Paragraph>
 					Основные габаритные
-					<Span Name="Topic1_2Photo_4">
+					<Hyperlink Name="Topic1_2Photo_4">
 						размеры паллет:
-					</Span>
+					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>
@@ -279,9 +279,9 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="Topic1_2Photo_5">
+					<Hyperlink Name="Topic1_2Photo_5">
 						Стоечные поддоны
-					</Span>
+					</Hyperlink>
 					отличаются от плоских тем, что они имеют стойки, которые позволяют делать многоярусную укладку поддонов и предназначены для пакетирования и хранения легкоповреждаемых штучных грузов (товары в картонных коробках, фольге, бумаге и т. д.).
 				</Paragraph>
 
@@ -290,9 +290,9 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="Topic1_2Photo_6">
+					<Hyperlink Name="Topic1_2Photo_6">
 						Ящичные поддоны
-					</Span>
+					</Hyperlink>
 					используются для мелкоштучных и легкоповреждаемых товаров, которые не могут быть уложены на плоские или стоечные поддоны (свертки, связки и т. п.)
 				</Paragraph>
 
@@ -322,13 +322,13 @@
 
 				<Paragraph>
 					Пакетирование может осуществляться
-					<Span Name="Topic1_2Video_7">
+					<Hyperlink Name="Topic1_2Video_7">
 						вручную с помощью оброллера
-					</Span>
+					</Hyperlink>
 					или
-					<Span Name="Topic1_2Video_8">
+					<Hyperlink Name="Topic1_2Video_8">
 						с помощью упаковочных устройств (автоматизированных обмотчиков)
-					</Span>
+					</Hyperlink>
 					и др.
 				</Paragraph>
 

@@ -24,18 +24,18 @@
 				<List>
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_5Photo_1">
+							<Hyperlink Name="Topic1_5Photo_1">
 								стеллажный,
-							</Span>
+							</Hyperlink>
 							при котором тарно-штучные товары могут храниться как в упакованном, так и в распакованном виде. Он связан с широкой внутрискладской подсортировкой товаров;
 						</Paragraph>
 					</ListItem>
 
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_5Photo_2">
+							<Hyperlink Name="Topic1_5Photo_2">
 								штабельный,
-							</Span>
+							</Hyperlink>
 							при котором товары хранятся в основном в таре, без распаковки с использованием различных типов поддонов (плоских, стоечных, ящичных).
 						</Paragraph>
 					</ListItem>
@@ -100,9 +100,9 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="Topic1_5Photo_3">
+					<Hyperlink Name="Topic1_5Photo_3">
 						Стеллаж
-					</Span>
+					</Hyperlink>
 					– это стационарная сборно-разборная многоярусная конструкция, предназначенная для хранения тарных и штучных грузов.
 				</Paragraph>
 
@@ -110,9 +110,9 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="Topic1_5Presentation_4">
+					<Hyperlink Name="Topic1_5Presentation_4">
 						Конструкция стеллажей
-					</Span>
+					</Hyperlink>
 					зависит от вида хранимых материалов и размеров помещений.
 				</Paragraph>
 
@@ -122,9 +122,9 @@
 
 				<Paragraph>
 					В зависимости от назначения выделяют следующие
-					<Span Name="Topic1_5Video_5">
+					<Hyperlink Name="Topic1_5Video_5">
 						виды стеллажей:
-					</Span>
+					</Hyperlink>
 				</Paragraph>
 
 				<List>
@@ -135,23 +135,23 @@
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_5Video_6">
+							<Hyperlink Name="Topic1_5Video_6">
 								мезонинные (многоэтажные);
-							</Span>
+							</Hyperlink>
 						</Paragraph>
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_5Video_7">
+							<Hyperlink Name="Topic1_5Video_7">
 								универсальные паллетные;
-							</Span>
+							</Hyperlink>
 						</Paragraph>
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_5Video_8">
+							<Hyperlink Name="Topic1_5Video_8">
 								консольные;
-							</Span>
+							</Hyperlink>
 						</Paragraph>
 					</ListItem>
 					<ListItem>

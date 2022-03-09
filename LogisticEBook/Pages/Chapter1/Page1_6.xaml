@@ -87,9 +87,9 @@
 				</Paragraph>
 
 				<Paragraph TextAlignment="Center">
-					<Span Name="Topic1_6Photo_1">
+					<Hyperlink Name="Topic1_6Photo_1">
 						Рисунок 10
-					</Span>
+					</Hyperlink>
 				</Paragraph>
 				
 				<Paragraph>
@@ -97,9 +97,9 @@
 				</Paragraph>
 
 				<Paragraph TextAlignment="Center">
-					<Span Name="Topic1_6Photo_2">
+					<Hyperlink Name="Topic1_6Photo_2">
 						Рисунок 11
-					</Span>
+					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>
@@ -107,9 +107,9 @@
 				</Paragraph>
 
 				<Paragraph TextAlignment="Center">
-					<Span Name="Topic1_6Photo_3">
+					<Hyperlink Name="Topic1_6Photo_3">
 						Рисунок 12
-					</Span>
+					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>
@@ -120,9 +120,9 @@
 				</Paragraph>
 
 				<Paragraph TextAlignment="Center">
-					<Span Name="Topic1_6Photo_4">
+					<Hyperlink Name="Topic1_6Photo_4">
 						Рисунок 13
-					</Span>
+					</Hyperlink>
 				</Paragraph>
 
 				<Paragraph>

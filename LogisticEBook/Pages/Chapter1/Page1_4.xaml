@@ -19,9 +19,9 @@
 
 				<Paragraph>
 					Основными
-					<Span Name="Topic1_4Photo_1">
+					<Hyperlink Name="Topic1_4Photo_1">
 						видами
-					</Span>
+					</Hyperlink>
 					конструкций складских зданий и сооружений являются:
 				</Paragraph>
 				<List>
@@ -37,17 +37,17 @@
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_4Photo_2"> 
+							<Hyperlink Name="Topic1_4Photo_2"> 
 								закрытые неотапливаемые или отапливаемые отдельно стоящие здания.
-							</Span>
+							</Hyperlink>
 						</Paragraph>
 					</ListItem>
 				</List>
 
 				<Paragraph>
-					<Span Name="Topic1_4Photo_3">
+					<Hyperlink Name="Topic1_4Photo_3">
 						Открытые складские площадки
-					</Span>
+					</Hyperlink>
 					- это щебеночные, мощенные брусчаткой, асфальтовые, бетонные площадки, на которых хранят разнообразные виды неупакованных, массовых и навалочных грузов (сыпучие, тарно-штучные, крупногабаритные и длинномерные, лесные грузы, прокат черных металлов и других грузов), которые по технологическим требованиям допускают хранение на открытом воздухе, т.е. не боящихся воздействия атмосферных осадков и перепадов температуры, качество грузов от этого не снизится.
 				</Paragraph>
 
@@ -58,9 +58,9 @@
 				<List MarkerStyle="Decimal">
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_4Photo_4">
+							<Hyperlink Name="Topic1_4Photo_4">
 								без стен, с крышей на столбах;
-							</Span>
+							</Hyperlink>
 						</Paragraph>
 					</ListItem>
 					<ListItem>
@@ -135,9 +135,9 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="Topic1_4Photo_5">
+					<Hyperlink Name="Topic1_4Photo_5">
 						Главными конструктивными элементами универсального складского здания
-					</Span>
+					</Hyperlink>
 					являются: фундаменты, стены, колонны, рампы, полы, междуэтажные перекрытия, верхнее покрытие, кровля, перегородки, двери, окна и световые фонари.
 				</Paragraph>
 
