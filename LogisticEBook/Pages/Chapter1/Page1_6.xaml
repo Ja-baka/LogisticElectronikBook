@@ -29,7 +29,7 @@
 					</Style>
 				</FlowDocument.Resources>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					1.6 УСТРОЙСТВА ДЛЯ ХРАНЕНИЯ СЫПУЧИХ ГРУЗОВ
 					<LineBreak/>
 					1.6.1. Общая характеристика устройств для хранения сыпучих грузов
@@ -59,7 +59,7 @@
 				<Paragraph>
 					В целях экономии складской площади за счет увеличения высоты слоя хранимого товара применяют щиты ограждения. Деревянные или бетонные щиты используют как на открытых складских площадках, так и в закрытых помещениях.
 				</Paragraph>
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					1.6.2. Классификация закрытых складов сыпучих грузов
 				</Paragraph>
 				<Paragraph>
@@ -93,7 +93,7 @@
 					Закрытые склады сыпучих грузов классифицируются также по роду грузов, назначению и т.д.
 				</Paragraph>
 
-				<Paragraph  TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph  Style="{StaticResource Title}">
 					1.6.3. Характеристика основных видов закрытых складов сыпучих грузов
 				</Paragraph>
 

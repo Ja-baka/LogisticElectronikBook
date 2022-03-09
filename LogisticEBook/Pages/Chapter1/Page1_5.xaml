@@ -29,7 +29,7 @@
 					</Style>
 				</FlowDocument.Resources>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					1.5. СТЕЛЛАЖНОЕ ОБОРУДОВАНИЕ
 					<LineBreak/>
 					1.5.1. Способы хранения тарно-штучных грузов
@@ -113,7 +113,7 @@
 				<Paragraph>Использование штабельного хранения имеет следующие недостатки: при хранении пакетированных грузов высота склада используется ограниченно, примерно лишь до 3,5 – 4 м (в зависимости от вида груза), из-за неустойчивости штабелей при увеличении их высоты; продукция при укладке и хранении в штабели может повреждаться; невозможно обеспечить эффективную организацию работ в многономенклатурных складах.
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					1.5.2. Стеллажное оборудование
 				</Paragraph>
 

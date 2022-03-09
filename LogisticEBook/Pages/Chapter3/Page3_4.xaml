@@ -28,7 +28,7 @@
 					</Style>
 				</FlowDocument.Resources>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					3.4. УСТРОЙСТВА ДЛЯ ПОГРУЗКИ И ВЫГРУЗКИ ГРУЗОВ ИЗ АВТОМОБИЛЕЙ
 					<LineBreak/>
 					3.4.1. Разгрузка сыпучих грузов из автомобилей
@@ -52,7 +52,7 @@
 					</Span>
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					3.4.2. Устройства для выгрузки из автомобилей тарно-штучных грузов
 				</Paragraph>
 

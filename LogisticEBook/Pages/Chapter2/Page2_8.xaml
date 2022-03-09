@@ -29,7 +29,7 @@
 					</Style>
 				</FlowDocument.Resources>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					2.8. УСТРОЙСТВА ДЛЯ МЕХАНИЗАЦИИ ВСПОМОГАТЕЛЬНЫХ ОПЕРАЦИЙ
 					<LineBreak/>
 					2.8.1. Классификация вспомогательного оборудование складов
@@ -51,7 +51,7 @@
 					– ремонтное оборудование (ремонтная мастерская, тарная мастерская, зарядная станция для аккумуляторов)
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					2.8.2. Вспомогательное технологическое оборудование
 				</Paragraph>
 
@@ -196,7 +196,7 @@
 					– по принципу действия – непрерывного и периодического действия.
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					2.8.3. Внешнее складское оборудование
 				</Paragraph>
 

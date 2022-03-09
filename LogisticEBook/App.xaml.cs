@@ -13,5 +13,9 @@ namespace LogisticEBook
 	/// </summary>
 	public partial class App : Application
 	{
+		private void Hyperlink_Click(object sender, RoutedEventArgs e)
+		{
+			PopUp.ShowInAppsViewer(sender);
+		}
 	}
 }

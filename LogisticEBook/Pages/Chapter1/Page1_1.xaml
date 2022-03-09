@@ -12,40 +12,22 @@
 	<Grid Background="#f5e8ae">
 		<FlowDocumentReader x:Name="Reader" ViewingMode="Scroll">
 			<FlowDocument FontFamily="Segoe UI">
-				<FlowDocument.Resources>
-					<Style TargetType="Paragraph">
-						<Setter Property="Margin" Value="10"/>
-						<Setter Property="TextIndent" Value="20"/>
-					</Style>
-					<Style TargetType="Span">
-						<Setter Property="FontWeight" Value="Bold"/>
-						<Setter Property="Cursor" Value="Hand"/>
-						<Setter Property="FontStyle" Value="Italic"/>
-						<Setter Property="Foreground" Value="CornflowerBlue"/>
-						<EventSetter Event="MouseDown"  Handler="OpenPopUp"/>
-					</Style>
-					<Style TargetType="List">
-						<Setter Property="Margin" Value="10"/>
-					</Style>
-				</FlowDocument.Resources>
-
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">	
 					РАЗДЕЛ 1 ОБОРУДОВАНИЕ, СООРУЖЕНИЯ И УСТРОЙСТВА ДЛЯ ХРАНЕНИЯ ГРУЗОВ
 					<LineBreak/>
 					ГРУЗЫ И УСТРОЙСТВА ДЛЯ ИХ ХРАНЕНИЯ
 					<LineBreak/>
 					1.1.1. Классификация и характеристика грузов
 				</Paragraph>
-			
-					
+
 				<Paragraph>
 					В логистике главным материальным компонентом являются сами грузы, для которых и проектируется вся система рациональной организации грузопотока, наиболее эффективное перемещение, которых от пункта зарождения грузопотока к конечным потребителям и представляет основную задачу логистики.
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="Topic1_1Photo_1">
+					<Hyperlink Name="Topic1_1Photo_1">
 						Груз
-					</Span>
+					</Hyperlink>
 					– это все предметы с момента принятия их к транспортировке у заказчика до сдачи получателю.
 				</Paragraph>
 
@@ -58,9 +40,9 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="Topic1_1Photo_2">
+					<Hyperlink Name="Topic1_1Photo_2">
 						Твердые грузы
-					</Span>
+					</Hyperlink>
 					 образуют обширную группу штучных грузов, которые могут быть классифицированы по нескольким признакам: по способам транспортировки (перевозимые в открытом и в крытом подвижном составе, автотранспортом); по назначению и отраслям народного хозяйства (металл, лесные грузы, изделия лёгкой промышленности, каучук и резинотехнические изделия, бумага и целлюлоза, строительные материалы, волокнистые грузы, промышленные товары народного потребления, химические материалы и т. д.); по способам переработки и складирования (тарно-штучные, длинномерные, крупногабаритные, контейнеры и т.д.).
 				</Paragraph>
 
@@ -69,24 +51,24 @@
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="Topic1_1Photo_3">
+					<Hyperlink Name="Topic1_1Photo_3">
 						Сыпучие грузы
-					</Span>
+					</Hyperlink>
 					делятся на две большие группы по технологии и условиям перевозок и хранения: грузы открытого хранения, перевозимые в открытом транспорте и подвижном составе (песок, щебень, песчано-гравийная смесь, руда, уголь); грузы закрытого хранения, транспортируемые обычно в крытом транспорте и подвижном составе (цемент, зерно, химические материалы, минеральные удобрения).
 				</Paragraph>
 
 				<Paragraph>
 					К
-					<Span Name="Topic1_1Photo_4">
+					<Hyperlink Name="Topic1_1Photo_4">
 						жидким грузам
-					</Span>
+					</Hyperlink>
 					относят нефть, бензин, керосин, дизельное и моторное топливо, мазут, растительные масла и др.
 				</Paragraph>
 
 				<Paragraph>
-					<Span Name="Topic1_1Photo_5">
+					<Hyperlink Name="Topic1_1Photo_5">
 						Газообразные грузы
-					</Span>
+					</Hyperlink>
 					- пропан, азот и др.
 				</Paragraph>
 
@@ -96,13 +78,13 @@
 
 				<Paragraph>
 					По условиям хранения и перевозки грузы делятся на
-					<Span Name="Topic1_1Photo_6">
+					<Hyperlink Name="Topic1_1Photo_6">
 						пять групп:
-					</Span>
+					</Hyperlink>
 					обычные, скоропортящиеся (мясо, рыба, фрукты), с резким запахом (краска, бензин), антисанитарные (отходы, мусор), живность.
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					1.1.2. Классификация устройств для хранения грузов
 				</Paragraph>
 
@@ -116,23 +98,23 @@
 						<List>
 							<ListItem>
 								<Paragraph>
-									<Span Name="Topic1_1Photo_7">
+									<Hyperlink Name="Topic1_1Photo_7">
 										устройства для хранения тарно-штучных грузов;
-									</Span>
+									</Hyperlink>
 								</Paragraph>
 							</ListItem>
 							<ListItem>
 								<Paragraph>
-									<Span Name="Topic1_1Photo_8">
+									<Hyperlink Name="Topic1_1Photo_8">
 										для хранения навалочных и насыпных грузов;
-									</Span>
+									</Hyperlink>
 								</Paragraph>
 							</ListItem>
 							<ListItem>
 								<Paragraph>
-									<Span Name="Topic1_1Photo_9">
+									<Hyperlink Name="Topic1_1Photo_9">
 										для хранения наливных грузов и газообразных грузов;
-									</Span>
+									</Hyperlink>
 								</Paragraph>
 							</ListItem>
 						</List>
@@ -142,9 +124,9 @@
 						<List>
 							<ListItem>
 								<Paragraph>
-									<Span Name="Topic1_1Photo_10">
+									<Hyperlink Name="Topic1_1Photo_10">
 										стационарные;
-									</Span>
+									</Hyperlink>
 								</Paragraph>
 							</ListItem>
 							<ListItem>
@@ -191,9 +173,9 @@
 							</ListItem>
 							<ListItem>
 								<Paragraph>
-									<Span Name="Topic1_1Photo_11">
+									<Hyperlink Name="Topic1_1Photo_11">
 										комбинированные;
-									</Span>
+									</Hyperlink>
 								</Paragraph>
 							</ListItem>
 						</List>
@@ -205,16 +187,16 @@
 						<List>
 							<ListItem>
 								<Paragraph>
-									<Span Name="Topic1_1Photo_12">
+									<Hyperlink Name="Topic1_1Photo_12">
 										со специальным оборудованием;
-									</Span>
+									</Hyperlink>
 								</Paragraph>
 							</ListItem>
 							<ListItem>
 								<Paragraph>
-									<Span Name="Topic1_1Photo_13">
+									<Hyperlink Name="Topic1_1Photo_13">
 										без специального оборудования и сооружений;
-									</Span>
+									</Hyperlink>
 								</Paragraph>
 							</ListItem>
 							<ListItem>
@@ -229,18 +211,18 @@
 							</ListItem>
 							<ListItem>
 								<Paragraph>
-									<Span Name="Topic1_1Photo_14">
+									<Hyperlink Name="Topic1_1Photo_14">
 										высотные;
-									</Span>
+									</Hyperlink>
 								</Paragraph>
 							</ListItem>
 						</List>
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_1Photo_15">
+							<Hyperlink Name="Topic1_1Photo_15">
 								по видам емкостей:
-							</Span>
+							</Hyperlink>
 						</Paragraph>
 						<List>
 							<ListItem>
@@ -262,9 +244,9 @@
 					</ListItem>
 					<ListItem>
 						<Paragraph>
-							<Span Name="Topic1_1Photo_16">
+							<Hyperlink Name="Topic1_1Photo_16">
 								по конструкции:
-							</Span>
+							</Hyperlink>
 						</Paragraph>
 						<List>
 							<ListItem>

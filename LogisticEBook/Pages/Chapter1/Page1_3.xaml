@@ -29,7 +29,7 @@
 					</Style>
 				</FlowDocument.Resources>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					1.3. ОБЩИЕ ТРЕБОВАНИЯ К УСТРОЙСТВАМ ДЛЯ ХРАНЕНИЯ ГРУЗОВ
 					<LineBreak/>
 					1.3.1. Общие требования
@@ -119,7 +119,7 @@
 				</List>
 
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					1.3.2. Требования техники безопасности при ведении работ на складах
 				</Paragraph>
 
@@ -160,7 +160,7 @@
 					</ListItem>
 				</List>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					1.3.3. Требования к устройствам для хранения грузов с учетом их свойств
 				</Paragraph>
 				<Paragraph>

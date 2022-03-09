@@ -31,5 +31,10 @@ namespace LogisticEBook.Pages
 		{
 			PopUp.ShowInAppsViewer(sender);
 		}
+
+		private void Hyperlink_Click(object sender, RoutedEventArgs e)
+		{
+			PopUp.ShowInAppsViewer(sender);
+		}
 	}
 }

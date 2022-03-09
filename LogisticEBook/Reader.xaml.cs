@@ -17,6 +17,8 @@ using System.Xml.Linq;
 using LogisticEBook.Pages;
 using System.Runtime.InteropServices;
 using static LogisticEBook.Reader;
+using System.IO;
+using System.Windows.Markup;
 //using Microsoft.Office.Interop.Word;
 
 namespace LogisticEBook
@@ -73,6 +75,29 @@ namespace LogisticEBook
 			TextPointer textSelectionEnd = page.DocumentContent.Selection.End;
 			TextRange range = new(textSelectionStart, textSelectionEnd);
 			return range;
+		}
+
+		private void ButtonSave_Click(object sender, RoutedEventArgs e)
+		{
+			try
+			{
+				if (MainFrame.Content is not IContent page)
+				{
+					throw new Exception("Страница не реализует интерфейс IFlowDocument");
+				}
+
+				string path = "mydoc.xaml";
+				using FileStream fs = File.Open(path, FileMode.Create);
+				if (page.DocumentContent.Document != null)
+				{
+					XamlWriter.Save(page.DocumentContent.Document, fs);
+					MessageBox.Show("Файл сохранен");
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
+			}
 		}
 	}
 }

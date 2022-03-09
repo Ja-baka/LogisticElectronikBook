@@ -28,7 +28,7 @@
 					</Style>
 				</FlowDocument.Resources>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					2.1. КЛАССИФИКАЦИЯ ПОДЪЕМНО-ТРАНСПОРТНОГО ОБОРУДОВАНИЯ
 					<LineBreak/>
 					2.1.1. Общая характеристика подъемно-транспортного оборудования
@@ -76,7 +76,7 @@
 					При большой высоте хранения товаров применяются сложные подъемно-транспортные механизмы, полностью исключающие ручной труд. На небольших складах используют средства малой механизации: ручные кары и бункерные тележки, транспортеры.
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					2.1.2. Основные требования к складской технике
 				</Paragraph>
 
@@ -124,7 +124,7 @@
 					В настоящее время и в Республике Беларусь, и за рубежом насчитывается небольшое количество полностью автоматизированных складов, использующих системы передачи данных. Эти системы, применяющиеся для обработки документов, учета товарных запасов, комплектования заказов, позволяют автоматизировать технологический процесс обработки товаров и способствуют снижению всех операционных расходов.
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					2.1.3. Классификация подъемно-транспортного оборудования
 				</Paragraph>
 
@@ -220,7 +220,7 @@
 					- погрузочно-разгрузочные машины.
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					2.1.4. Краткая характеристика подъемно-транспортного оборудования
 				</Paragraph>
 

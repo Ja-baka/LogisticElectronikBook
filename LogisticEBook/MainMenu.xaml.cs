@@ -205,9 +205,9 @@ namespace LogisticEBook
 				Reader reader = new(page);
 				reader.ShowDialog();
 			}
-			catch
+			catch (Exception ex)
 			{
-				MessageBox.Show($"Тема в разработке");
+				MessageBox.Show($"Тема в разработке\n{ex.Message}\n{ex.InnerException}");
 			}
 		}
 

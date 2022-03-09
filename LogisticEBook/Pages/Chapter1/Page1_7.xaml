@@ -29,7 +29,7 @@
 					</Style>
 				</FlowDocument.Resources>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					1.7. УСТРОЙСТВА ДЛЯ ХРАНЕНИЯ ЖИДКИХ ГРУЗОВ
 					<LineBreak/>
 					1.7.1. Характеристика устройств для хранения наливных грузов
@@ -95,7 +95,7 @@
 					В настоящее время для хранения и перевозки наливных и сыпучих грузов нередко используют мягкие эластичные контейнеры емкостью от 0,2 до 10 м3 и мягкие резервуары (фото 31). Они характеризуются высокой прочностью на разрыв, износостойкостью и малой массой. Порожние мягкие контейнеры перевозят в сложенном виде.
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					1.7.2. Технология работы складов наливных грузов
 				</Paragraph>
 
@@ -127,7 +127,7 @@
 					– регенерация отработанных жидкостей.
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					1.7.3. Особенности хранения наливных грузов
 				</Paragraph>
 

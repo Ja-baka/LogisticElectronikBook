@@ -29,7 +29,7 @@
 					</Style>
 				</FlowDocument.Resources>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					2.5. МАШИНЫ НЕПРЕРЫВНОГО ДЕЙСТВИЯ
 					<LineBreak/>
 					2.5.1. Классификация машин непрерывного действия
@@ -171,7 +171,7 @@
 					К категории конвейеров без тягового органа можно отнести гидравлические, где груз перемещается вместе с жидкостью по грузопроводу, и пневматические, где грузы в контейнерах перемещаются в трубах сжатым воздухом.
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					2.5.3. Характеристика гидротранспорта и пневмотранспорта
 				</Paragraph>
 

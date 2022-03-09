@@ -28,7 +28,7 @@
 					</Style>
 				</FlowDocument.Resources>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					5.3. СИСТЕМЫ АВТОМАТИЧЕСКОГО УПРАВЛЕНИЯ ПОДЪЁМНО - ТРАНСПОРТНЫМ ОБОРУДОВАНИЕМНА СКЛАДАХ
 					<LineBreak/>
 					5.3.1. Степень автоматизации работы подъемно-транспортного оборудования
@@ -54,7 +54,7 @@
 					В систему автоматического управления складским комплексом входят схемы автоматического управления отдельными видами ПТО: кранами-штабелёрами, манипуляторами и промышленными роботами, конвейерами, пакетоформирующими машинами, перегрузочными устройствами и т. д.
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					5.3.2. Схемы автоматического управления отдельными видами подъемно-транспортного оборудования
 				</Paragraph>
 
@@ -118,7 +118,7 @@
 					Автоматическое управление всем оборудованием склада может производиться с помощью комплекса технических средств для локальных информационно-управляющих систем.
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					5.3.3. Автоматизированные складские системы хранения
 				</Paragraph>
 

@@ -11,30 +11,11 @@
 	<Grid Background="#f5e8ae">
 		<FlowDocumentReader x:Name="Reader" ViewingMode="Scroll">
 			<FlowDocument FontFamily="Segoe UI">
-
-				<FlowDocument.Resources>
-					<Style TargetType="Paragraph">
-						<Setter Property="Margin" Value="10"/>
-						<Setter Property="TextIndent" Value="20"/>
-					</Style>
-					<Style TargetType="Span">
-						<Setter Property="FontWeight" Value="Bold"/>
-						<Setter Property="Cursor" Value="Hand"/>
-						<Setter Property="Foreground" Value="CornflowerBlue"/>
-						<Setter Property="FontStyle" Value="Italic"/>
-						<EventSetter Event="MouseDown"  Handler="OpenPopUp"/>
-					</Style>
-					<Style TargetType="List">
-						<Setter Property="Margin" Value="10"/>
-					</Style>
-				</FlowDocument.Resources>
-
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					1.2 ГРУЗОВАЯ ЕДИНИЦА
 					<LineBreak/>
 					1.2.1. Понятие грузовой единицы, ее виды
 				</Paragraph>
-
 
 				<Paragraph>
 					Одним из ключевых понятий логистики является понятие грузовой единицы. 
@@ -87,7 +68,7 @@
 					Задача выбора размера грузовой единицы может решаться как на уровне склада отдельного предприятия, так и при формировании сквозной логистической цепи. При этом следует принимать во внимание тенденцию укрупнения грузовых единиц в перевозках.
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					1.2.2. Роль грузовой единицы в логистике и её характеристики
 				</Paragraph>
 
@@ -153,7 +134,7 @@
 					</ListItem>
 				</List>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					1.2.3. Базовый модуль
 				</Paragraph>
 
@@ -173,7 +154,7 @@
 					На основании базового модуля разработана единая система унифицированных размеров транспортной тары. Принцип создания этой системы заключается в том, что площадь поддона разделяют на сетку кратных поддону размеров, которые определяют наружные и внутренние размеры транспортной тары.
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					1.2.4. Поддоны (паллеты)
 				</Paragraph>
 
@@ -327,7 +308,7 @@
 					В настоящее время появились специальные шкафные складные поддоны для транспортировки тяжелых материалов (подшипники, скобяные изделия). Обе короткие стороны имеют откидные верхние половины для удобства отбора товаров при штабелировании и укладке на полках. У шкафных и бордюровых поддонов сеточных или полностенных складной конструкции откидную половину делают только на одной длинной стороне. Сеточные поддоны имеют сетки также лишь на длинных стенах. Их короткая сторона сделана из крепленого листового металла. Поддоны предназначены для манипуляции как с легким товаром, так и с тяжелыми материалами.
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					1.2.5. Пакетирование
 				</Paragraph>
 

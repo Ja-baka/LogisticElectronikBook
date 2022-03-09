@@ -28,7 +28,7 @@
 					</Style>
 				</FlowDocument.Resources>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					3.5. ТРЕБОВАНИЯ К ТЕХНОЛОГИИ И ОРГАНИЗАЦИИ ПОГРУЗОЧНО-РАЗГРУЗОЧНЫХ РАБОТ
 					<LineBreak/>
 					3.5.1. Основные мероприятия по технике безопасности при выполнении погрузочно-разгрузочных работ
@@ -66,7 +66,7 @@
 					–	 при возникновении аварийной ситуации работы немедленно прекращают и принимают меры для устранения опасности.
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					3.5.2. Основные требования безопасности при выполнении погрузочно-разгрузочных работ
 				</Paragraph>
 
@@ -102,7 +102,7 @@
 					–	 не допускать к погрузочно-разгрузочным работам работников в непригодной и загрязненной специальной одежде (обуви).
 				</Paragraph>
 
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 					3.5.3. Профилактические меры для обеспечения безопасности погрузочно-разгрузочных работ
 				</Paragraph>
 

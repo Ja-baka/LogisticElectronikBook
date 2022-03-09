@@ -12,24 +12,7 @@
 	<Grid Background="#f5e8ae">
 		<FlowDocumentReader x:Name="Reader" ViewingMode="Scroll">
 			<FlowDocument FontFamily="Segoe UI">
-				<FlowDocument.Resources>
-					<Style TargetType="Paragraph">
-						<Setter Property="Margin" Value="10"/>
-						<Setter Property="TextIndent" Value="20"/>
-					</Style>
-					<Style TargetType="Span">
-						<Setter Property="FontWeight" Value="Bold"/>
-						<Setter Property="Cursor" Value="Hand"/>
-						<Setter Property="FontStyle" Value="Italic"/>
-						<Setter Property="Foreground" Value="CornflowerBlue"/>
-						<EventSetter Event="MouseDown"  Handler="OpenPopUp"/>
-					</Style>
-					<Style TargetType="List">
-						<Setter Property="Margin" Value="10"/>
-					</Style>
-				</FlowDocument.Resources>
-
-				<Paragraph TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold">
+				<Paragraph Style="{StaticResource Title}">
 						Введение
 				</Paragraph>
 				
@@ -43,9 +26,12 @@
 					Склад – это здание, сооружение и разнообразные устройства, предназначенные для приемки, размещения и хранения, поступивших на них товаров, подготовки их к потреблению и отпуску потребителю.
 				</Paragraph>
 				<Paragraph>
-					<Span Name="Topic0Photo_1">
+					<Hyperlink Name="Topic0Photo_1">
 						Склад
-					</Span>
+					</Hyperlink>
+					<!--<Span Name="Topic0Photo_1">
+						Склад
+					</Span>-->
 					- объект транспортно-логистической системы (здание, сооружение, ангар, либо их отдельная часть, либо открытая площадка, либо площадка под навесом), расположенный на изолированной территории или совместно с производственными, торговыми и другими помещениями и предназначенный для приема, хранения, переработки и отправки грузов.
 				</Paragraph>
 				<Paragraph>
