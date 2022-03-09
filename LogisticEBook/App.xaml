@@ -32,5 +32,14 @@
 			<Setter Property="FontWeight" Value="Bold"/>
 			<Setter Property="Margin" Value="0,20,0,0"/>
 		</Style>
+
+		<Style TargetType="FlowDocument">
+			<Setter Property="FontFamily" Value="Segoe UI"/>
+			<Setter Property="Background" Value="#f5e8ae"/>
+		</Style>
+
+		<Style TargetType="FlowDocumentReader">
+			<Setter Property="ViewingMode" Value="Scroll"/>
+		</Style>
 	</Application.Resources>
 </Application>
