@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 using static LogisticEBook.Reader;
 using System.IO;
 using System.Windows.Markup;
-//using Microsoft.Office.Interop.Word;
+using System.Xml;
 
 namespace LogisticEBook
 {
@@ -34,6 +34,15 @@ namespace LogisticEBook
 
 			NavigationService navigation = MainFrame.NavigationService;
 			navigation.Navigate(page);
+
+			if (page is not IContent contentPage)
+			{
+				ButtonDeselect.IsEnabled = false;
+				ButtonSelect.IsEnabled = false;
+				return;
+			}
+
+			LoadPage(contentPage);
 		}
 
 		private void ButtonExit_Click(object sender, RoutedEventArgs e)
@@ -56,20 +65,20 @@ namespace LogisticEBook
 			try
 			{
 				TextRange range = GetSelectedText();
+
 				range.ApplyPropertyValue(TextElement.BackgroundProperty, brush);
+
+				SavePage();
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show($"{ex.Message} \n {ex.StackTrace}");
+				HandleException(ex);
 			}
 		}
 
 		private TextRange GetSelectedText()
 		{
-			if (MainFrame.Content is not IContent page)
-			{
-				throw new Exception("Страница не реализует интерфейс IFlowDocument");
-			}
+			IContent page = MainFrameToContentPage();
 
 			TextPointer textSelectionStart = page.DocumentViewer.Selection.Start;
 			TextPointer textSelectionEnd = page.DocumentViewer.Selection.End;
@@ -77,27 +86,58 @@ namespace LogisticEBook
 			return range;
 		}
 
-		private void ButtonSave_Click(object sender, RoutedEventArgs e)
+		private IContent MainFrameToContentPage()
+		{
+			return MainFrame.Content is IContent page
+				? page
+				: throw new Exception("Страница не реализует интерфейс IFlowDocument");
+		}
+
+
+		private void SavePage()
+		{
+			IContent page = MainFrameToContentPage();
+			string path = $"Pages/{page.GetType().Name}.xaml";
+
+			using FileStream fileStream = File.Open(path, FileMode.Create);
+			if (page.DocumentViewer.Document is FlowDocument document)
+			{
+				XamlWriter.Save(document, fileStream);
+			}
+		}
+
+		private static void LoadPage(IContent page)
 		{
 			try
 			{
-				if (MainFrame.Content is not IContent page)
-				{
-					throw new Exception("Страница не реализует интерфейс IFlowDocument");
-				}
+				string path = $"Pages/{page.GetType().Name}.xaml";
 
-				string path = "mydoc.xaml";
-				using FileStream fs = File.Open(path, FileMode.Create);
-				if (page.DocumentViewer.Document != null)
+				using FileStream fileStream = File.Open(path, FileMode.OpenOrCreate);
+				if (XamlReader.Load(fileStream) is FlowDocument document)
 				{
-					XamlWriter.Save(page.DocumentViewer.Document, fs);
-					MessageBox.Show("Файл сохранен");
+					page.DocumentViewer.Document = document;
 				}
+			}
+			catch (XamlParseException)
+			{
+				// Это исключение вызывается если в файле вся страница,
+				// а не только FlowDocument. Фиксится при сохранении,
+				// поэтому это исключение я игнорирую
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show(ex.Message);
+				HandleException(ex);
 			}
+		}
+
+		private static void HandleException(Exception ex)
+		{
+			MessageBox.Show
+			(
+				$"Message - {ex.Message}\n"
+				+ $"Inner Exception - {ex.InnerException}"
+				+ $"Stack Trace - {ex.StackTrace}\n"
+			);
 		}
 	}
 }

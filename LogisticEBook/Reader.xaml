@@ -12,11 +12,12 @@
 	<Grid Background="White">
 		<Grid.Resources>
 			<Style TargetType="Button">
-				<Setter Property="Margin" Value="10"/>
+				<Setter Property="Margin" Value="5"/>
 				<Setter Property="FontSize" Value="14"/>
 				<Setter Property="Grid.Row" Value="0"/>
 			</Style>
 		</Grid.Resources>
+		
 		<Grid.RowDefinitions>
 			<RowDefinition Height="50"/>
 			<RowDefinition/>
@@ -28,13 +29,9 @@
 		<Button Name="ButtonExit" Content="Вернуться в главное меню" HorizontalAlignment="Left" VerticalAlignment="Center" Click="ButtonExit_Click" />
 
 		<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
-			<Button Name="ButtonSave" Content="Сохранить" Click="ButtonSave_Click" />
-			<Button Name="ButtonDeselect" Content="Отменить выделение" Click="ButtonDeselect_Click" />
+			<Button Name="ButtonDeselect" Content="Удалить выделение" Click="ButtonDeselect_Click" />
 			<Button Name="ButtonSelect" Content="Выделить" Click="ButtonSelect_Click" />
 		</StackPanel>
-
-
 		<Frame NavigationUIVisibility="Hidden" Grid.Row="1" Name="MainFrame" Background="AliceBlue"/>
 	</Grid>
-
 </Window>
