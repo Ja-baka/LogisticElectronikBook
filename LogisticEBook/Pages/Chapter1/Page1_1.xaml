@@ -10,9 +10,8 @@
 	  Title="Тема 1.1">
 
 	<Grid Background="#f5e8ae">
-		<FlowDocumentReader ViewingMode="Scroll">
+		<FlowDocumentReader x:Name="Reader" ViewingMode="Scroll">
 			<FlowDocument FontFamily="Segoe UI">
-
 				<FlowDocument.Resources>
 					<Style TargetType="Paragraph">
 						<Setter Property="Margin" Value="10"/>

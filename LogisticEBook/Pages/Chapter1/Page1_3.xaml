@@ -9,7 +9,7 @@
       Title="Page1_3">
 
 	<Grid Background="#f5e8ae">
-		<FlowDocumentReader ViewingMode="Scroll">
+		<FlowDocumentReader x:Name="Reader" ViewingMode="Scroll">
 			<FlowDocument FontFamily="Segoe UI">
 
 				<FlowDocument.Resources>

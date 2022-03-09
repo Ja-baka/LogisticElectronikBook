@@ -64,13 +64,13 @@ namespace LogisticEBook
 
 		private TextRange GetSelectedText()
 		{
-			if (MainFrame.Content is not IFlowDocument page)
+			if (MainFrame.Content is not IContent page)
 			{
 				throw new Exception("Страница не реализует интерфейс IFlowDocument");
 			}
 
-			TextPointer textSelectionStart = page.FlowDocumentReader.Selection.Start;
-			TextPointer textSelectionEnd = page.FlowDocumentReader.Selection.End;
+			TextPointer textSelectionStart = page.DocumentContent.Selection.Start;
+			TextPointer textSelectionEnd = page.DocumentContent.Selection.End;
 			TextRange range = new(textSelectionStart, textSelectionEnd);
 			return range;
 		}
