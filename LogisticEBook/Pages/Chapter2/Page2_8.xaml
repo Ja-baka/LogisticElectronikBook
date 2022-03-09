@@ -8,9 +8,9 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page2_8">
 
-	<Grid Background="#f5e8ae">
-		<FlowDocumentReader ViewingMode="Scroll">
-			<FlowDocument FontFamily="Segoe UI">
+	<Grid>
+		<FlowDocumentReader x:Name="Reader">
+			<FlowDocument>
 				<Paragraph Style="{StaticResource Title}">
 					2.8. УСТРОЙСТВА ДЛЯ МЕХАНИЗАЦИИ ВСПОМОГАТЕЛЬНЫХ ОПЕРАЦИЙ
 					<LineBreak/>

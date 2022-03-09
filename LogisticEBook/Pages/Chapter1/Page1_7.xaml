@@ -8,9 +8,9 @@
       d:DesignHeight="3500" d:DesignWidth="800"
       Title="Page1_7">
 
-	<Grid Background="#f5e8ae">
-		<FlowDocumentReader x:Name="Reader" ViewingMode="Scroll">
-			<FlowDocument FontFamily="Segoe UI">
+	<Grid>
+		<FlowDocumentReader x:Name="Reader">
+			<FlowDocument>
 				<Paragraph Style="{StaticResource Title}">
 					1.7. УСТРОЙСТВА ДЛЯ ХРАНЕНИЯ ЖИДКИХ ГРУЗОВ
 					<LineBreak/>

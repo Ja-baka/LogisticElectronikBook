@@ -9,7 +9,7 @@
       Title="Page3_2">
 
 	<Grid>
-		<FlowDocumentReader>
+		<FlowDocumentReader x:Name="Reader">
 			<FlowDocument>
 				<Paragraph Style="{StaticResource Title}">
 					3.2. УСТРОЙСТВА ДЛЯ РАЗГРУЗКИ ГРУЗОВ ИЗ ПОЛУВАГОНОВ И ПЛАТФОРМ

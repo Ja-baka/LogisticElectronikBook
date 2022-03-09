@@ -9,7 +9,7 @@
       Title="Page3_3">
 
 	<Grid>
-		<FlowDocumentReader>
+		<FlowDocumentReader x:Name="Reader">
 			<FlowDocument>
 				<Paragraph Style="{StaticResource Title}">
 					3.3. УСТРОЙСТВА ДЛЯ ПОГРУЗКИ ГРУЗОВ В ВАГОНЫ

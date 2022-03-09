@@ -9,7 +9,7 @@
       Title="Page3_5">
 
 	<Grid>
-		<FlowDocumentReader>
+		<FlowDocumentReader x:Name="Reader">
 			<FlowDocument>
 				<Paragraph Style="{StaticResource Title}">
 					3.5. ТРЕБОВАНИЯ К ТЕХНОЛОГИИ И ОРГАНИЗАЦИИ ПОГРУЗОЧНО-РАЗГРУЗОЧНЫХ РАБОТ

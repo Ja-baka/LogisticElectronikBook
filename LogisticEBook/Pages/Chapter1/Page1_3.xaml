@@ -8,9 +8,9 @@
       d:DesignHeight="2500" d:DesignWidth="800"
       Title="Page1_3">
 
-	<Grid Background="#f5e8ae">
-		<FlowDocumentReader x:Name="Reader" ViewingMode="Scroll">
-			<FlowDocument FontFamily="Segoe UI">
+	<Grid>
+		<FlowDocumentReader x:Name="Reader">
+			<FlowDocument>
 				<Paragraph Style="{StaticResource Title}">
 					1.3. ОБЩИЕ ТРЕБОВАНИЯ К УСТРОЙСТВАМ ДЛЯ ХРАНЕНИЯ ГРУЗОВ
 					<LineBreak/>

@@ -9,9 +9,9 @@
 	  d:DesignWidth="800"
       Title="Введение">
 
-	<Grid Background="#f5e8ae">
-		<FlowDocumentReader x:Name="Reader" ViewingMode="Scroll">
-			<FlowDocument FontFamily="Segoe UI">
+	<Grid>
+		<FlowDocumentReader x:Name="Reader">
+			<FlowDocument>
 				<Paragraph Style="{StaticResource Title}">
 					Введение
 				</Paragraph>

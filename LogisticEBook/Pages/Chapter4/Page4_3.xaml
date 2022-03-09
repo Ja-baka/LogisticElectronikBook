@@ -8,26 +8,9 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page4_3">
 
-	<Grid Background="#f5e8ae">
-		<FlowDocumentReader ViewingMode="Scroll">
-			<FlowDocument FontFamily="Segoe UI">
-				<FlowDocument.Resources>
-					<Style TargetType="Paragraph">
-						<Setter Property="Margin" Value="10"/>
-						<Setter Property="TextIndent" Value="20"/>
-					</Style>
-					<Style TargetType="Span">
-						<Setter Property="FontWeight" Value="Bold"/>
-						<Setter Property="Cursor" Value="Hand"/>
-						<Setter Property="FontStyle" Value="Italic"/>
-						<Setter Property="Foreground" Value="CornflowerBlue"/>
-						<EventSetter Event="MouseDown"  Handler="OpenPopUp"/>
-					</Style>
-					<Style TargetType="List">
-						<Setter Property="Margin" Value="10"/>
-					</Style>
-				</FlowDocument.Resources>
-
+	<Grid>
+		<FlowDocumentReader x:Name="Reader">
+			<FlowDocument>
 				<Paragraph Style="{StaticResource Title}">
 					4.3. МЕХАНИЗАЦИЯ ВСПОМОГАТЕЛЬНЫХ ОПЕРАЦИЙ НА СКЛАДАХ
 					<LineBreak/>

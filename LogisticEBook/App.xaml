@@ -41,5 +41,9 @@
 		<Style TargetType="FlowDocumentReader">
 			<Setter Property="ViewingMode" Value="Scroll"/>
 		</Style>
+
+		<Style TargetType="Span">
+			<Setter Property="Background" Value="Red"/>
+		</Style>
 	</Application.Resources>
 </Application>

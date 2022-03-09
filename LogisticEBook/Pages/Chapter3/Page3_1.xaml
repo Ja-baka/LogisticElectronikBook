@@ -9,7 +9,7 @@
       Title="Page3_1">
 
 	<Grid>
-		<FlowDocumentReader>
+		<FlowDocumentReader x:Name="Reader">
 			<FlowDocument>
 				<Paragraph Style="{StaticResource Title}">
 					3.1. УСТРОЙСТВА ДЛЯ РАЗГРУЗКИ ГРУЗОВ ИЗ КРЫТЫХ ВАГОНОВ

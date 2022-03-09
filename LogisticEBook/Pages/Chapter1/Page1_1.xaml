@@ -9,9 +9,9 @@
 	  d:DesignWidth="800"
 	  Title="Тема 1.1">
 
-	<Grid Background="#f5e8ae">
-		<FlowDocumentReader x:Name="Reader" ViewingMode="Scroll">
-			<FlowDocument FontFamily="Segoe UI">
+	<Grid>
+		<FlowDocumentReader x:Name="Reader">
+			<FlowDocument>
 				<Paragraph Style="{StaticResource Title}">	
 					РАЗДЕЛ 1 ОБОРУДОВАНИЕ, СООРУЖЕНИЯ И УСТРОЙСТВА ДЛЯ ХРАНЕНИЯ ГРУЗОВ
 					<LineBreak/>

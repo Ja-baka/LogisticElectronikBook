@@ -8,9 +8,9 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page5_1">
 
-	<Grid Background="#f5e8ae">
-		<FlowDocumentReader ViewingMode="Scroll">
-			<FlowDocument FontFamily="Segoe UI">
+	<Grid>
+		<FlowDocumentReader x:Name="Reader">
+			<FlowDocument>
 				<FlowDocument.Resources>
 					<Style TargetType="Paragraph">
 						<Setter Property="Margin" Value="10"/>
