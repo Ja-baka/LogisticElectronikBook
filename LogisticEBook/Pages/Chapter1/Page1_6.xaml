@@ -11,24 +11,6 @@
 	<Grid Background="#f5e8ae">
 		<FlowDocumentReader x:Name="Reader" ViewingMode="Scroll">
 			<FlowDocument FontFamily="Segoe UI">
-
-				<FlowDocument.Resources>
-					<Style TargetType="Paragraph">
-						<Setter Property="Margin" Value="10"/>
-						<Setter Property="TextIndent" Value="20"/>
-					</Style>
-					<Style TargetType="Span">
-						<Setter Property="FontWeight" Value="Bold"/>
-						<Setter Property="Cursor" Value="Hand"/>
-						<Setter Property="Foreground" Value="CornflowerBlue"/>
-						<Setter Property="FontStyle" Value="Italic"/>
-						<EventSetter Event="MouseDown"  Handler="OpenPopUp"/>
-					</Style>
-					<Style TargetType="List">
-						<Setter Property="Margin" Value="10"/>
-					</Style>
-				</FlowDocument.Resources>
-
 				<Paragraph Style="{StaticResource Title}">
 					1.6 УСТРОЙСТВА ДЛЯ ХРАНЕНИЯ СЫПУЧИХ ГРУЗОВ
 					<LineBreak/>

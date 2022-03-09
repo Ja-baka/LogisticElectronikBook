@@ -5,24 +5,32 @@
              StartupUri="StartWindow.xaml">
 	<Application.Resources>
 		<Style TargetType="Paragraph">
-			<Setter Property="Margin" Value="10"/>
+			<Setter Property="Margin" Value="10, 0"/>
 			<Setter Property="TextIndent" Value="20"/>
 		</Style>
+		
 		<Style TargetType="List">
-			<Setter Property="Margin" Value="10"/>
+			<Setter Property="Margin" Value="5"/>
+			<Style.Resources>
+				<Style TargetType="Paragraph">
+					<Setter Property="TextIndent" Value="0" />
+				</Style>
+			</Style.Resources>
 		</Style>
+		
 		<Style TargetType="Hyperlink">
 			<Setter Property="FontWeight" Value="Bold"/>
 			<Setter Property="FontStyle" Value="Italic"/>
 			<Setter Property="TextDecorations" Value="None"/>
 			<EventSetter Event="Click" Handler="Hyperlink_Click"/>
 		</Style>
+		
 		<Style x:Key="Title" TargetType="Paragraph">
-			<!--TextAlignment="Center" TextIndent="0" FontSize="20" FontWeight="Bold"-->
 			<Setter Property="TextAlignment" Value="Center"/>
 			<Setter Property="TextIndent" Value="0"/>
 			<Setter Property="FontSize" Value="20"/>
 			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="Margin" Value="0,20,0,0"/>
 		</Style>
 	</Application.Resources>
 </Application>
