@@ -18,16 +18,13 @@ namespace LogisticEBook.Pages
     /// <summary>
     /// Логика взаимодействия для Page4_2.xaml
     /// </summary>
-    public partial class Page4_2 : Page
+    public partial class Page4_2 : Page, IContent
     {
         public Page4_2()
         {
             InitializeComponent();
         }
 
-		private void OpenPopUp(object sender, MouseButtonEventArgs e)
-		{
-            PopUp.ShowInAppsViewer(sender);
-		}
-	}
+        public FlowDocumentReader DocumentViewer => Reader;
+    }
 }

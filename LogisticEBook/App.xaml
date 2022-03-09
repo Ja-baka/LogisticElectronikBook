@@ -24,6 +24,15 @@
 			<Setter Property="TextDecorations" Value="None"/>
 			<EventSetter Event="Click" Handler="Hyperlink_Click"/>
 		</Style>
+
+		<Style TargetType="FlowDocument">
+			<Setter Property="FontFamily" Value="Segoe UI"/>
+			<Setter Property="Background" Value="#f5e8ae"/>
+		</Style>
+
+		<Style TargetType="FlowDocumentReader">
+			<Setter Property="ViewingMode" Value="Scroll"/>
+		</Style>
 		
 		<Style x:Key="Title" TargetType="Paragraph">
 			<Setter Property="TextAlignment" Value="Center"/>
@@ -33,13 +42,9 @@
 			<Setter Property="Margin" Value="0,20,0,0"/>
 		</Style>
 
-		<Style TargetType="FlowDocument">
-			<Setter Property="FontFamily" Value="Segoe UI"/>
-			<Setter Property="Background" Value="#f5e8ae"/>
-		</Style>
-
-		<Style TargetType="FlowDocumentReader">
-			<Setter Property="ViewingMode" Value="Scroll"/>
+		<Style x:Key="Content" TargetType="Paragraph">
+			<Setter Property="TextIndent" Value="40"/>
+			<Setter Property="Margin" Value="5"/>
 		</Style>
 	</Application.Resources>
 </Application>
