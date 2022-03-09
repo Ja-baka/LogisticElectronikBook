@@ -13,21 +13,18 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace LogisticEBook.Pages
+namespace LogisticEBook.Pages.Chapter2
 {
 	/// <summary>
 	/// Логика взаимодействия для Page2_1.xaml
 	/// </summary>
-	public partial class Page2_1 : Page
+	public partial class Page2_1 : Page, IContent
 	{
 		public Page2_1()
 		{
 			InitializeComponent();
 		}
 
-		private void OpenPopUp(object sender, MouseButtonEventArgs e)
-		{
-			PopUp.ShowInAppsViewer(sender);
-		}
+		public FlowDocumentReader DocumentViewer => Reader;
 	}
 }

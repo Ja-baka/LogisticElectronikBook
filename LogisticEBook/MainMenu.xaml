@@ -10,9 +10,9 @@
 		Width="800"
 		WindowStartupLocation="CenterScreen" Closed="Window_Closed" Icon="/Resources/Authors/Owl.png" ResizeMode="CanResizeWithGrip"
 >
-	<Grid Background="AliceBlue">
+	<Grid>
 		<FlowDocumentScrollViewer IsSelectionEnabled="False">
-			<FlowDocument FontFamily="Arial">
+			<FlowDocument FontFamily="Arial" Background="AliceBlue">
 				<FlowDocument.Resources>
 					<Style TargetType="{x:Type Paragraph}">
 						<Setter Property="Margin" Value="5"/>
@@ -151,13 +151,14 @@
 						1.7 Устройства для хранения жидких грузов
 					</Hyperlink>
 				</Paragraph>
-				<Paragraph TextIndent="0" FontWeight="Bold">
-					Раздел 2. Средства механизации складских работ
-				</Paragraph>
-				<Paragraph  TextIndent="40">
+				<Paragraph TextIndent="40">
 					<Hyperlink Name="Test1_7">
 						Тест
 					</Hyperlink>
+				</Paragraph>
+				
+				<Paragraph TextIndent="0" FontWeight="Bold">
+					Раздел 2. Средства механизации складских работ
 				</Paragraph>
 
 				<Paragraph>
